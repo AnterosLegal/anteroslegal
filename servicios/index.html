@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios Legales | Anteros Legal</title>
+<meta name="description" content="Servicios jurídicos de Anteros Legal: residencias, visas, constitución de empresas, defensa migratoria, compliance y asesoría LATAM remota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--negro:#0a0a0a;--marfil:#f5f0e8;--dorado:#b8963e;--gris:#5a5a5a;--gris-claro:#e8e4dc;--blanco:#fafaf7;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--blanco);color:var(--negro);overflow-x:hidden;}
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 4%;background:rgba(250,250,247,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(184,150,62,0.15);}
+  .nav-logo{display:flex;align-items:center;gap:0.7rem;text-decoration:none;color:var(--negro);}
+  .nav-logo img{height:38px;}
+  .nav-logo-text{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;letter-spacing:0.05em;}
+  .nav-links{display:flex;gap:2rem;list-style:none;}
+  .nav-links a{text-decoration:none;color:var(--gris);font-size:0.83rem;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;}
+  .nav-links a:hover{color:var(--dorado);}
+  .nav-cta{background:var(--negro);color:var(--marfil)!important;padding:0.5rem 1.2rem;border-radius:2px;}
 
+  .hero{min-height:55vh;background:var(--negro);display:flex;align-items:flex-end;padding:8rem 7% 4rem;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(184,150,62,0.12) 0%,transparent 60%);}
+  .hero-content{position:relative;z-index:2;}
+  .hero-label{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dorado);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.8rem;}
+  .hero-label::before{content:'';width:30px;height:1px;background:var(--dorado);}
+  .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--marfil);margin-bottom:1rem;}
+  .hero h1 em{font-style:italic;color:var(--dorado);}
+  .hero p{color:rgba(245,240,232,0.65);font-size:0.95rem;line-height:1.7;max-width:500px;}
+
+  /* TABS */
+  .tabs-section{background:var(--blanco);}
+  .tabs-nav{display:flex;border-bottom:2px solid var(--gris-claro);padding:0 7%;background:var(--marfil);overflow-x:auto;}
+  .tab-btn{background:none;border:none;cursor:pointer;padding:1rem 1.8rem;font-family:'DM Sans',sans-serif;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gris);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.2s;white-space:nowrap;}
+  .tab-btn.active{color:var(--negro);border-bottom-color:var(--dorado);}
+  .tab-btn:hover{color:var(--negro);}
+
+  .tab-panel{display:none;padding:4rem 7%;}
+  .tab-panel.active{display:block;}
+
+  .panel-intro{max-width:600px;margin-bottom:3rem;}
+  .panel-intro h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:0.8rem;}
+  .panel-intro h2 em{font-style:italic;color:var(--dorado);}
+  .panel-intro p{color:var(--gris);line-height:1.7;}
+
+  .servicios-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5px;background:var(--gris-claro);}
+  .servicio-card{background:var(--blanco);padding:2rem;position:relative;overflow:hidden;transition:background 0.3s;}
+  .servicio-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;transition:0.3s;}
+  .servicio-card:hover{background:var(--marfil);}
+  .servicio-card:hover::before{background:var(--dorado);}
+  .s-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:var(--gris-claro);line-height:1;margin-bottom:0.5rem;}
+  .s-badge{display:inline-block;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;padding:0.25rem 0.7rem;border-radius:2px;margin-bottom:0.8rem;}
+  .badge-urgente{background:#fdf0e0;color:#8b5e1a;}
+  .badge-emergente{background:#e8f0f5;color:#1a4a6b;}
+  .badge-remoto{background:#e8f5ec;color:#1a5a30;}
+  .badge-empresas{background:#f0e8f5;color:#4a1a6b;}
+  .servicio-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;margin-bottom:0.5rem;line-height:1.3;}
+  .servicio-card p{font-size:0.83rem;color:var(--gris);line-height:1.6;margin-bottom:1.2rem;}
+  .btn-contratar{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--dorado);text-decoration:none;font-weight:500;transition:gap 0.2s;}
+  .btn-contratar:hover{gap:0.7rem;}
+  .btn-contratar::after{content:'→';}
+
+  /* PROCESO */
+  .proceso{background:var(--negro);padding:5rem 7%;}
+  .proceso .label{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dorado);display:flex;align-items:center;gap:0.8rem;margin-bottom:0.8rem;}
+  .proceso .label::before{content:'';width:30px;height:1px;background:var(--dorado);}
+  .proceso h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--marfil);margin-bottom:3rem;}
+  .proceso h2 em{font-style:italic;color:var(--dorado);}
+  .pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
+  .paso{padding:2rem;border-right:1px solid rgba(255,255,255,0.07);}
+  .paso:last-child{border:none;}
+  .paso-n{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(184,150,62,0.2);line-height:1;margin-bottom:0.8rem;}
+  .paso h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--marfil);margin-bottom:0.5rem;}
+  .paso p{font-size:0.8rem;color:#777;line-height:1.6;}
+
+  /* CTA -->
+  .cta{background:var(--dorado);padding:4rem 7%;}
+  .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;}
+  .cta h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--negro);}
+  .cta p{color:rgba(10,10,10,0.65);margin-top:0.5rem;font-size:0.9rem;}
+  .btn-dark{display:inline-flex;align-items:center;gap:0.5rem;background:var(--negro);color:var(--marfil);padding:0.9rem 2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;border-radius:2px;transition:all 0.3s;white-space:nowrap;}
+  .btn-dark:hover{background:var(--blanco);color:var(--negro);}
+
+  footer{background:#060606;color:#555;padding:2rem 7%;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;flex-wrap:wrap;gap:1rem;}
+  footer a{color:#444;text-decoration:none;}
+  footer a:hover{color:var(--dorado);}
+  .footer-links{display:flex;gap:1.5rem;}
+
+  @media(max-width:900px){
+    .nav-links{display:none;}
+    .pasos{grid-template-columns:1fr 1fr;}
+    .cta-inner{flex-direction:column;}
+    .tab-panel{padding:3rem 5%;}
+    .hero{padding:8rem 5% 3rem;}
+  }
+</style>
+</head>
+<body>
+<nav>
+  <a href="../" class="nav-logo">
+    <img src="../images/logo.jpg" alt="Anteros Legal" onerror="this.style.display='none'">
+    <span class="nav-logo-text">Anteros Legal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../">Inicio</a></li>
+    <li><a href="../la-firma/">La Firma</a></li>
+    <li><a href="./">Servicios</a></li>
+    <li><a href="../responsabilidad-social/">Resp. Social</a></li>
+    <li><a href="../#contacto" class="nav-cta">Consulta</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-label">Áreas de práctica</div>
+    <h1>Soluciones legales<br>para cada <em>etapa</em></h1>
+    <p>Servicios integrales para personas, familias y empresas. Atención presencial en Punta Arenas y 100% remota para toda Latinoamérica.</p>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs-section">
+  <div class="tabs-nav">
+    <button class="tab-btn active" onclick="switchTab('personas',this)">Para Personas</button>
+    <button class="tab-btn" onclick="switchTab('defensa',this)">Defensa &amp; Urgencia</button>
+    <button class="tab-btn" onclick="switchTab('empresas',this)">Para Empresas</button>
+    <button class="tab-btn" onclick="switchTab('latam',this)">LATAM Remoto</button>
+  </div>
+
+  <!-- PERSONAS -->
+  <div class="tab-panel active" id="tab-personas">
+    <div class="panel-intro">
+      <h2>Para <em>Personas y Familias</em></h2>
+      <p>Regularización migratoria, residencias, reunificación familiar y nacionalización. Acompañamiento completo desde la primera consulta hasta la resolución.</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Temporal (primera vez)</h3><p>Para venezolanos, colombianos, bolivianos y latinoamericanos recién llegados. Diagnóstico, documentación y presentación ante Extranjería.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Prórroga de Residencia Temporal</h3><p>Para quienes ya tienen RT y deben renovar. Proceso guiado desde el inicio hasta la aprobación, evitando quedar en situación irregular.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Definitiva (PEDE)</h3><p>Para venezolanos y latinoamericanos con 2+ años de residencia temporal. El paso hacia la permanencia legal completa en Chile.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Reunificación Familiar</h3><p>Trae a tu familia a Chile. Tramitamos desde dentro o fuera del país. Incluye cónyuge, hijos y dependientes directos.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Nacionalización Chilena</h3><p>Para quienes han construido su vida en Chile. Guía completa del proceso ante el Ministerio del Interior, con seguimiento hasta la resolución.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>RT Humanitaria — Menores (NNA)</h3><p>Para niños y adolescentes dentro de Chile. Proceso especial de regularización con enfoque en el interés superior del niño.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+    </div>
+  </div>
+
+  <!-- DEFENSA -->
+  <div class="tab-panel" id="tab-defensa">
+    <div class="panel-intro">
+      <h2>Defensa &amp; <em>Urgencia</em></h2>
+      <p>Representación experta cuando enfrentas obstáculos administrativos severos. Actuamos rápido cuando el tiempo es crítico.</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-urgente">Urgencia máxima</span><h3>Defensa ante Expulsión Administrativa</h3><p>Si recibes una orden de expulsión, actuamos en las primeras 24–72 horas. Más de 23.000 expulsiones dictadas en 2025 — no esperes.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Emergencia WhatsApp</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Recurso de Protección</h3><p>Acción constitucional para detener actos arbitrarios que afecten tus derechos fundamentales. Respuesta judicial rápida ante la Corte de Apelaciones.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Apelación de Rechazo de Visa</h3><p>Si te rechazaron una visa, revisamos la resolución, identificamos errores y construimos la mejor defensa para revertirla.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Urgencia máxima</span><h3>Amparo Constitucional</h3><p>Para situaciones de detención o restricción de libertad por razones migratorias. Acción inmediata ante los tribunales de justicia.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Emergencia WhatsApp</a></div>
+      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Defensa en Procedimiento de Expulsión</h3><p>Si tienes un procedimiento iniciado pero aún no resuelto, actuamos antes de que se dicte la resolución final.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Solicitud de Refugio</h3><p>Para personas que enfrentan persecución en su país. Acompañamiento ante ACNUR y el Ministerio del Interior.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+    </div>
+  </div>
+
+  <!-- EMPRESAS -->
+  <div class="tab-panel" id="tab-empresas">
+    <div class="panel-intro">
+      <h2>Para <em>Empresas y PYMES</em></h2>
+      <p>Constitución, cumplimiento legal, visas para tu equipo y compliance migratorio. Todo lo que necesita tu empresa para operar con respaldo jurídico.</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Constitución de Empresas en 48hs</h3><p>SpA, EIRL, SRL o SA. Constitución completa, inicio de actividades y RUT. Ideal para emprendedores migrantes y fundadores extranjeros.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Compliance Migratorio Empresarial</h3><p>Auditoría, contratos, regularización masiva y certificación de empleador regular. Evita multas y fiscalizaciones.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Visa ALR — Para Empresas</h3><p>Tramitación de visas sujetas a contrato para empresas que contratan trabajadores migrantes específicos.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Auditoría ante Fiscalización</h3><p>Servicio reactivo para empresas ya notificadas por la Dirección del Trabajo o Extranjería. Actuamos inmediatamente.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Urgente WhatsApp</a></div>
+      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-empresas">Especializado</span><h3>Legal Partner Mensual</h3><p>Asesoría legal continua: revisión de contratos, consultas ilimitadas, alertas regulatorias y acompañamiento estratégico mensual.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Visas para Socios e Inversionistas</h3><p>Para extranjeros que quieren invertir o ser socios en empresas chilenas. Visa de residente inversionista y alternativas de la Ley de Migración.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+    </div>
+  </div>
+
+  <!-- LATAM -->
+  <div class="tab-panel" id="tab-latam">
+    <div class="panel-intro">
+      <h2>LATAM <em>Remoto</em></h2>
+      <p>Servicio 100% digital para latinoamericanos que quieren venir a Chile desde Venezuela, Colombia, Perú, Bolivia y más. Iniciamos el proceso antes de que viajes.</p>
+    </div>
+    <div class="servicios-grid">
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Diagnóstico Express — 30 min</h3><p>¿Calificas? ¿Qué vía migratoria se adapta a tu situación? Sesión online con hoja de ruta personalizada. <strong>$30.000 CLP</strong></p><a href="https://calendly.com/anteroslegal" class="btn-contratar" target="_blank">Agendar diagnóstico</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Plan Migratorio Personalizado</h3><p>Hoja de ruta completa: qué documentos apostillar, qué traducir, qué trámites hacer antes de viajar. Paso a paso desde tu país.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Asesoría hasta Visa Temporal</h3><p>Acompañamiento completo desde tu país hasta obtener la visa temporal. Revisión de documentos vía Drive + seguimiento.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Paquete hasta Residencia Definitiva</h3><p>Desde la primera visa hasta la residencia definitiva. El proceso completo acompañado, sin sorpresas. Pago en cuotas disponible.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Nuevo</span><h3>Mentoría para Emprendedores Migrantes</h3><p>Orientación legal + estratégica para migrantes que quieren emprender en Chile. Constitución, visas y cumplimiento para tu equipo.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Nuevo</span><h3>Paquetes PYMES LATAM en Chile</h3><p>Para empresas de Venezuela, Colombia, Perú o México que quieren operar en Chile. Constitución, cumplimiento y visas para socios.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESO -->
+<div class="proceso">
+  <div class="label">Cómo trabajamos</div>
+  <h2>Un proceso <em>claro</em> de inicio a fin</h2>
+  <div class="pasos">
+    <div class="paso"><div class="paso-n">01</div><h3>Diagnóstico</h3><p>Revisamos tu caso, identificamos la vía correcta y te decimos exactamente qué necesitas. Sin rodeos.</p></div>
+    <div class="paso"><div class="paso-n">02</div><h3>Plan de Acción</h3><p>Trazamos el mapa completo: documentos, plazos reales, costos y hitos del proceso.</p></div>
+    <div class="paso"><div class="paso-n">03</div><h3>Ejecución</h3><p>Gestionamos cada paso: recopilación, presentación y seguimiento ante los organismos.</p></div>
+    <div class="paso"><div class="paso-n">04</div><h3>Resolución</h3><p>Te acompañamos hasta la resolución final. Cierre completo, sin cabos sueltos.</p></div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+  <div class="cta-inner">
+    <div>
+      <h2>¿Listo para avanzar?</h2>
+      <p>Revisamos tu caso y trazamos un plan claro. Atención presencial en Punta Arenas y remota en toda LATAM.</p>
+    </div>
+    <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-dark" target="_blank">Hablemos →</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Anteros Legal SpA</span>
+  <div class="footer-links">
+    <a href="../">Inicio</a>
+    <a href="../la-firma/">La Firma</a>
+    <a href="../#contacto">Contacto</a>
+    <a href="../privacidad/">Privacidad</a>
+  </div>
+</footer>
+
+<script>
+function switchTab(tab, btn) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
