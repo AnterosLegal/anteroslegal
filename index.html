@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anteros Legal | Migración, Emprendimiento y Negocios en Chile</title>
+<meta name="description" content="Firma boutique especializada en derecho migratorio y empresarial en Chile. Regularización, residencias, constitución de empresas y defensa legal. Punta Arenas.">
+<meta name="keywords" content="abogado migratorio Chile, visa Chile, residencia Chile, constitución empresa Chile, abogado Punta Arenas">
+<link rel="canonical" href="https://anteroslegal.cl/">
+
+<!-- OG -->
+<meta property="og:title" content="Anteros Legal | Migración, Emprendimiento y Negocios en Chile">
+<meta property="og:description" content="Claridad legal para tu futuro en Chile. 13 años acompañando migrantes, emprendedores y pymes.">
+<meta property="og:url" content="https://anteroslegal.cl">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --negro: #0a0a0a;
+    --marfil: #f5f0e8;
+    --dorado: #b8963e;
+    --dorado-claro: #d4aa5a;
+    --gris: #5a5a5a;
+    --gris-claro: #e8e4dc;
+    --blanco: #fafaf7;
+    --rojo: #8b2020;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--blanco);
+    color: var(--negro);
+    overflow-x: hidden;
+  }
+
+  /* ---- NAV ---- */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 4%;
+    background: rgba(250,250,247,0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(184,150,62,0.15);
+    transition: all 0.3s;
+  }
+  nav.scrolled { padding: 0.8rem 4%; box-shadow: 0 2px 30px rgba(0,0,0,0.08); }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.7rem;
+    text-decoration: none; color: var(--negro);
+  }
+  .nav-logo img { height: 38px; }
+  .nav-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; letter-spacing: 0.05em; }
+
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a {
+    text-decoration: none; color: var(--gris);
+    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--dorado); }
+
+  .nav-cta {
+    background: var(--negro); color: var(--marfil) !important;
+    padding: 0.6rem 1.4rem; border-radius: 2px;
+    font-size: 0.78rem !important; letter-spacing: 0.1em !important;
+    transition: background 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--dorado) !important; color: var(--negro) !important; }
+
+  .nav-mobile-btn { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+  .nav-mobile-btn span { display: block; width: 24px; height: 2px; background: var(--negro); margin: 5px 0; transition: 0.3s; }
+
+  /* ---- HERO ---- */
+  .hero {
+    min-height: 100vh;
+    display: grid; grid-template-columns: 1fr 1fr;
+    padding-top: 72px;
+    overflow: hidden;
+  }
+  .hero-content {
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 5% 6% 5% 7%;
+    position: relative; z-index: 2;
+  }
+  .hero-eyebrow {
+    display: flex; align-items: center; gap: 0.8rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--dorado); font-weight: 500; margin-bottom: 2rem;
+  }
+  .hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--dorado); }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    font-weight: 300; line-height: 1.1;
+    color: var(--negro); margin-bottom: 1.5rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--dorado); }
+
+  .hero-desc {
+    font-size: 1rem; line-height: 1.7; color: var(--gris);
+    max-width: 480px; margin-bottom: 2.5rem;
+  }
+
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--negro); color: var(--marfil);
+    padding: 0.9rem 2rem; text-decoration: none;
+    font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    border-radius: 2px; transition: all 0.3s;
+  }
+  .btn-primary:hover { background: var(--dorado); color: var(--negro); transform: translateY(-2px); }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    border: 1px solid var(--negro); color: var(--negro);
+    padding: 0.9rem 2rem; text-decoration: none;
+    font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 400;
+    border-radius: 2px; transition: all 0.3s;
+  }
+  .btn-secondary:hover { background: var(--negro); color: var(--marfil); }
+
+  .hero-stats {
+    display: flex; gap: 2.5rem; margin-top: 3.5rem;
+    padding-top: 2.5rem; border-top: 1px solid var(--gris-claro);
+  }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem; font-weight: 500; color: var(--negro); line-height: 1;
+  }
+  .stat-label { font-size: 0.72rem; color: var(--gris); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 0.3rem; }
+
+  .hero-image {
+    position: relative; overflow: hidden;
+    background: var(--negro);
+  }
+  .hero-image img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.75; mix-blend-mode: luminosity;
+    transform: scale(1.05); transition: transform 8s ease;
+  }
+  .hero-image:hover img { transform: scale(1); }
+  .hero-image-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(184,150,62,0.3) 0%, transparent 60%);
+  }
+  .hero-badge {
+    position: absolute; bottom: 2.5rem; left: 2.5rem;
+    background: rgba(10,10,10,0.85); backdrop-filter: blur(8px);
+    color: var(--marfil); padding: 1rem 1.5rem; border-radius: 3px;
+    border-left: 3px solid var(--dorado);
+  }
+  .hero-badge-top { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dorado); margin-bottom: 0.3rem; }
+  .hero-badge-main { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; }
+
+  /* ---- TRUST BAR ---- */
+  .trust-bar {
+    background: var(--negro);
+    padding: 1.2rem 7%;
+    display: flex; align-items: center; gap: 3rem;
+    overflow-x: auto;
+  }
+  .trust-bar-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: #666; white-space: nowrap; }
+  .trust-items { display: flex; gap: 2.5rem; align-items: center; }
+  .trust-item { font-size: 0.78rem; color: #aaa; white-space: nowrap; display: flex; align-items: center; gap: 0.5rem; }
+  .trust-item::before { content: '●'; color: var(--dorado); font-size: 0.5rem; }
+
+  /* ---- SECTIONS COMÚN ---- */
+  section { padding: 6rem 7%; }
+  .section-label {
+    font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--dorado); font-weight: 500;
+    display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;
+  }
+  .section-label::before { content: ''; width: 30px; height: 1px; background: var(--dorado); }
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 300; line-height: 1.2; color: var(--negro);
+  }
+  h2 em { font-style: italic; color: var(--dorado); }
+
+  /* ---- FIRMA ---- */
+  .firma-section { background: var(--marfil); }
+  .firma-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+  .firma-image-wrap { position: relative; }
+  .firma-image-wrap img { width: 100%; border-radius: 3px; display: block; }
+  .firma-image-accent {
+    position: absolute; top: -1.5rem; left: -1.5rem; right: 1.5rem; bottom: 1.5rem;
+    border: 1px solid var(--dorado); border-radius: 3px; z-index: -1;
+  }
+  .firma-years {
+    position: absolute; bottom: -1.5rem; right: -1.5rem;
+    background: var(--dorado); color: var(--negro);
+    padding: 1.2rem 1.5rem; text-align: center;
+  }
+  .firma-years-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 600; line-height: 1; }
+  .firma-years-label { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .firma-content h2 { margin-bottom: 1.5rem; }
+  .firma-content p { color: var(--gris); line-height: 1.8; margin-bottom: 1.2rem; }
+  .firma-content p strong { color: var(--negro); }
+
+  .firma-valores { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0 2rem; }
+  .valor-item { display: flex; align-items: flex-start; gap: 0.6rem; }
+  .valor-dot { width: 6px; height: 6px; background: var(--dorado); border-radius: 50%; margin-top: 0.45rem; flex-shrink: 0; }
+  .valor-text { font-size: 0.88rem; color: var(--gris); }
+
+  /* ---- SERVICIOS ---- */
+  #servicios { background: var(--blanco); }
+  .servicios-intro { max-width: 600px; margin-bottom: 3.5rem; }
+  .servicios-intro p { color: var(--gris); line-height: 1.7; margin-top: 1rem; }
+
+  .servicios-tabs {
+    display: flex; gap: 0; margin-bottom: 3rem;
+    border-bottom: 2px solid var(--gris-claro);
+  }
+  .tab-btn {
+    background: none; border: none; cursor: pointer;
+    padding: 0.8rem 1.8rem;
+    font-family: 'DM Sans', sans-serif; font-size: 0.82rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--gris);
+    border-bottom: 2px solid transparent; margin-bottom: -2px;
+    transition: all 0.2s;
+  }
+  .tab-btn.active { color: var(--negro); border-bottom-color: var(--dorado); }
+  .tab-btn:hover { color: var(--negro); }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5px; background: var(--gris-claro); }
+
+  .servicio-card {
+    background: var(--blanco); padding: 2rem;
+    transition: all 0.3s; position: relative;
+    overflow: hidden;
+  }
+  .servicio-card::before {
+    content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 3px; background: transparent; transition: 0.3s;
+  }
+  .servicio-card:hover { background: var(--marfil); }
+  .servicio-card:hover::before { background: var(--dorado); }
+
+  .servicio-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 300; color: var(--gris-claro);
+    line-height: 1; margin-bottom: 0.5rem;
+  }
+  .servicio-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 500; color: var(--negro);
+    margin-bottom: 0.6rem; line-height: 1.3;
+  }
+  .servicio-card p { font-size: 0.85rem; color: var(--gris); line-height: 1.6; margin-bottom: 1.2rem; }
+  .servicio-badge {
+    display: inline-block; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.25rem 0.7rem; background: var(--gris-claro); color: var(--gris);
+    border-radius: 2px; margin-bottom: 1rem;
+  }
+  .servicio-badge.urgente { background: #fdf0e0; color: #8b5e1a; }
+  .servicio-badge.emergente { background: #e8f0f5; color: #1a4a6b; }
+
+  .btn-contratar {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--dorado); text-decoration: none; font-weight: 500;
+    transition: gap 0.2s;
+  }
+  .btn-contratar:hover { gap: 0.7rem; }
+  .btn-contratar::after { content: '→'; }
+
+  /* ---- PROCESO ---- */
+  .proceso-section { background: var(--negro); color: var(--marfil); }
+  .proceso-section .section-label { color: var(--dorado); }
+  .proceso-section h2 { color: var(--marfil); }
+  .proceso-section h2 em { color: var(--dorado); }
+
+  .proceso-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-top: 3.5rem; }
+  .proceso-step { padding: 2.5rem 2rem; border-right: 1px solid rgba(255,255,255,0.08); position: relative; }
+  .proceso-step:last-child { border-right: none; }
+  .paso-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 300; color: rgba(184,150,62,0.2);
+    line-height: 1; margin-bottom: 1rem;
+  }
+  .proceso-step h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem; color: var(--marfil); margin-bottom: 0.7rem;
+  }
+  .proceso-step p { font-size: 0.83rem; color: #888; line-height: 1.6; }
+  .paso-connector {
+    position: absolute; top: 50%; right: -1px;
+    width: 8px; height: 8px; background: var(--dorado);
+    border-radius: 50%; transform: translateY(-50%);
+  }
+
+  /* ---- RECURSOS ---- */
+  .recursos-section { background: var(--marfil); }
+  .recursos-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem; }
+  .recurso-card {
+    background: var(--blanco); border: 1px solid var(--gris-claro);
+    padding: 2.5rem; border-radius: 3px; position: relative; overflow: hidden;
+  }
+  .recurso-card::before {
+    content: 'RECURSO GRATUITO';
+    position: absolute; top: 1.2rem; right: -2rem;
+    background: var(--dorado); color: var(--negro);
+    font-size: 0.58rem; letter-spacing: 0.2em; padding: 0.4rem 3rem;
+    transform: rotate(45deg);
+  }
+  .recurso-version { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--dorado); margin-bottom: 0.8rem; }
+  .recurso-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 0.6rem; }
+  .recurso-card p { font-size: 0.85rem; color: var(--gris); line-height: 1.6; margin-bottom: 1.5rem; }
+  .recurso-items { list-style: none; margin-bottom: 1.5rem; }
+  .recurso-items li { font-size: 0.83rem; color: var(--gris); padding: 0.4rem 0; display: flex; align-items: center; gap: 0.6rem; }
+  .recurso-items li::before { content: '✓'; color: var(--dorado); font-weight: 600; }
+
+  .recurso-form { display: flex; flex-direction: column; gap: 0.8rem; }
+  .recurso-form input[type="email"] {
+    padding: 0.9rem 1.2rem; border: 1px solid var(--gris-claro);
+    font-family: 'DM Sans', sans-serif; font-size: 0.88rem;
+    background: var(--blanco); color: var(--negro); border-radius: 2px;
+    outline: none; transition: border-color 0.2s;
+  }
+  .recurso-form input:focus { border-color: var(--dorado); }
+  .recurso-form button {
+    padding: 0.9rem; background: var(--negro); color: var(--marfil);
+    border: none; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;
+    border-radius: 2px; transition: background 0.2s;
+  }
+  .recurso-form button:hover { background: var(--dorado); color: var(--negro); }
+  .recurso-form .form-note { font-size: 0.72rem; color: #999; text-align: center; }
+
+  .recursos-texto h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-bottom: 1rem; }
+  .recursos-texto p { color: var(--gris); line-height: 1.7; margin-bottom: 1rem; }
+
+  /* ---- TESTIMONIOS ---- */
+  #testimonios { background: var(--blanco); }
+  .testimonios-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--gris-claro); margin-top: 3rem; }
+  .testimonio-card { background: var(--blanco); padding: 2.5rem; }
+  .testimonio-quote { font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--dorado); line-height: 0.5; margin-bottom: 1rem; }
+  .testimonio-text { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: var(--negro); line-height: 1.6; margin-bottom: 1.5rem; }
+  .testimonio-author { display: flex; align-items: center; gap: 0.8rem; }
+  .testimonio-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--gris-claro); object-fit: cover; }
+  .testimonio-name { font-size: 0.85rem; font-weight: 500; color: var(--negro); }
+  .testimonio-role { font-size: 0.75rem; color: var(--gris); }
+
+  .case-study {
+    grid-column: 1 / -1; background: var(--negro); padding: 2.5rem;
+    display: grid; grid-template-columns: auto 1fr auto; gap: 2rem; align-items: center;
+  }
+  .case-label { font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dorado); margin-bottom: 0.5rem; }
+  .case-study h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--marfil); }
+  .case-study p { font-size: 0.85rem; color: #888; margin-top: 0.5rem; }
+  .case-result { text-align: right; }
+  .case-result-num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--dorado); font-weight: 300; line-height: 1; }
+  .case-result-label { font-size: 0.72rem; color: #666; letter-spacing: 0.1em; text-transform: uppercase; }
+  .case-divider { width: 1px; height: 60px; background: rgba(255,255,255,0.1); }
+
+  /* ---- CONTACTO ---- */
+  #contacto { background: var(--negro); }
+  .contacto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; margin-top: 3rem; }
+  .contacto-info h2 { color: var(--marfil); margin-bottom: 1.2rem; }
+  .contacto-info p { color: #888; line-height: 1.7; margin-bottom: 2rem; }
+
+  .contacto-metodos { display: flex; flex-direction: column; gap: 1rem; }
+  .contacto-metodo {
+    display: flex; align-items: center; gap: 1rem;
+    padding: 1.2rem; border: 1px solid rgba(255,255,255,0.08);
+    text-decoration: none; transition: border-color 0.2s;
+    border-radius: 2px;
+  }
+  .contacto-metodo:hover { border-color: var(--dorado); }
+  .contacto-metodo-icon { font-size: 1.2rem; width: 40px; text-align: center; }
+  .contacto-metodo-text { }
+  .contacto-metodo-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: #666; }
+  .contacto-metodo-val { font-size: 0.9rem; color: var(--marfil); margin-top: 0.2rem; }
+
+  .contacto-form-wrap { background: var(--marfil); padding: 2.5rem; border-radius: 3px; }
+  .contacto-form-wrap h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 1.5rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1rem; }
+  .form-group label { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gris); }
+  .form-group input, .form-group select, .form-group textarea {
+    padding: 0.8rem; border: 1px solid var(--gris-claro);
+    font-family: 'DM Sans', sans-serif; font-size: 0.88rem;
+    background: var(--blanco); color: var(--negro); border-radius: 2px;
+    outline: none; transition: border-color 0.2s;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--dorado); }
+  .form-group textarea { resize: vertical; min-height: 100px; }
+  .form-submit {
+    width: 100%; padding: 1rem; background: var(--negro); color: var(--marfil);
+    border: none; cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;
+    border-radius: 2px; transition: background 0.2s;
+  }
+  .form-submit:hover { background: var(--dorado); color: var(--negro); }
+
+  /* ---- RS ---- */
+  .rs-section { background: var(--marfil); }
+  .rs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+  .rs-content h2 { margin-bottom: 1.2rem; }
+  .rs-content p { color: var(--gris); line-height: 1.7; margin-bottom: 1rem; }
+  .rs-items { margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+  .rs-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1.2rem; background: var(--blanco); border-radius: 2px; }
+  .rs-item-icon { font-size: 1.4rem; }
+  .rs-item h4 { font-size: 0.88rem; font-weight: 500; margin-bottom: 0.3rem; }
+  .rs-item p { font-size: 0.8rem; color: var(--gris); margin: 0; }
+  .rs-image img { width: 100%; border-radius: 3px; }
+
+  /* ---- FOOTER ---- */
+  footer {
+    background: #060606; color: #555;
+    padding: 4rem 7% 2rem;
+  }
+  .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+  .footer-brand img { height: 35px; margin-bottom: 1rem; filter: brightness(0.6); }
+  .footer-brand p { font-size: 0.83rem; line-height: 1.6; color: #444; max-width: 220px; }
+  .footer-col h4 { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: #666; margin-bottom: 1.2rem; }
+  .footer-col a { display: block; font-size: 0.83rem; color: #444; text-decoration: none; margin-bottom: 0.6rem; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--dorado); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; border-top: 1px solid #111; font-size: 0.75rem; }
+  .footer-legal { display: flex; gap: 1.5rem; }
+  .footer-legal a { color: #444; text-decoration: none; }
+  .footer-legal a:hover { color: var(--dorado); }
+
+  /* ---- WHATSAPP FLOAT ---- */
+  .whatsapp-float {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 99;
+    width: 54px; height: 54px; border-radius: 50%;
+    background: #25D366; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4); text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
+  .whatsapp-float svg { width: 28px; height: 28px; fill: white; }
+
+  /* ---- ANIMACIONES ---- */
+  @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+  .animate { opacity: 0; }
+  .animate.in { animation: fadeUp 0.7s ease forwards; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.35s; }
+
+  /* ---- MOBILE ---- */
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+    .nav-mobile-btn { display: block; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-image { height: 300px; order: -1; }
+    .hero-content { padding: 2.5rem 5%; }
+    .hero-stats { gap: 1.5rem; }
+    .firma-grid, .recursos-grid, .contacto-grid, .rs-grid { grid-template-columns: 1fr; }
+    .proceso-grid { grid-template-columns: 1fr 1fr; }
+    .testimonios-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    section { padding: 4rem 5%; }
+    .tab-btn { padding: 0.7rem 1rem; font-size: 0.75rem; }
+    .servicios-tabs { overflow-x: auto; }
+    .case-study { grid-template-columns: 1fr; text-align: center; }
+    .case-divider { display: none; }
+    .case-result { text-align: center; }
+    .form-row { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="/" class="nav-logo">
+    <img src="images/logo.jpg" alt="Anteros Legal" onerror="this.style.display='none'">
+    <span class="nav-logo-text">Anteros Legal</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/">Inicio</a></li>
+    <li><a href="la-firma/">La Firma</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="responsabilidad-social/">Responsabilidad Social</a></li>
+    <li><a href="#contacto" class="nav-cta">Agendar Consulta</a></li>
+  </ul>
+  <button class="nav-mobile-btn" onclick="toggleMenu()" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow animate">Punta Arenas · Chile · Atención LATAM</div>
+    <h1 class="animate delay-1">Migración,<br>Emprendimiento<br>y Negocios<br><em>con Rumbo Claro</em></h1>
+    <p class="hero-desc animate delay-2">Transformamos la incertidumbre legal en acciones concretas. Te guiamos para regularizar tu situación migratoria, emprender con seguridad y hacer crecer tus proyectos en Chile.</p>
+    <div class="hero-actions animate delay-3">
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-primary" target="_blank">Hablemos de tu Caso</a>
+      <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+    </div>
+    <div class="hero-stats animate delay-3">
+      <div>
+        <div class="stat-num">13</div>
+        <div class="stat-label">Años de experiencia</div>
+      </div>
+      <div>
+        <div class="stat-num">+500</div>
+        <div class="stat-label">Casos resueltos</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Países atendidos</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="images/hero-la-firma.jpg" alt="Anteros Legal - Firma Jurídica">
+    <div class="hero-image-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-top">Firma Boutique</div>
+      <div class="hero-badge-main">Derecho Migratorio &amp; Empresarial</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <span class="trust-bar-label">Especialistas en</span>
+  <div class="trust-items">
+    <span class="trust-item">Residencia Temporal y Definitiva</span>
+    <span class="trust-item">Constitución de Empresas</span>
+    <span class="trust-item">Defensa ante Expulsiones</span>
+    <span class="trust-item">Asesoría Empresarial LATAM</span>
+    <span class="trust-item">Atención 100% Remota</span>
+    <span class="trust-item">Compliance Migratorio</span>
+  </div>
+</div>
+
+<!-- LA FIRMA -->
+<section class="firma-section" id="la-firma">
+  <div class="section-label">Quiénes somos</div>
+  <div class="firma-grid">
+    <div class="firma-image-wrap">
+      <div class="firma-image-accent"></div>
+      <img src="images/perfilJMS.jpg" alt="José Manuel Simons - Fundador Anteros Legal">
+      <div class="firma-years">
+        <div class="firma-years-num">13</div>
+        <div class="firma-years-label">Años</div>
+      </div>
+    </div>
+    <div class="firma-content">
+      <div class="section-label">José Manuel Simons</div>
+      <h2>Una firma construida sobre <em>compromiso real</em></h2>
+      <p>Tenemos <strong>13 años acompañando a migrantes, emprendedores y pymes</strong> en momentos decisivos. Hoy, desde Chile, trabajamos inspirados en <strong>Anteros</strong>: símbolo de la <strong>pasión que se construye</strong> basada en compromiso real, estrategia y confianza mutua.</p>
+      <p>Esa pasión compartida es la base de nuestra relación contigo. No somos un estudio masivo ni una firma genérica: somos una boutique legal donde cada caso recibe atención personalizada, diagnóstico preciso y un plan de acción claro.</p>
+      <div class="firma-valores">
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Derecho Migratorio</span></div>
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Derecho Empresarial</span></div>
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Defensa Constitucional</span></div>
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Asesoría PYMES</span></div>
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Atención LATAM Remota</span></div>
+        <div class="valor-item"><div class="valor-dot"></div><span class="valor-text">Compliance Migratorio</span></div>
+      </div>
+      <a href="la-firma/" class="btn-secondary">Conoce más sobre la firma</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="servicios-intro">
+    <div class="section-label">Áreas de práctica</div>
+    <h2>Soluciones legales para <em>cada etapa</em></h2>
+    <p>Servicios integrales diseñados para personas, familias y empresas que necesitan claridad legal en Chile. Atención presencial en Punta Arenas y 100% remota para el resto de LATAM.</p>
+  </div>
+
+  <div class="servicios-tabs">
+    <button class="tab-btn active" onclick="switchTab('personas', this)">Para Personas</button>
+    <button class="tab-btn" onclick="switchTab('defensa', this)">Defensa &amp; Urgencia</button>
+    <button class="tab-btn" onclick="switchTab('empresas', this)">Para Empresas</button>
+    <button class="tab-btn" onclick="switchTab('latam', this)">LATAM Remoto</button>
+  </div>
+
+  <!-- TAB PERSONAS -->
+  <div class="tab-panel active" id="tab-personas">
+    <div class="servicio-card">
+      <div class="servicio-num">01</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Residencia Temporal (primera vez)</h3>
+      <p>Para venezolanos, colombianos, bolivianos y latinoamericanos recién llegados. Diagnóstico, recopilación de documentos y presentación ante Extranjería.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">02</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Prórroga de Residencia Temporal</h3>
+      <p>Para clientes que ya tienen RT y deben renovar. Evita quedar en situación irregular. Proceso guiado desde el inicio hasta la aprobación.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">03</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Residencia Definitiva (PEDE)</h3>
+      <p>Para venezolanos y latinoamericanos con 2+ años de residencia temporal. El paso hacia la permanencia legal completa en Chile.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">04</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Reunificación Familiar</h3>
+      <p>Reúne a tu familia en Chile. Tramitamos desde dentro o fuera del país. Incluye cónyuge, hijos y dependientes directos.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">05</div>
+      <span class="servicio-badge emergente">Demanda creciente</span>
+      <h3>Nacionalización Chilena</h3>
+      <p>Para quienes han construido su vida en Chile. Guía completa del proceso ante el Ministerio del Interior, con seguimiento hasta la resolución.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">06</div>
+      <span class="servicio-badge emergente">Demanda creciente</span>
+      <h3>RT Humanitaria — Menores (NNA)</h3>
+      <p>Para menores de 17 años que ya se encuentran dentro de Chile. Proceso especial de regularización con enfoque en protección del interés superior del niño.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+  </div>
+
+  <!-- TAB DEFENSA -->
+  <div class="tab-panel" id="tab-defensa">
+    <div class="servicio-card">
+      <div class="servicio-num">01</div>
+      <span class="servicio-badge urgente">Urgencia máxima</span>
+      <h3>Defensa ante Expulsión Administrativa</h3>
+      <p>Si recibes una orden de expulsión, tienes derechos. Actuamos en las primeras 24-72 horas. Más de 23.000 expulsiones dictadas en 2025 — no esperes.</p>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Emergencia — WhatsApp</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">02</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Recurso de Protección</h3>
+      <p>Acción constitucional para detener actos arbitrarios que afecten tus derechos fundamentales. Respuesta judicial rápida ante la Corte de Apelaciones.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">03</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Apelación de Rechazo de Visa</h3>
+      <p>Si te rechazaron una visa, el proceso no termina ahí. Revisamos la resolución, identificamos errores y construimos la mejor defensa para revertirla.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">04</div>
+      <span class="servicio-badge">Especializado</span>
+      <h3>Amparo Constitucional</h3>
+      <p>Para situaciones de detención o restricción de libertad por razones migratorias. Acción inmediata ante los tribunales de justicia.</p>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Emergencia — WhatsApp</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">05</div>
+      <span class="servicio-badge emergente">Demanda creciente</span>
+      <h3>Defensa en Procedimiento de Expulsión en Curso</h3>
+      <p>Si tienes un procedimiento iniciado pero aún no resuelto (85.975 desde 2022), actuamos antes de que se dicte la resolución final.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">06</div>
+      <span class="servicio-badge emergente">Demanda creciente</span>
+      <h3>Solicitud de Refugio</h3>
+      <p>Para personas que enfrentan persecución o riesgo en su país de origen. Acompañamiento completo ante ACNUR y el Ministerio del Interior.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+  </div>
+
+  <!-- TAB EMPRESAS -->
+  <div class="tab-panel" id="tab-empresas">
+    <div class="servicio-card">
+      <div class="servicio-num">01</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Constitución de Empresas en 48hs</h3>
+      <p>SpA, EIRL, SRL o SA. Constitución completa, inicio de actividades y RUT en tiempo récord. Ideal para emprendedores migrantes y fundadores extranjeros.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">02</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Compliance Migratorio Empresarial</h3>
+      <p>Para empresas que contratan trabajadores migrantes. Auditoría, contratos, regularización masiva y certificación de empleador regular. Evita multas y fiscalizaciones.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">03</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Visa ALR — Para Empresas</h3>
+      <p>Tramitación de visas sujetas a contrato para empresas que requieren contratar trabajadores migrantes específicos. Proceso guiado y eficiente.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">04</div>
+      <span class="servicio-badge urgente">Alta demanda</span>
+      <h3>Auditoría ante Fiscalización</h3>
+      <p>Servicio reactivo para empresas ya notificadas por la Dirección del Trabajo o Extranjería. Actuamos inmediatamente para minimizar sanciones.</p>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Urgente — WhatsApp</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">05</div>
+      <span class="servicio-badge">Especializado</span>
+      <h3>Legal Partner Mensual</h3>
+      <p>Asesoría legal continua para tu empresa. Revisión de contratos, consultas ilimitadas, alertas regulatorias y acompañamiento estratégico mensual.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">06</div>
+      <span class="servicio-badge emergente">Demanda creciente</span>
+      <h3>Visas para Socios e Inversionistas</h3>
+      <p>Para extranjeros que quieren invertir o ser socios en empresas chilenas. Visa de residente inversionista y todas las alternativas de la Ley de Migración.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+  </div>
+
+  <!-- TAB LATAM REMOTO -->
+  <div class="tab-panel" id="tab-latam">
+    <div class="servicio-card">
+      <div class="servicio-num">01</div>
+      <span class="servicio-badge urgente">100% Remoto</span>
+      <h3>Diagnóstico Express — 30 min</h3>
+      <p>¿Calificas para venir a Chile? ¿Qué vía migratoria se adapta a tu situación? Sesión de 30 minutos 100% online con hoja de ruta personalizada.</p>
+      <a href="https://calendly.com/anteroslegal" class="btn-contratar" target="_blank">Agendar diagnóstico</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">02</div>
+      <span class="servicio-badge urgente">100% Remoto</span>
+      <h3>Plan Migratorio Personalizado</h3>
+      <p>Hoja de ruta paso a paso para venir a Chile. Incluye: qué documentos apostillar en tu país, qué traducir, qué trámites hacer antes de viajar.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">03</div>
+      <span class="servicio-badge">100% Remoto</span>
+      <h3>Asesoría hasta Visa Temporal</h3>
+      <p>Acompañamiento completo desde tu país de origen hasta obtener la visa temporal en Chile. Revisión de documentos vía Drive compartido + seguimiento.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">04</div>
+      <span class="servicio-badge">100% Remoto</span>
+      <h3>Paquete hasta Residencia Definitiva</h3>
+      <p>Desde la primera visa hasta la residencia definitiva. El proceso completo acompañado, sin sorpresas. Pago en cuotas disponible.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">05</div>
+      <span class="servicio-badge emergente">Nuevo</span>
+      <h3>Mentoría para Emprendedores Migrantes</h3>
+      <p>Orientación legal + estratégica para migrantes que quieren emprender en Chile. Constitución, cumplimiento laboral y visas para tu equipo.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">06</div>
+      <span class="servicio-badge emergente">Nuevo</span>
+      <h3>Paquetes PYMES LATAM en Chile</h3>
+      <p>Para empresas de Venezuela, Colombia, Perú o México que quieren operar en Chile. Constitución, cumplimiento y visas para socios e inversionistas.</p>
+      <a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="proceso-section">
+  <div class="section-label">Cómo trabajamos</div>
+  <h2>Un proceso <em>claro</em> de inicio a fin</h2>
+  <div class="proceso-grid">
+    <div class="proceso-step">
+      <div class="paso-num">01</div>
+      <h3>Diagnóstico</h3>
+      <p>Revisamos tu caso, identificamos la vía correcta y te decimos exactamente qué necesitas. Sin rodeos.</p>
+      <div class="paso-connector"></div>
+    </div>
+    <div class="proceso-step">
+      <div class="paso-num">02</div>
+      <h3>Plan de Acción</h3>
+      <p>Trazamos el mapa completo: documentos, plazos, costos reales y hitos del proceso. Claridad total.</p>
+      <div class="paso-connector"></div>
+    </div>
+    <div class="proceso-step">
+      <div class="paso-num">03</div>
+      <h3>Ejecución</h3>
+      <p>Gestionamos cada paso: recopilación, presentación, seguimiento ante los organismos y respuesta a requerimientos.</p>
+      <div class="paso-connector"></div>
+    </div>
+    <div class="proceso-step">
+      <div class="paso-num">04</div>
+      <h3>Resolución</h3>
+      <p>Te acompañamos hasta la resolución final y el siguiente paso. Cierre completo, sin cabos sueltos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECURSO GRATUITO -->
+<section class="recursos-section" id="recurso">
+  <div class="recursos-grid">
+    <div class="recurso-card">
+      <div class="recurso-version">PDF v2.6 · Actualizado 2026</div>
+      <h3>Guía de Migración Chile 2026</h3>
+      <p>El recurso técnico más completo para venezolanos, colombianos y latinoamericanos que quieren regularizarse en Chile.</p>
+      <ul class="recurso-items">
+        <li>Checklist de admisibilidad (Visa Temp/Def)</li>
+        <li>Tabla de plazos reales vs. legales</li>
+        <li>Matriz de costos oficiales 2026</li>
+        <li>Cambios por la Ley 21.325</li>
+      </ul>
+      <form class="recurso-form" onsubmit="sendGuia(event)">
+        <input type="email" placeholder="tu@correo.com" required id="guia-email">
+        <button type="submit">Enviar Guía PDF</button>
+        <span class="form-note">Sin spam. Solo contenido de alto valor técnico.</span>
+      </form>
+    </div>
+    <div class="recursos-texto">
+      <div class="section-label">¿Por qué nosotros?</div>
+      <h3>No somos un trámite.<br>Somos tu <em>socio estratégico</em>.</h3>
+      <p>En Anteros Legal combinamos 13 años de experiencia jurídica con tecnología y un enfoque completamente humano. Cada caso recibe atención personalizada — no somos un estudio masivo.</p>
+      <p>Atendemos presencialmente en Punta Arenas y de forma 100% remota a toda Latinoamérica. Venezolanos, colombianos, peruanos y centroamericanos que aún están en su país pueden iniciar su proceso con nosotros antes de viajar.</p>
+      <a href="https://calendly.com/anteroslegal" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">Agendar Consulta Gratuita</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="section-label">Testimonios</div>
+  <h2>Historias de <em>quienes avanzaron</em></h2>
+  <div class="testimonios-grid">
+    <div class="testimonio-card">
+      <div class="testimonio-quote">"</div>
+      <p class="testimonio-text">Lo que otros abogados complicaban, Anteros lo simplificó. El seguimiento constante me dio una paz mental que no tiene precio.</p>
+      <div class="testimonio-author">
+        <div class="testimonio-avatar"></div>
+        <div>
+          <div class="testimonio-name">Carlos Mendoza</div>
+          <div class="testimonio-role">Ingeniero · Venezuela → Chile</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio-card">
+      <div class="testimonio-quote">"</div>
+      <p class="testimonio-text">Constituir mi SpA fue cuestión de días. Entienden perfectamente las necesidades de un fundador extranjero en Chile.</p>
+      <div class="testimonio-author">
+        <div class="testimonio-avatar"></div>
+        <div>
+          <div class="testimonio-name">Ana María Silva</div>
+          <div class="testimonio-role">Founder · Colombia → Chile</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonio-card">
+      <div class="testimonio-quote">"</div>
+      <p class="testimonio-text">Me dictaron una expulsión y no sabía qué hacer. Anteros actuó en horas y logramos revertirla. No exagero al decir que cambiaron mi vida.</p>
+      <div class="testimonio-author">
+        <div class="testimonio-avatar"></div>
+        <div>
+          <div class="testimonio-name">Miguel Ángel R.</div>
+          <div class="testimonio-role">Trabajador · Perú → Chile</div>
+        </div>
+      </div>
+    </div>
+    <div class="case-study">
+      <div>
+        <div class="case-label">Caso de Éxito · #042</div>
+        <h3>Familia Rodríguez — De Visa Temporal a PEDE</h3>
+        <p>Familia venezolana, 4 integrantes. Proceso completo de regularización hasta residencia definitiva.</p>
+      </div>
+      <div class="case-divider"></div>
+      <div class="case-result">
+        <div class="case-result-num">8</div>
+        <div class="case-result-label">Meses hasta PEDE</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESPONSABILIDAD SOCIAL -->
+<section class="rs-section" id="responsabilidad-social">
+  <div class="rs-grid">
+    <div class="rs-content">
+      <div class="section-label">Responsabilidad Social</div>
+      <h2>Derecho al servicio <em>de las personas</em></h2>
+      <p>Creemos que el acceso a la justicia no debe ser un privilegio. Por eso dedicamos parte de nuestra capacidad a causas sociales, organizaciones y comunidades vulnerables.</p>
+      <div class="rs-items">
+        <div class="rs-item">
+          <div class="rs-item-icon">🌿</div>
+          <div>
+            <h4>Liberando Colores</h4>
+            <p>Apoyo legal a comunidades migrantes vulnerables en Punta Arenas.</p>
+          </div>
+        </div>
+        <div class="rs-item">
+          <div class="rs-item-icon">🎓</div>
+          <div>
+            <h4>UMAG — Universidad de Magallanes</h4>
+            <p>Colaboración académica y talleres de derecho migratorio para estudiantes.</p>
+          </div>
+        </div>
+        <div class="rs-item">
+          <div class="rs-item-icon">⚖️</div>
+          <div>
+            <h4>Pro Bono Migratorio</h4>
+            <p>Casos gratuitos para familias en situación de vulnerabilidad extrema.</p>
+          </div>
+        </div>
+      </div>
+      <a href="responsabilidad-social/" class="btn-secondary" style="margin-top:1.5rem; display:inline-flex;">Ver más sobre nuestro impacto</a>
+    </div>
+    <div class="rs-image">
+      <img src="images/imagen1.jpg" alt="Responsabilidad Social Anteros Legal">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-label" style="color:var(--dorado)">Contacto</div>
+  <div class="contacto-grid">
+    <div class="contacto-info">
+      <h2 style="color:var(--marfil)">¿Listo para avanzar<br>con <em>seguridad</em>?</h2>
+      <p>Revisamos tu caso, trazamos un plan claro y te acompañamos paso a paso. Atendemos presencialmente en Punta Arenas y de forma remota en toda Latinoamérica.</p>
+      <div class="contacto-metodos">
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="contacto-metodo" target="_blank">
+          <div class="contacto-metodo-icon">💬</div>
+          <div class="contacto-metodo-text">
+            <div class="contacto-metodo-label">WhatsApp Business</div>
+            <div class="contacto-metodo-val">+56 9 4892 0125 — Respuesta en minutos</div>
+          </div>
+        </a>
+        <a href="https://calendly.com/anteroslegal" class="contacto-metodo" target="_blank">
+          <div class="contacto-metodo-icon">📅</div>
+          <div class="contacto-metodo-text">
+            <div class="contacto-metodo-label">Agenda Online</div>
+            <div class="contacto-metodo-val">Reserva tu consulta en Calendly</div>
+          </div>
+        </a>
+        <a href="mailto:anteros.spa@gmail.com" class="contacto-metodo">
+          <div class="contacto-metodo-icon">✉️</div>
+          <div class="contacto-metodo-text">
+            <div class="contacto-metodo-label">Email</div>
+            <div class="contacto-metodo-val">anteros.spa@gmail.com</div>
+          </div>
+        </a>
+        <div class="contacto-metodo">
+          <div class="contacto-metodo-icon">📍</div>
+          <div class="contacto-metodo-text">
+            <div class="contacto-metodo-label">Oficina</div>
+            <div class="contacto-metodo-val">Punta Arenas, Región de Magallanes, Chile</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacto-form-wrap">
+      <h3>Cuéntanos tu caso</h3>
+      <form onsubmit="sendContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label>Teléfono / WhatsApp</label>
+            <input type="tel" placeholder="+56 / +58 / +57...">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Correo Electrónico</label>
+          <input type="email" placeholder="tu@correo.com" required>
+        </div>
+        <div class="form-group">
+          <label>Tipo de consulta</label>
+          <select required>
+            <option value="">Selecciona una opción</option>
+            <optgroup label="Personas">
+              <option>Residencia Temporal (primera vez)</option>
+              <option>Prórroga de Residencia Temporal</option>
+              <option>Residencia Definitiva (PEDE)</option>
+              <option>Reunificación Familiar</option>
+              <option>Nacionalización</option>
+              <option>Defensa ante Expulsión</option>
+              <option>Otro proceso migratorio</option>
+            </optgroup>
+            <optgroup label="Empresas">
+              <option>Constitución de Empresa</option>
+              <option>Compliance Migratorio Empresarial</option>
+              <option>Visa ALR para trabajadores</option>
+              <option>Legal Partner Mensual</option>
+            </optgroup>
+            <optgroup label="LATAM Remoto">
+              <option>Diagnóstico Express desde mi país</option>
+              <option>Mentoría para emprender en Chile</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Describe brevemente tu situación</label>
+          <textarea placeholder="Cuéntanos en qué situación te encuentras y qué necesitas..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Enviar Consulta</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="images/logo.jpg" alt="Anteros Legal">
+      <p>Claridad legal para tu futuro en Chile. Expertos en migración, negocios y regularización. 13 años de experiencia.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="/">Inicio</a>
+      <a href="la-firma/">La Firma</a>
+      <a href="#servicios">Servicios</a>
+      <a href="responsabilidad-social/">Resp. Social</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <a href="#servicios">Residencia Temporal</a>
+      <a href="#servicios">Residencia Definitiva</a>
+      <a href="#servicios">Constitución Empresas</a>
+      <a href="#servicios">Defensa ante Expulsión</a>
+      <a href="#servicios">LATAM Remoto</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1" target="_blank">WhatsApp</a>
+      <a href="https://calendly.com/anteroslegal" target="_blank">Calendly</a>
+      <a href="mailto:anteros.spa@gmail.com">anteros.spa@gmail.com</a>
+      <a href="#">Punta Arenas, Chile</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Anteros Legal. Todos los derechos reservados.</span>
+    <div class="footer-legal">
+      <a href="privacidad/">Política de Privacidad</a>
+      <a href="terminos/">Términos de Uso</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    if (links.style.display === 'flex') {
+      links.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:var(--blanco);padding:2rem;gap:1.5rem;border-bottom:1px solid var(--gris-claro);z-index:99;';
+    }
+  }
+
+  // Tabs
+  function switchTab(tab, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + tab).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  // Animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+  // Forms
+  function sendGuia(e) {
+    e.preventDefault();
+    const email = document.getElementById('guia-email').value;
+    window.open('https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0', '_blank');
+    e.target.innerHTML = '<p style="color:var(--dorado);text-align:center;font-family:Cormorant Garamond,serif;font-size:1.1rem;">✓ ¡Guía enviada a ' + email + '!</p>';
+  }
+
+  function sendContact(e) {
+    e.preventDefault();
+    window.open('https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0', '_blank');
+  }
+</script>
+</body>
+</html>
