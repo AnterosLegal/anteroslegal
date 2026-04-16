@@ -447,7 +447,61 @@
   .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
   .whatsapp-float svg { width: 28px; height: 28px; fill: white; }
 
-  /* ---- ANIMACIONES ---- */
+  /* ---- PRODUCTOS ---- */
+  .producto-card {
+    background: #111; display: flex; flex-direction: column;
+    transition: background 0.3s;
+  }
+  .producto-card:hover { background: #161616; }
+  .producto-card--destacado { position: relative; }
+  .producto-card--destacado::before {
+    content: '⭐ Más vendido';
+    position: absolute; top: 1rem; left: 1rem;
+    background: var(--dorado); color: var(--negro);
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.25rem 0.6rem; border-radius: 2px; z-index: 2;
+  }
+  .producto-img-wrap {
+    position: relative; overflow: hidden;
+    background: #1a1a1a; aspect-ratio: 4/3;
+  }
+  .producto-img-wrap img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.4s;
+  }
+  .producto-card:hover .producto-img-wrap img { transform: scale(1.04); }
+  .producto-badge {
+    position: absolute; top: 0.8rem; right: 0.8rem;
+    background: rgba(10,10,10,0.85); color: var(--marfil);
+    font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.25rem 0.6rem; border-radius: 2px;
+  }
+  .producto-badge--gold { background: var(--dorado); color: var(--negro); }
+  .producto-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
+  .producto-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; font-weight: 500; color: var(--marfil);
+    line-height: 1.35; margin-bottom: 0.6rem;
+  }
+  .producto-desc { font-size: 0.8rem; color: #888; line-height: 1.6; flex: 1; margin-bottom: 1.2rem; }
+  .producto-precio { margin-bottom: 1rem; }
+  .precio-clp {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem; font-weight: 500; color: var(--dorado); line-height: 1;
+  }
+  .precio-clp small { font-size: 0.75rem; font-family: 'DM Sans', sans-serif; font-weight: 400; color: #888; }
+  .precio-usd { font-size: 0.72rem; color: #666; letter-spacing: 0.05em; }
+  .btn-comprar {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--dorado); color: var(--negro);
+    padding: 0.7rem 1.2rem; text-decoration: none;
+    font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 500;
+    border-radius: 2px; transition: all 0.2s; text-align: center;
+  }
+  .btn-comprar:hover { background: var(--dorado-claro); transform: translateY(-1px); }
+
+
   @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
   .animate { opacity: 0; }
   .animate.in { animation: fadeUp 0.7s ease forwards; }
@@ -819,9 +873,10 @@
         <li>Matriz de costos oficiales 2026</li>
         <li>Cambios por la Ley 21.325</li>
       </ul>
-      <form class="recurso-form" onsubmit="sendGuia(event)">
+      <form class="recurso-form" onsubmit="sendGuia(event)" id="guia-form">
+        <input type="text" placeholder="Tu nombre (opcional)" id="guia-nombre" style="padding:0.9rem 1.2rem;border:1px solid var(--gris-claro);font-family:'DM Sans',sans-serif;font-size:0.88rem;background:var(--blanco);color:var(--negro);border-radius:2px;outline:none;transition:border-color 0.2s;">
         <input type="email" placeholder="tu@correo.com" required id="guia-email">
-        <button type="submit">Enviar Guía PDF</button>
+        <button type="submit" id="guia-btn">Enviar Guía PDF</button>
         <span class="form-note">Sin spam. Solo contenido de alto valor técnico.</span>
       </form>
     </div>
@@ -832,6 +887,89 @@
       <p>Atendemos presencialmente en Punta Arenas y de forma 100% remota a toda Latinoamérica. Venezolanos, colombianos, peruanos y centroamericanos que aún están en su país pueden iniciar su proceso con nosotros antes de viajar.</p>
       <a href="https://calendly.com/anteroslegal" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">Agendar Consulta Gratuita</a>
     </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS -->
+<section id="productos" style="background:var(--negro);padding:5.5rem 7%;">
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem;">
+    <div>
+      <div class="section-label" style="color:var(--dorado)">Recursos Digitales</div>
+      <h2 style="color:var(--marfil);">Guías y Manuales<br><em>para llevar contigo</em></h2>
+    </div>
+    <p style="color:#888;font-size:0.88rem;max-width:320px;line-height:1.6;">Documentos técnicos descargables. Compra directa, acceso inmediato. Sin suscripciones.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5px;background:rgba(255,255,255,0.06);">
+
+    <!-- Producto 1 -->
+    <div class="producto-card">
+      <div class="producto-img-wrap">
+        <img src="images/producto-guia-recursos.jpg" alt="Guía de Recursos para Migrantes en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+        <span class="producto-badge">Ebook</span>
+      </div>
+      <div class="producto-body">
+        <h3 class="producto-titulo">Guía de Recursos para Migrantes en Chile</h3>
+        <p class="producto-desc">Todo lo que necesitas saber sobre instituciones, derechos y servicios disponibles para migrantes en Chile.</p>
+        <div class="producto-precio">
+          <span class="precio-clp">$7.000 <small>CLP</small></span>
+          <span class="precio-usd">USD $7</span>
+        </div>
+        <a href="https://anteroslegal.gumroad.com/l/jcramm" class="btn-comprar" target="_blank">Comprar →</a>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="producto-card">
+      <div class="producto-img-wrap">
+        <img src="images/producto-salud.jpg" alt="Guía Sistema de Salud en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+        <span class="producto-badge">Ebook</span>
+      </div>
+      <div class="producto-body">
+        <h3 class="producto-titulo">Cómo Navegar el Sistema de Salud en Chile como Migrante</h3>
+        <p class="producto-desc">Fonasa, Isapres, urgencias y derechos de salud. Guía práctica para acceder al sistema sin importar tu estatus migratorio.</p>
+        <div class="producto-precio">
+          <span class="precio-clp">$7.000 <small>CLP</small></span>
+          <span class="precio-usd">USD $7</span>
+        </div>
+        <a href="https://anteroslegal.gumroad.com/l/gbqzu" class="btn-comprar" target="_blank">Comprar →</a>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="producto-card">
+      <div class="producto-img-wrap">
+        <img src="images/producto-derechos-laborales.jpg" alt="Manual Derechos Trabajadores Extranjeros" onerror="this.parentElement.style.background='#1a1a1a'">
+        <span class="producto-badge">Manual</span>
+      </div>
+      <div class="producto-body">
+        <h3 class="producto-titulo">Derechos y Obligaciones de Trabajadores Extranjeros en Chile</h3>
+        <p class="producto-desc">Manual completo sobre contrato de trabajo, visas laborales, derechos sindicales y protección ante el empleador.</p>
+        <div class="producto-precio">
+          <span class="precio-clp">$13.000 <small>CLP</small></span>
+          <span class="precio-usd">USD $13</span>
+        </div>
+        <a href="https://anteroslegal.gumroad.com/l/aeyhem" class="btn-comprar" target="_blank">Comprar →</a>
+      </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="producto-card producto-card--destacado">
+      <div class="producto-img-wrap">
+        <img src="images/producto-invertir.jpg" alt="Guía para Invertir en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+        <span class="producto-badge producto-badge--gold">Premium</span>
+      </div>
+      <div class="producto-body">
+        <h3 class="producto-titulo">Guía para Invertir en Chile: Estrategias para Invertir y Emprender</h3>
+        <p class="producto-desc">Marcos legales, estructuras societarias, beneficios tributarios y rutas reales para inversionistas y emprendedores extranjeros.</p>
+        <div class="producto-precio">
+          <span class="precio-clp">$25.000 <small>CLP</small></span>
+          <span class="precio-usd">USD $25</span>
+        </div>
+        <a href="https://anteroslegal.gumroad.com/l/svthjr" class="btn-comprar" target="_blank">Comprar →</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -1074,11 +1212,25 @@
   document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
   // Forms
-  function sendGuia(e) {
+  // Guía Migración — webhook Make → Notion CRM + Email con PDF
+  async function sendGuia(e) {
     e.preventDefault();
-    const email = document.getElementById('guia-email').value;
-    window.open('https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0', '_blank');
-    e.target.innerHTML = '<p style="color:var(--dorado);text-align:center;font-family:Cormorant Garamond,serif;font-size:1.1rem;">✓ ¡Guía enviada a ' + email + '!</p>';
+    const email = document.getElementById('guia-email').value.trim();
+    const nombre = document.getElementById('guia-nombre') ? document.getElementById('guia-nombre').value.trim() : '';
+    const btn = document.getElementById('guia-btn');
+    if (!email) return;
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+    try {
+      await fetch('https://hook.us2.make.com/4xmbveszx5y7mkbsyll8qqjydqenddek', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({ email, nombre, origen: 'Guía Migración 2026 - anteroslegal.cl' })
+      });
+    } catch(err) { console.error(err); }
+    // Mostrar confirmación independientemente del resultado de red
+    const form = document.getElementById('guia-form');
+    form.innerHTML = '<p style="color:var(--dorado);text-align:center;font-family:Cormorant Garamond,serif;font-size:1.15rem;padding:1rem 0;">✓ ¡Guía enviada a ' + email + '!<br><span style=\"font-size:0.8rem;color:var(--gris);font-family:DM Sans,sans-serif;\">Revisa tu bandeja de entrada.</span></p>';
   }
 
   function sendContact(e) {
