@@ -410,7 +410,7 @@ footer a:hover{color:var(--dorado);}
   const ok=sessionStorage.getItem('barometro_acceso');
   if(!ok){const p=document.getElementById('puerta');p.style.display='flex';}
   const n=sessionStorage.getItem('barometro_nombre');
-  if(n){const s=document.querySelector('.portada-sub');if(s){const sp=document.createElement('span');sp.style.cssText='display:block;font-family:IBM Plex Mono,monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(244,240,230,0.35);margin-top:1rem;';sp.textContent='Preparado para '+n;s.appendChild(sp);}}
+  if(n){const s=document.querySelector('.portada-sub');if(s){const sp=document.createElement('span');sp.style.cssText='display:block;font-family:IBM Plex Mono,monospace;font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(244,240,230,0.35);margin-top:1rem;';sp.textContent='Por '+n;s.appendChild(sp);}}
 })();
 
 function tog(btn){
