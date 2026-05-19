@@ -57,6 +57,36 @@
   .numero-label{font-size:0.78rem;color:var(--gris);letter-spacing:0.08em;text-transform:uppercase;margin-top:0.4rem;}
 
   .iniciativas{background:var(--blanco);}
+
+  /* ─────── SECCIÓN MENTOR AUSTRAL ─────── */
+  .mentor{background:var(--blanco);position:relative;overflow:hidden;}
+  .mentor::before{content:'';position:absolute;top:0;left:0;width:140px;height:140px;background:radial-gradient(circle,rgba(184,150,62,0.08) 0%,transparent 70%);}
+  .mentor-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center;margin-top:2rem;position:relative;z-index:2;}
+  .mentor-imagen{position:relative;border-radius:2px;overflow:hidden;box-shadow:0 30px 60px -20px rgba(10,10,10,0.25);}
+  .mentor-imagen img{width:100%;height:auto;display:block;}
+  .mentor-imagen-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(10,10,10,0.85) 0%,transparent 100%);padding:2rem 1.8rem 1.2rem;color:var(--marfil);font-size:0.78rem;letter-spacing:0.05em;}
+  .mentor-imagen-caption strong{color:var(--dorado);font-weight:500;}
+  .mentor-texto h2{margin-bottom:1.5rem;}
+  .mentor-texto > p{color:var(--gris);line-height:1.85;margin-bottom:1.3rem;font-size:0.95rem;}
+  .mentor-texto p strong{color:var(--negro);}
+  .mentor-texto p em{font-style:italic;color:var(--verde);font-weight:500;}
+  .mentor-badge{display:inline-flex;align-items:center;gap:0.6rem;background:var(--verde-claro);color:var(--verde);padding:0.5rem 1rem;border-radius:2px;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;font-weight:500;margin-bottom:1.5rem;}
+  .mentor-badge::before{content:'★';color:var(--dorado);}
+  .mentor-socios{margin-top:2rem;padding-top:2rem;border-top:1px solid var(--gris-claro);}
+  .mentor-socios-label{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gris);font-weight:500;margin-bottom:0.8rem;}
+  .mentor-socios-lista{display:flex;flex-wrap:wrap;gap:0.5rem 1.2rem;}
+  .mentor-socio{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--negro);font-weight:500;}
+  .mentor-socio:not(:last-child)::after{content:'·';color:var(--dorado);margin-left:1.2rem;}
+
+  /* Caja de cierre con CTA al Barómetro */
+  .mentor-barometro{background:var(--negro);color:var(--marfil);padding:2.5rem 2.3rem;border-radius:2px;margin-top:2.5rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;}
+  .mentor-barometro-texto h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:400;color:var(--marfil);margin-bottom:0.6rem;line-height:1.3;}
+  .mentor-barometro-texto h3 em{color:var(--dorado);font-style:italic;}
+  .mentor-barometro-texto p{color:rgba(245,240,232,0.7);font-size:0.88rem;line-height:1.65;}
+  .btn-dorado{display:inline-flex;align-items:center;gap:0.5rem;background:var(--dorado);color:var(--negro);padding:0.95rem 1.8rem;text-decoration:none;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:600;border-radius:2px;transition:all 0.3s;white-space:nowrap;}
+  .btn-dorado:hover{background:var(--marfil);transform:translateX(4px);}
+
+
   .iniciativas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5px;background:var(--gris-claro);margin-top:2.5rem;}
   .iniciativa-card{background:var(--blanco);padding:2.5rem;position:relative;overflow:hidden;transition:background 0.3s;}
   .iniciativa-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:transparent;transition:background 0.3s;}
@@ -98,6 +128,8 @@
   @media(max-width:900px){
     .nav-links{display:none;}
     .hero-grid,.manifiesto-grid,.compromiso-inner{grid-template-columns:1fr;}
+    .mentor-grid{grid-template-columns:1fr;gap:2.5rem;}
+    .mentor-barometro{grid-template-columns:1fr;gap:1.5rem;text-align:left;}
     .hero-quote{display:none;}
     .iniciativas-grid{grid-template-columns:1fr;}
     .principios-grid{grid-template-columns:1fr 1fr;}
@@ -151,6 +183,45 @@
       <div class="numero-card"><div class="numero-big">Pro<br>Bono</div><div class="numero-label">Casos sin costo para familias vulnerables</div></div>
       <div class="numero-card"><div class="numero-big">3</div><div class="numero-label">Alianzas sociales activas</div></div>
     </div>
+  </div>
+</section>
+
+<section class="mentor">
+  <div class="section-label">Aporte al ecosistema regional</div>
+  <h2>Mentor Austral<br>Magallanes <em>2026</em></h2>
+  <div class="mentor-grid">
+    <div class="mentor-imagen">
+      <img src="../images/netmentora.jpg" alt="Programa Mentor Austral Magallanes 2026" onerror="this.style.display='none'">
+      <div class="mentor-imagen-caption">
+        <strong>Programa Mentor Austral 2026</strong><br>
+        Acompañamiento a emprendedores y empresas de la región
+      </div>
+    </div>
+    <div class="mentor-texto">
+      <div class="mentor-badge">Iniciativa institucional activa</div>
+      <p>En 2026 <strong>Anteros Legal fue seleccionado como Mentor del Programa Mentor Austral Magallanes</strong>, una iniciativa regional que reúne a Netmentora, HUB FPYME, Universidad Santo Tomás y ZonAustral, con apoyo de CORFO.</p>
+      <p>Nuestro rol en el programa tiene un foco claro: acompañar a <em>emprendedores migrantes</em> y a <em>empresas que contratan personal extranjero</em> en Magallanes. Porque cuando un emprendedor migrante crece, gana toda la región. Y cuando una empresa local mantiene sus operaciones en regla con su personal, sigue generando empleo, sigue tributando, sigue siendo parte del tejido productivo regional.</p>
+      <p>Creemos que <strong>la responsabilidad social también se ejerce sosteniendo los negocios que sostienen familias</strong>. No solo se trata de defender derechos individuales — también se trata de cuidar el ecosistema económico que hace posible que las personas migrantes y las empresas locales sigan construyendo, juntos, una región más próspera.</p>
+
+      <div class="mentor-socios">
+        <div class="mentor-socios-label">Red institucional del programa</div>
+        <div class="mentor-socios-lista">
+          <span class="mentor-socio">Netmentora</span>
+          <span class="mentor-socio">HUB FPYME</span>
+          <span class="mentor-socio">Universidad Santo Tomás</span>
+          <span class="mentor-socio">ZonAustral</span>
+          <span class="mentor-socio">CORFO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mentor-barometro">
+    <div class="mentor-barometro-texto">
+      <h3>Barómetro Emprendedor <em>2026</em></h3>
+      <p>Nuestro aporte público a la comunidad empresarial y migrante de Magallanes: el primer informe regional con datos legales y migratorios para emprendedores. Cubierto por La Prensa Austral, Radio Polar, ITV Patagonia y Urgente.cl. Gratuito. Datos de fuentes oficiales.</p>
+    </div>
+    <a href="../#recurso" class="btn-dorado">Conocer el Barómetro →</a>
   </div>
 </section>
 
