@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Servicios Legales | Anteros Legal</title>
-<meta name="description" content="Servicios jurídicos de Anteros Legal: residencias, visas, constitución de empresas, defensa migratoria, compliance y asesoría LATAM remota.">
+<meta name="description" content="Servicios jurídicos de Anteros Legal: Diagnóstico Express, regularización, defensa migratoria, compliance empresarial y Anteros Asesor — asesoría legal continua mensual.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--negro:#0a0a0a;--marfil:#f5f0e8;--dorado:#b8963e;--gris:#5a5a5a;--gris-claro:#e8e4dc;--blanco:#fafaf7;}
+  :root{--negro:#0a0a0a;--marfil:#f5f0e8;--dorado:#b8963e;--dorado-oscuro:#8a6f2d;--gris:#5a5a5a;--gris-claro:#e8e4dc;--blanco:#fafaf7;--verde:#2d5a3d;--verde-claro:#e8f0eb;}
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{font-family:'DM Sans',sans-serif;background:var(--blanco);color:var(--negro);overflow-x:hidden;}
@@ -30,8 +30,35 @@
   .hero h1 em{font-style:italic;color:var(--dorado);}
   .hero p{color:rgba(245,240,232,0.65);font-size:0.95rem;line-height:1.7;max-width:500px;}
 
+  /* DIAGNÓSTICO EXPRESS - bloque destacado pre-tabs */
+  .diagnostico-hero{background:var(--marfil);padding:4.5rem 7%;border-bottom:1px solid var(--gris-claro);}
+  .diag-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:4rem;align-items:center;max-width:1400px;margin:0 auto;}
+  .diag-eyebrow{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dorado);margin-bottom:1rem;display:flex;align-items:center;gap:0.8rem;font-weight:600;}
+  .diag-eyebrow::before{content:'';width:30px;height:1px;background:var(--dorado);}
+  .diag-titulo{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:300;line-height:1.15;margin-bottom:1.2rem;color:var(--negro);}
+  .diag-titulo em{font-style:italic;color:var(--dorado);}
+  .diag-desc{color:var(--gris);line-height:1.75;margin-bottom:1.8rem;font-size:0.98rem;}
+  .diag-features{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.5rem;margin-bottom:2rem;}
+  .diag-feature{display:flex;align-items:flex-start;gap:0.7rem;font-size:0.86rem;color:var(--negro);line-height:1.5;}
+  .diag-feature::before{content:'—';color:var(--dorado);font-weight:600;flex-shrink:0;}
+  .diag-cta-row{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;}
+  .btn-primary{display:inline-flex;align-items:center;gap:0.5rem;background:var(--negro);color:var(--marfil);padding:1rem 2.2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.3s;}
+  .btn-primary:hover{background:var(--dorado);color:var(--negro);}
+  .diag-precio-box{background:var(--negro);color:var(--marfil);padding:2.5rem 2.2rem;border-radius:2px;text-align:center;position:relative;border:1px solid var(--dorado);}
+  .diag-precio-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--dorado);}
+  .diag-precio-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dorado);margin-bottom:0.8rem;}
+  .diag-precio{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;line-height:1;color:var(--marfil);margin-bottom:0.4rem;}
+  .diag-precio-clp{font-size:0.85rem;color:rgba(245,240,232,0.5);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem;}
+  .diag-precio-bullets{text-align:left;font-size:0.82rem;color:rgba(245,240,232,0.8);line-height:1.7;border-top:1px solid rgba(184,150,62,0.25);padding-top:1.2rem;margin-top:0.5rem;}
+  .diag-precio-bullets div{margin-bottom:0.4rem;display:flex;gap:0.5rem;align-items:flex-start;}
+  .diag-precio-bullets div::before{content:'·';color:var(--dorado);font-weight:bold;}
+
   /* TABS */
   .tabs-section{background:var(--blanco);}
+  .tabs-intro{padding:3rem 7% 1rem;}
+  .tabs-intro h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,2.8vw,2.2rem);font-weight:300;margin-bottom:0.4rem;}
+  .tabs-intro h2 em{font-style:italic;color:var(--dorado);}
+  .tabs-intro p{color:var(--gris);font-size:0.92rem;max-width:600px;}
   .tabs-nav{display:flex;border-bottom:2px solid var(--gris-claro);padding:0 7%;background:var(--marfil);overflow-x:auto;}
   .tab-btn{background:none;border:none;cursor:pointer;padding:1rem 1.8rem;font-family:'DM Sans',sans-serif;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--gris);border-bottom:2px solid transparent;margin-bottom:-2px;transition:all 0.2s;white-space:nowrap;}
   .tab-btn.active{color:var(--negro);border-bottom-color:var(--dorado);}
@@ -56,30 +83,66 @@
   .badge-emergente{background:#e8f0f5;color:#1a4a6b;}
   .badge-remoto{background:#e8f5ec;color:#1a5a30;}
   .badge-empresas{background:#f0e8f5;color:#4a1a6b;}
+  .badge-diferenciador{background:#fff5d6;color:#7a5f0e;font-weight:600;}
   .servicio-card h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;margin-bottom:0.5rem;line-height:1.3;}
   .servicio-card p{font-size:0.83rem;color:var(--gris);line-height:1.6;margin-bottom:1.2rem;}
   .btn-contratar{display:inline-flex;align-items:center;gap:0.4rem;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--dorado);text-decoration:none;font-weight:500;transition:gap 0.2s;}
   .btn-contratar:hover{gap:0.7rem;}
   .btn-contratar::after{content:'→';}
 
+  /* ANTEROS ASESOR - sección destacada post-tabs */
+  .asesor{background:var(--negro);color:var(--marfil);padding:5.5rem 7%;position:relative;overflow:hidden;}
+  .asesor::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent 0%,var(--dorado) 50%,transparent 100%);}
+  .asesor-header{max-width:780px;margin-bottom:3.5rem;}
+  .asesor-eyebrow{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dorado);margin-bottom:1.2rem;display:flex;align-items:center;gap:0.8rem;font-weight:600;}
+  .asesor-eyebrow::before{content:'';width:30px;height:1px;background:var(--dorado);}
+  .asesor-header h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--marfil);margin-bottom:1rem;line-height:1.15;}
+  .asesor-header h2 em{font-style:italic;color:var(--dorado);}
+  .asesor-header p{color:rgba(245,240,232,0.7);font-size:1rem;line-height:1.75;}
+  .asesor-frase{font-family:'Cormorant Garamond',serif;font-style:italic;color:rgba(245,240,232,0.55);font-size:1.1rem;margin-top:1.2rem;border-left:2px solid var(--dorado);padding-left:1.2rem;line-height:1.5;}
+
+  .planes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem;}
+  .plan{background:rgba(255,255,255,0.03);border:1px solid rgba(184,150,62,0.18);border-radius:3px;padding:2.2rem 1.8rem;position:relative;transition:all 0.3s;display:flex;flex-direction:column;}
+  .plan:hover{background:rgba(255,255,255,0.06);border-color:rgba(184,150,62,0.4);transform:translateY(-3px);}
+  .plan-destacado{background:linear-gradient(180deg,rgba(184,150,62,0.08) 0%,rgba(184,150,62,0.02) 100%);border-color:var(--dorado);border-width:1.5px;}
+  .plan-destacado::before{content:'Recomendado';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--dorado);color:var(--negro);font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;padding:0.35rem 1rem;border-radius:2px;}
+  .plan-nivel{font-size:0.65rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--dorado);font-weight:600;margin-bottom:0.5rem;}
+  .plan-nombre{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:400;color:var(--marfil);margin-bottom:0.4rem;line-height:1.1;}
+  .plan-precio{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:300;color:var(--marfil);line-height:1;margin-bottom:0.2rem;}
+  .plan-precio .moneda{font-size:1rem;color:var(--dorado);vertical-align:top;margin-right:0.1rem;}
+  .plan-periodo{font-size:0.78rem;color:rgba(245,240,232,0.45);letter-spacing:0.05em;margin-bottom:1.3rem;}
+  .plan-desc{font-size:0.82rem;color:rgba(245,240,232,0.65);line-height:1.55;margin-bottom:1.3rem;padding-bottom:1.2rem;border-bottom:1px solid rgba(184,150,62,0.15);min-height:60px;}
+  .plan-features{list-style:none;padding:0;margin:0 0 1.8rem 0;flex-grow:1;}
+  .plan-features li{font-size:0.83rem;color:rgba(245,240,232,0.85);line-height:1.55;padding-left:1.2rem;position:relative;margin-bottom:0.7rem;}
+  .plan-features li::before{content:'—';color:var(--dorado);position:absolute;left:0;font-weight:600;}
+  .plan-features li.incluido-todo{color:var(--dorado);font-style:italic;font-weight:500;margin-bottom:0.9rem;padding-bottom:0.6rem;border-bottom:1px dashed rgba(184,150,62,0.2);}
+  .plan-features li.incluido-todo::before{content:'+';font-size:1.1rem;}
+  .plan-cta{display:inline-flex;align-items:center;gap:0.5rem;background:transparent;border:1px solid var(--dorado);color:var(--dorado);padding:0.85rem 1.5rem;text-decoration:none;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.3s;justify-content:center;text-align:center;}
+  .plan-cta:hover{background:var(--dorado);color:var(--negro);}
+  .plan-cta-destacada{background:var(--dorado);color:var(--negro);}
+  .plan-cta-destacada:hover{background:var(--marfil);border-color:var(--marfil);}
+
+  .asesor-nota{text-align:center;margin-top:3rem;color:rgba(245,240,232,0.55);font-size:0.85rem;font-style:italic;}
+  .asesor-nota a{color:var(--dorado);text-decoration:none;border-bottom:1px solid rgba(184,150,62,0.3);cursor:pointer;}
+
   /* PROCESO */
-  .proceso{background:var(--negro);padding:5rem 7%;}
+  .proceso{background:var(--marfil);padding:5rem 7%;}
   .proceso .label{font-size:0.68rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--dorado);display:flex;align-items:center;gap:0.8rem;margin-bottom:0.8rem;}
   .proceso .label::before{content:'';width:30px;height:1px;background:var(--dorado);}
-  .proceso h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--marfil);margin-bottom:3rem;}
+  .proceso h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--negro);margin-bottom:3rem;}
   .proceso h2 em{font-style:italic;color:var(--dorado);}
   .pasos{display:grid;grid-template-columns:repeat(4,1fr);gap:0;}
-  .paso{padding:2rem;border-right:1px solid rgba(255,255,255,0.07);}
+  .paso{padding:2rem;border-right:1px solid var(--gris-claro);}
   .paso:last-child{border:none;}
-  .paso-n{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(184,150,62,0.2);line-height:1;margin-bottom:0.8rem;}
-  .paso h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--marfil);margin-bottom:0.5rem;}
-  .paso p{font-size:0.8rem;color:#777;line-height:1.6;}
+  .paso-n{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(184,150,62,0.3);line-height:1;margin-bottom:0.8rem;}
+  .paso h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--negro);margin-bottom:0.5rem;}
+  .paso p{font-size:0.8rem;color:var(--gris);line-height:1.6;}
 
-  /* CTA -->
+  /* CTA */
   .cta{background:var(--dorado);padding:4rem 7%;}
   .cta-inner{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;}
   .cta h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--negro);}
-  .cta p{color:rgba(10,10,10,0.65);margin-top:0.5rem;font-size:0.9rem;}
+  .cta p{color:rgba(10,10,10,0.65);margin-top:0.5rem;font-size:0.9rem;max-width:500px;}
   .btn-dark{display:inline-flex;align-items:center;gap:0.5rem;background:var(--negro);color:var(--marfil);padding:0.9rem 2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;border-radius:2px;transition:all 0.3s;white-space:nowrap;}
   .btn-dark:hover{background:var(--blanco);color:var(--negro);}
 
@@ -91,9 +154,16 @@
   @media(max-width:900px){
     .nav-links{display:none;}
     .pasos{grid-template-columns:1fr 1fr;}
-    .cta-inner{flex-direction:column;}
+    .cta-inner{flex-direction:column;align-items:flex-start;}
     .tab-panel{padding:3rem 5%;}
     .hero{padding:8rem 5% 3rem;}
+    .diagnostico-hero{padding:3.5rem 5%;}
+    .diag-grid{grid-template-columns:1fr;gap:2.5rem;}
+    .diag-features{grid-template-columns:1fr;}
+    .asesor{padding:4rem 5%;}
+    .planes{grid-template-columns:1fr;}
+    .plan-destacado{order:-1;}
+    .proceso{padding:3.5rem 5%;}
   }
 </style>
 </head>
@@ -117,12 +187,48 @@
   <div class="hero-content">
     <div class="hero-label">Áreas de práctica</div>
     <h1>Soluciones legales<br>para cada <em>etapa</em></h1>
-    <p>Servicios integrales para personas, familias y empresas. Atención presencial en Punta Arenas y 100% remota para toda Latinoamérica.</p>
+    <p>Servicios integrales para personas, familias y empresas. Atención presencial en Punta Arenas y acompañamiento remoto para latinoamericanos.</p>
   </div>
 </div>
 
+<!-- DIAGNÓSTICO EXPRESS — BLOQUE DESTACADO PRE-TABS -->
+<section class="diagnostico-hero" id="diagnostico">
+  <div class="diag-grid">
+    <div>
+      <div class="diag-eyebrow">El primer paso</div>
+      <h2 class="diag-titulo">Diagnóstico <em>Express</em></h2>
+      <p class="diag-desc">Antes de cualquier trámite, necesitas saber exactamente dónde estás parado. El Diagnóstico Express es una sesión profesional breve seguida de un informe técnico escrito que te entregamos en 48 horas. Lo usan tanto personas con un trámite migratorio personal como empresas que necesitan saber si su dotación extranjera está en regla.</p>
+      <div class="diag-features">
+        <div class="diag-feature">Sesión de 30 a 45 minutos, presencial o por videollamada</div>
+        <div class="diag-feature">Informe Semáforo con áreas en verde, amarillo y rojo</div>
+        <div class="diag-feature">Plan de Acción priorizado a 30, 60 y 90 días</div>
+        <div class="diag-feature">Hoja de próximos pasos con servicios recomendados</div>
+      </div>
+      <div class="diag-cta-row">
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-primary" target="_blank">Agendar Diagnóstico →</a>
+      </div>
+    </div>
+    <div>
+      <div class="diag-precio-box">
+        <div class="diag-precio-label">Valor</div>
+        <div class="diag-precio">$80.000</div>
+        <div class="diag-precio-clp">CLP · pago anticipado</div>
+        <div class="diag-precio-bullets">
+          <div>Entrega en 48 horas hábiles</div>
+          <div>Para personas y empresas</div>
+          <div>Descuento si contratas otro servicio</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TABS -->
 <div class="tabs-section">
+  <div class="tabs-intro">
+    <h2>Áreas <em>de práctica</em></h2>
+    <p>Servicios puntuales por área. Si ya sabes lo que necesitas, encuéntralo abajo. Si todavía no estás seguro, empieza por el Diagnóstico Express.</p>
+  </div>
   <div class="tabs-nav">
     <button class="tab-btn active" onclick="switchTab('personas',this)">Para Personas</button>
     <button class="tab-btn" onclick="switchTab('defensa',this)">Defensa &amp; Urgencia</button>
@@ -137,9 +243,9 @@
       <p>Regularización migratoria, residencias, reunificación familiar y nacionalización. Acompañamiento completo desde la primera consulta hasta la resolución.</p>
     </div>
     <div class="servicios-grid">
-      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Temporal (primera vez)</h3><p>Para venezolanos, colombianos, bolivianos y latinoamericanos recién llegados. Diagnóstico, documentación y presentación ante Extranjería.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Temporal (primera vez)</h3><p>Para venezolanos, colombianos, bolivianos y latinoamericanos recién llegados. Diagnóstico, documentación y presentación ante el SERMIG.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Prórroga de Residencia Temporal</h3><p>Para quienes ya tienen RT y deben renovar. Proceso guiado desde el inicio hasta la aprobación, evitando quedar en situación irregular.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Definitiva (PEDE)</h3><p>Para venezolanos y latinoamericanos con 2+ años de residencia temporal. El paso hacia la permanencia legal completa en Chile.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Residencia Definitiva</h3><p>Para venezolanos y latinoamericanos con 2+ años de residencia temporal. El paso hacia la permanencia legal completa en Chile.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Reunificación Familiar</h3><p>Trae a tu familia a Chile. Tramitamos desde dentro o fuera del país. Incluye cónyuge, hijos y dependientes directos.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Nacionalización Chilena</h3><p>Para quienes han construido su vida en Chile. Guía completa del proceso ante el Ministerio del Interior, con seguimiento hasta la resolución.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>RT Humanitaria — Menores (NNA)</h3><p>Para niños y adolescentes dentro de Chile. Proceso especial de regularización con enfoque en el interés superior del niño.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
@@ -166,34 +272,103 @@
   <div class="tab-panel" id="tab-empresas">
     <div class="panel-intro">
       <h2>Para <em>Empresas y PYMES</em></h2>
-      <p>Constitución, cumplimiento legal, visas para tu equipo y compliance migratorio. Todo lo que necesita tu empresa para operar con respaldo jurídico.</p>
+      <p>Constitución, compliance migratorio empresarial y visas para tu equipo. Si buscas acompañamiento mensual continuo, mira más abajo nuestros planes <strong>Anteros Asesor</strong>.</p>
     </div>
     <div class="servicios-grid">
-      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Constitución de Empresas en 48hs</h3><p>SpA, EIRL, SRL o SA. Constitución completa, inicio de actividades y RUT. Ideal para emprendedores migrantes y fundadores extranjeros.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Compliance Migratorio Empresarial</h3><p>Auditoría, contratos, regularización masiva y certificación de empleador regular. Evita multas y fiscalizaciones.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Constitución de Empresas en 48 horas</h3><p>SpA, EIRL, SRL o SA. Constitución completa, inicio de actividades y RUT. Ideal para emprendedores migrantes y fundadores extranjeros.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-diferenciador">Diferenciador regional</span><h3>Compliance Migratorio Empresarial</h3><p>El único servicio paquetizado de su tipo en Magallanes. Auditoría de la dotación extranjera, regularización de contratos y prevención de multas SERMIG. Desde $80.000.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Visa ALR — Para Empresas</h3><p>Tramitación de visas sujetas a contrato para empresas que contratan trabajadores migrantes específicos.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Alta demanda</span><h3>Auditoría ante Fiscalización</h3><p>Servicio reactivo para empresas ya notificadas por la Dirección del Trabajo o Extranjería. Actuamos inmediatamente.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Urgente WhatsApp</a></div>
-      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-empresas">Especializado</span><h3>Legal Partner Mensual</h3><p>Asesoría legal continua: revisión de contratos, consultas ilimitadas, alertas regulatorias y acompañamiento estratégico mensual.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Visas para Socios e Inversionistas</h3><p>Para extranjeros que quieren invertir o ser socios en empresas chilenas. Visa de residente inversionista y alternativas de la Ley de Migración.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-urgente">Reactivo</span><h3>Auditoría ante Fiscalización</h3><p>Servicio reactivo para empresas ya notificadas por la Inspección del Trabajo, SERMIG o PDI. Actuamos en las primeras 48 horas.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Urgente WhatsApp</a></div>
+      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Estacional</span><h3>Compliance Estacional — Turismo Antártico</h3><p>Auditoría y regularización para empresas del sector turístico antártico que contratan tripulación extranjera estacionalmente.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-empresas">Inversión</span><h3>Visas para Socios e Inversionistas</h3><p>Para extranjeros que quieren invertir o ser socios en empresas chilenas. Visa de residente inversionista y alternativas de la Ley de Migración.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
     </div>
   </div>
 
-  <!-- LATAM -->
+  <!-- LATAM REMOTO -->
   <div class="tab-panel" id="tab-latam">
     <div class="panel-intro">
       <h2>LATAM <em>Remoto</em></h2>
-      <p>Servicio 100% digital para latinoamericanos que quieren venir a Chile desde Venezuela, Colombia, Perú, Bolivia y más. Iniciamos el proceso antes de que viajes.</p>
+      <p>Servicio digital para latinoamericanos que quieren venir a Chile. Iniciamos el acompañamiento antes de que viajes y continuamos hasta tu residencia definitiva.</p>
     </div>
     <div class="servicios-grid">
-      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Diagnóstico Express — 30 min</h3><p>¿Calificas? ¿Qué vía migratoria se adapta a tu situación? Sesión online con hoja de ruta personalizada. <strong>$30.000 CLP</strong></p><a href="https://calendly.com/anteroslegal" class="btn-contratar" target="_blank">Agendar diagnóstico</a></div>
-      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Plan Migratorio Personalizado</h3><p>Hoja de ruta completa: qué documentos apostillar, qué traducir, qué trámites hacer antes de viajar. Paso a paso desde tu país.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Asesoría hasta Visa Temporal</h3><p>Acompañamiento completo desde tu país hasta obtener la visa temporal. Revisión de documentos vía Drive + seguimiento.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">04</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Paquete hasta Residencia Definitiva</h3><p>Desde la primera visa hasta la residencia definitiva. El proceso completo acompañado, sin sorpresas. Pago en cuotas disponible.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Nuevo</span><h3>Mentoría para Emprendedores Migrantes</h3><p>Orientación legal + estratégica para migrantes que quieren emprender en Chile. Constitución, visas y cumplimiento para tu equipo.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
-      <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Nuevo</span><h3>Paquetes PYMES LATAM en Chile</h3><p>Para empresas de Venezuela, Colombia, Perú o México que quieren operar en Chile. Constitución, cumplimiento y visas para socios.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Acompañamiento Migratorio Completo</h3><p>Hoja de ruta personalizada desde tu país hasta la residencia definitiva en Chile. Incluye qué apostillar, qué traducir, qué presentar, cuándo y a quién. Pago por etapas disponible.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">02</div><span class="s-badge badge-remoto">100% Remoto</span><h3>Paquete Residencia Definitiva</h3><p>Acompañamiento integral desde la primera visa hasta la residencia definitiva. Para quienes ya están en Chile o llegan próximamente. Sin sorpresas, sin trámites perdidos.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
+      <div class="servicio-card"><div class="s-num">03</div><span class="s-badge badge-emergente">Empresas</span><h3>PYMES LATAM en Chile</h3><p>Para empresas de Venezuela, Colombia, Perú o México que quieren operar en Chile. Constitución legal, compliance migratorio y visas para socios y equipo clave.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
     </div>
   </div>
 </div>
+
+<!-- ANTEROS ASESOR -->
+<section class="asesor" id="anteros-asesor">
+  <div class="asesor-header">
+    <div class="asesor-eyebrow">Acompañamiento continuo</div>
+    <h2>Anteros <em>Asesor</em></h2>
+    <p>Suscripción mensual para emprendedores y empresas que necesitan un abogado disponible todo el año, no solo cuando aparece el problema. Tres niveles diseñados para acompañar el crecimiento real del negocio.</p>
+    <p class="asesor-frase">Un emprendedor migrante o una pyme local no necesita "un abogado de a ratos". Necesita un estudio que lo acompañe doce meses al año.</p>
+  </div>
+
+  <div class="planes">
+    <!-- PLAN BÁSICO -->
+    <div class="plan">
+      <div class="plan-nivel">Nivel 1</div>
+      <div class="plan-nombre">Básico</div>
+      <div class="plan-precio"><span class="moneda">$</span>80.000</div>
+      <div class="plan-periodo">CLP / mes · compromiso 3 meses</div>
+      <div class="plan-desc">Para emprendedor solo o con 1–2 trabajadores que quiere cobertura legal mínima continua.</div>
+      <ul class="plan-features">
+        <li>1 consulta mensual de hasta 30 min</li>
+        <li>Revisión de 1 contrato simple al mes</li>
+        <li>WhatsApp prioritario con respuesta en 24 horas hábiles</li>
+        <li>Newsletter privado mensual de cambios normativos</li>
+        <li>10% de descuento en servicios fuera del plan</li>
+      </ul>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="plan-cta" target="_blank">Quiero el Básico →</a>
+    </div>
+
+    <!-- PLAN PRO -->
+    <div class="plan plan-destacado">
+      <div class="plan-nivel">Nivel 2</div>
+      <div class="plan-nombre">Pro</div>
+      <div class="plan-precio"><span class="moneda">$</span>180.000</div>
+      <div class="plan-periodo">CLP / mes · compromiso 3 meses</div>
+      <div class="plan-desc">Para empresa pequeña (3–8 trabajadores) con actividad activa que necesita acompañamiento serio.</div>
+      <ul class="plan-features">
+        <li class="incluido-todo">Todo lo del plan Básico</li>
+        <li>3 consultas mensuales de hasta 45 min</li>
+        <li>Revisión de hasta 3 contratos al mes (incluidos laborales)</li>
+        <li>Compliance migratorio laboral semestral con informe semáforo</li>
+        <li>Borradores de comunicaciones legales (cartas, respuestas, despidos)</li>
+        <li>Representación ante Inspección del Trabajo (primer evento incluido)</li>
+        <li>20% de descuento en servicios fuera del plan</li>
+      </ul>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="plan-cta plan-cta-destacada" target="_blank">Quiero el Pro →</a>
+    </div>
+
+    <!-- PLAN PREMIUM -->
+    <div class="plan">
+      <div class="plan-nivel">Nivel 3</div>
+      <div class="plan-nombre">Premium</div>
+      <div class="plan-precio"><span class="moneda">$</span>350.000</div>
+      <div class="plan-periodo">CLP / mes · compromiso 3 meses</div>
+      <div class="plan-desc">Para pyme establecida (10+ trabajadores) o emprendedor con operación multi-país.</div>
+      <ul class="plan-features">
+        <li class="incluido-todo">Todo lo del plan Pro</li>
+        <li>Consultas ilimitadas</li>
+        <li>Revisión de contratos ilimitada</li>
+        <li>Compliance migratorio laboral trimestral con acciones correctivas</li>
+        <li>Compliance laboral completo: Ley Karin, reglamento interno, AFP/FONASA</li>
+        <li>Representación ante SERMIG / Inspección / Municipalidad (hasta 2/año)</li>
+        <li>Retainer preferente: línea directa para crisis</li>
+        <li>30% de descuento en servicios fuera del plan</li>
+      </ul>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="plan-cta" target="_blank">Quiero el Premium →</a>
+    </div>
+  </div>
+
+  <div class="asesor-nota">
+    ¿No estás seguro de cuál plan se ajusta a tu situación? Empieza con un <a onclick="document.querySelector('#diagnostico').scrollIntoView({behavior:'smooth'})">Diagnóstico Express</a> y lo decidimos juntos.
+  </div>
+</section>
 
 <!-- PROCESO -->
 <div class="proceso">
@@ -223,6 +398,7 @@
   <div class="footer-links">
     <a href="../">Inicio</a>
     <a href="../la-firma/">La Firma</a>
+    <a href="../responsabilidad-social/">Resp. Social</a>
     <a href="../#contacto">Contacto</a>
     <a href="../privacidad/">Privacidad</a>
   </div>
