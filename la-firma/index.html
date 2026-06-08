@@ -89,7 +89,7 @@
   .valor-card h3{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--marfil);margin-bottom:0.5rem;}
   .valor-card p{font-size:0.8rem;color:#777;line-height:1.6;}
 
-  /* CTA -->
+  /* CTA */
   .cta-section{background:var(--dorado);}
   .cta-inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
   .cta-text h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--negro);}
@@ -97,10 +97,17 @@
   .btn-dark{display:inline-flex;align-items:center;gap:0.5rem;background:var(--negro);color:var(--marfil);padding:0.9rem 2rem;text-decoration:none;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:all 0.3s;}
   .btn-dark:hover{background:var(--blanco);color:var(--negro);}
 
-  footer{background:#060606;color:#555;padding:2.5rem 7%;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;}
-  footer a{color:#444;text-decoration:none;}
-  footer a:hover{color:var(--dorado);}
-  .footer-links{display:flex;gap:1.5rem;}
+  footer{background:#060606;color:#777;padding:3.5rem 7% 2rem;}
+  .footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;flex-wrap:wrap;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,0.08);}
+  .footer-brand{max-width:300px;}
+  .footer-brand-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--marfil);letter-spacing:0.05em;margin-bottom:0.6rem;}
+  .footer-brand p{font-size:0.8rem;line-height:1.7;color:#888;}
+  .footer-col h4{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--dorado);font-weight:500;margin-bottom:1rem;}
+  .footer-col a{display:block;color:#999;text-decoration:none;font-size:0.85rem;margin-bottom:0.6rem;transition:color 0.3s;}
+  .footer-col a:hover{color:var(--marfil);}
+  .footer-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding-top:1.8rem;font-size:0.75rem;color:#555;}
+  .footer-bottom a{color:#666;text-decoration:none;}
+  .footer-bottom a:hover{color:var(--dorado);}
 
   @media(max-width:900px){
     .nav-links{display:none;}
@@ -110,6 +117,8 @@
     .areas-grid{grid-template-columns:1fr;}
     .valores-grid{grid-template-columns:1fr 1fr;}
     .cta-inner{flex-direction:column;text-align:center;}
+    .footer-top{flex-direction:column;gap:2rem;}
+    .footer-bottom{flex-direction:column;text-align:center;}
     section{padding:3.5rem 5%;}
   }
 </style>
@@ -181,21 +190,13 @@
     <div class="bio-content">
       <h2>José Manuel Simons<br><em>Abogado fundador</em></h2>
 
-      <p>José Manuel Simons es abogado venezolano, revalidante en la Universidad de Chile, especializado en <strong>derecho migratorio y asesoría empresarial</strong>, con sede en Punta Arenas y atención a toda Latinoamérica de forma remota. Fundó Anteros Legal con una premisa clara: el acceso a justicia legal y estrategias de calidad no debería depender del tamaño de la ciudad donde vives ni del país del que vienes.</p>
+      <p>Abogado venezolano, revalidante en la Universidad de Chile, especializado en <strong>derecho migratorio y asesoría empresarial</strong>. Fundó Anteros Legal con una premisa clara: el acceso a una estrategia legal de calidad no debería depender del tamaño de la ciudad donde vives ni del país del que vienes.</p>
 
-      <blockquote><p>"Anteros, en la mitología griega, es el dios que representa la pasión que se construye con tiempo, compromiso y reciprocidad. Esa es nuestra filosofía: una relación profesional que se construye sobre confianza mutua y resultados reales."</p></blockquote>
+      <blockquote><p>"Anteros, en la mitología griega, es el dios de la pasión que se construye con tiempo, compromiso y reciprocidad. Esa es nuestra filosofía: una relación profesional fundada en confianza mutua y resultados reales."</p></blockquote>
 
-      <p>A lo largo de <strong>13 años de trayectoria</strong>, ha acompañado a <strong>más de 1.000 personas y empresas</strong> en procesos migratorios complejos, constituciones de empresas, defensas ante expulsiones y trámites de residencia. Su enfoque combina rigor jurídico con tecnología: fue pionero en digitalizar la gestión de casos en Magallanes, integrando CRM + IA + automatizaciones y seguimiento en tiempo real.</p>
+      <p>A lo largo de <strong>13 años de trayectoria</strong> ha acompañado a más de mil personas y empresas en procesos migratorios complejos, constituciones de empresa y defensas ante expulsiones. Es <strong>Magíster en Gobierno y Dirección Pública</strong>, becado por la Konrad-Adenauer-Stiftung, y completó formación en Harvard Business School gracias a una beca del Banco Santander. En 2016 obtuvo una sentencia de la Sala Constitucional del Tribunal Supremo de Venezuela que reconoció derechos filiativos a un niño con dos madres, fijando jurisprudencia para la comunidad LGBTIQ+ del país.</p>
 
-      <p>Posee estudios en Derechos Humanos, Derecho Laboral y es <strong>Magíster en Gobierno y Dirección Pública de la Universidad Autónoma de Chile</strong>, luego de haber sido seleccionado como becado por la Konrad-Adenauer-Stiftung (KAS) gracias a un programa enfocado líderes venezolanos en Chile. El Banco Santander le otorgó una beca en Harvard Business School sobre Pedagogía con Propósito, lo que mejoró la manera en la que enseña a sus clientes, colaboradores, equipo y la comunidad. 
-        
-      <p> En 2016, logró que la Sala Constitucional del Tribunal Supremo de Justicia de Venezuela, reconociera derechos filiativos de un niño con dos madres, convirtiéndose en jusrisprudencia que reconoció derechos a toda la comunidas LGBTIQ+ de ese país. Participó en la redacción del Proyecto de Ley de Matrimonio Civil Igualitario y mantiene demandas en favor de derechos de la comunidad LGBTIQ+ de Venezuela. </p>
-        
-      <p> Ha desarrollado alianzas con organizaciones sociales como <strong>Venezuela Igualitaria, ASOVEN, Migración Diversa, Coalición por Venezuela, 2811, Fundación Iguales, OTD-Chile, Fundación Chile Positivo, Caribe Afirmativo, Hola América, INFOMIGRA, Migrantes por el Maule, Fundación Superación de la Pobreza en Chiile, Techo-Venezuela. UNICEF-Venezuela, FLACSO Chile y Argentina, entre otras...</strong> mantiene vínculos activos con la OIM, ACNUR, CIDH y la Red Regional de Protección a Personas LGBTIQ+ Migrantes, Refugiadas y Solicitantes de Asilo en las Américas. Su trabajo ha sido reconocido como referente en derechos humanos y migratorio.</p>
-
-      <p>En 2026, fue seleccionado para el <strong>Programa Mentor Austral Magallanes<strong>, liderado por Netmentora + HUB FPYME Magallanes + CORFO, con el objetivo de realizar mentorías de alto nivel a emprendimientos en etapas iniciales. </p>
-
-      <p>Su visión a largo plazo es convertir Anteros Legal en la <strong>firma boutique de referencia para la diáspora latinoamericana en Chile</strong>, no solo como proveedor de servicios legales, sino como aliado estratégico para quienes deciden construir su vida y sus proyectos en este país.</p>
+      <p>Trabaja con organismos internacionales como <strong>ACNUR, OIM y la CIDH</strong>, y en 2026 fue seleccionado para el programa <strong>Mentor Austral Magallanes</strong> (Netmentora · HUB FPYME · CORFO). Su visión es consolidar Anteros Legal como la <strong>firma boutique de referencia para la diáspora latinoamericana en Chile</strong>: no solo un proveedor de servicios legales, sino un aliado estratégico para quienes construyen su vida y sus proyectos en este país.</p>
     </div>
   </div>
 </section>
@@ -211,7 +212,7 @@
     </div>
     <div class="area-card">
       <h3>Apoyo Empresarial</h3>
-      <p>Constitución de empresas (SpA, EIRL, SRL), contratos comerciales, cumplimiento laboral, asesoría mensual y protección patrimonial para emprendedores y PYMES.</p>
+      <p>Constitución de empresas, contratos comerciales, cumplimiento laboral y asesoría mensual para emprendedores y PYMES.</p>
     </div>
     <div class="area-card">
       <h3>Defensa Constitucional</h3>
@@ -223,7 +224,7 @@
     </div>
     <div class="area-card">
       <h3>Asesoría LATAM Remota</h3>
-      <p>Servicio 100% digital para latinoamericanos que quieren venir a Chile. Atención desde Venezuela, Colombia, Perú, Bolivia y otros países antes del viaje.</p>
+      <p>Servicio 100% digital para quienes planifican su llegada a Chile desde su país de origen.</p>
     </div>
     <div class="area-card">
       <h3>Mentoría para Emprendedores</h3>
@@ -264,20 +265,35 @@
 <section class="cta-section">
   <div class="cta-inner">
     <div class="cta-text">
-      <h2>¿Listo para dar el siguiente paso?</h2>
-      <p>Agenda una consulta y revisamos tu caso juntos. Sin compromiso.</p>
+      <h2>Conversemos sobre tu caso</h2>
+      <p>Una consulta inicial para evaluar tu situación y definir el camino.</p>
     </div>
-    <a href="https://calendly.com/anteroslegal" class="btn-dark" target="_blank">Agendar Consulta →</a>
+    <a href="https://calendly.com/anteroslegal" class="btn-dark" target="_blank">Agendar consulta →</a>
   </div>
 </section>
 
 <footer>
-  <span>© 2026 Anteros Legal — Punta Arenas, Chile</span>
-  <div class="footer-links">
-    <a href="../">Inicio</a>
-    <a href="../#servicios">Servicios</a>
-    <a href="../#contacto">Contacto</a>
-    <a href="../privacidad/">Privacidad</a>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-brand-name">Anteros Legal</div>
+      <p>Firma boutique de derecho migratorio y empresarial. Punta Arenas, con atención remota a toda Latinoamérica.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="../">Inicio</a>
+      <a href="../#servicios">Servicios</a>
+      <a href="../#contacto">Contacto</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank">WhatsApp</a>
+      <a href="mailto:anteros.spa@gmail.com">anteros.spa@gmail.com</a>
+      <a href="https://calendly.com/anteroslegal" target="_blank">Agendar consulta</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Anteros Legal — Punta Arenas, Chile</span>
+    <a href="../privacidad/">Política de privacidad</a>
   </div>
 </footer>
 </body>
