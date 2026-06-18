@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abogado Migratorio en Chile · Anteros Legal</title>
+<meta name="description" content="Regularización, residencias, nacionalización y defensa ante expulsión. Atención en todo Chile y a la diáspora latinoamericana. Primera evaluación de tu caso sin compromiso.">
+
+<!-- ===== Google tag (GA4) — ya configurado en el sitio ===== -->
+<!-- Reemplazar G-1Z9K5XKKYJ ya está activo a nivel de dominio. Los eventos de conversión de Google Ads se conectan en los puntos marcados como data-conversion abajo. -->
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+  :root{
+    --navy:#1a2942;
+    --navy-deep:#0f1b30;
+    --sepia:#c5a572;
+    --sepia-soft:#d9c4a0;
+    --marfil:#f7f4ee;
+    --marfil-2:#efe9df;
+    --tinta:#2a2a2a;
+    --gris:#6b6b6b;
+    --verde:#2f7d5b;
+    --linea:rgba(26,41,66,0.10);
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'DM Sans',sans-serif;
+    color:var(--tinta);
+    background:var(--marfil);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;line-height:1.15;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* ===== Barra superior mínima (sin navegación, solo marca + teléfono) ===== */
+  .topbar{
+    background:var(--navy-deep);
+    color:var(--marfil);
+    padding:14px 0;
+    position:sticky;top:0;z-index:50;
+  }
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;}
+  .brand{font-family:'Playfair Display',serif;font-size:1.25rem;letter-spacing:0.04em;color:var(--marfil);}
+  .brand span{color:var(--sepia);}
+  .topbar-phone{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--marfil);text-decoration:none;font-size:0.95rem;font-weight:500;
+  }
+  .topbar-phone strong{color:var(--sepia);}
+  @media(max-width:640px){ .topbar-phone .label{display:none;} }
+
+  /* ===== HERO ===== */
+  .hero{
+    background:
+      linear-gradient(160deg, rgba(15,27,48,0.94), rgba(26,41,66,0.90)),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E");
+    color:var(--marfil);
+    padding:64px 0 72px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 80% 10%, rgba(197,165,114,0.18), transparent 45%);
+    pointer-events:none;
+  }
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:start;}
+
+  .eyebrow{
+    display:inline-block;
+    font-size:0.78rem;letter-spacing:0.22em;text-transform:uppercase;
+    color:var(--sepia);font-weight:600;margin-bottom:20px;
+    border-left:2px solid var(--sepia);padding-left:12px;
+  }
+  .hero h1{font-size:2.9rem;color:#fff;margin-bottom:20px;font-weight:600;}
+  .hero h1 em{font-style:italic;color:var(--sepia-soft);}
+  .hero .lead{font-size:1.12rem;color:rgba(247,244,238,0.86);max-width:520px;margin-bottom:28px;}
+
+  .hero-points{list-style:none;margin-bottom:8px;}
+  .hero-points li{
+    display:flex;gap:12px;align-items:flex-start;
+    padding:9px 0;color:rgba(247,244,238,0.92);font-size:1.02rem;
+  }
+  .hero-points .tick{color:var(--sepia);font-weight:700;flex-shrink:0;margin-top:1px;}
+
+  /* ===== Tarjeta de contacto (el corazón de conversión) ===== */
+  .lead-card{
+    background:var(--marfil);
+    border-radius:10px;
+    padding:30px 28px;
+    box-shadow:0 24px 60px rgba(0,0,0,0.30);
+    border-top:4px solid var(--sepia);
+  }
+  .lead-card h2{font-size:1.45rem;color:var(--navy);margin-bottom:6px;}
+  .lead-card .sub{font-size:0.94rem;color:var(--gris);margin-bottom:22px;}
+
+  .field{margin-bottom:14px;}
+  .field label{display:block;font-size:0.8rem;font-weight:600;color:var(--navy);margin-bottom:5px;}
+  .field input,.field select,.field textarea{
+    width:100%;padding:11px 13px;border:1px solid var(--linea);border-radius:6px;
+    font-family:inherit;font-size:0.95rem;color:var(--tinta);background:#fff;
+    transition:border-color .2s, box-shadow .2s;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--sepia);box-shadow:0 0 0 3px rgba(197,165,114,0.18);
+  }
+  .field textarea{resize:vertical;min-height:64px;}
+
+  .btn-primary{
+    display:block;width:100%;text-align:center;
+    background:var(--navy);color:#fff;border:none;border-radius:6px;
+    padding:15px;font-family:inherit;font-size:1.02rem;font-weight:600;letter-spacing:0.01em;
+    cursor:pointer;transition:background .25s, transform .15s;
+    text-decoration:none;
+  }
+  .btn-primary:hover{background:var(--navy-deep);transform:translateY(-1px);}
+  .lead-card .legal{font-size:0.74rem;color:var(--gris);text-align:center;margin-top:12px;line-height:1.5;}
+
+  .or-divider{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--gris);font-size:0.8rem;}
+  .or-divider::before,.or-divider::after{content:"";flex:1;height:1px;background:var(--linea);}
+
+  .btn-whatsapp{
+    display:flex;align-items:center;justify-content:center;gap:9px;width:100%;
+    background:#fff;color:var(--verde);border:1.5px solid var(--verde);border-radius:6px;
+    padding:13px;font-family:inherit;font-size:0.98rem;font-weight:600;
+    text-decoration:none;transition:background .2s, color .2s;
+  }
+  .btn-whatsapp:hover{background:var(--verde);color:#fff;}
+
+  /* ===== Franja de confianza ===== */
+  .trust{background:var(--navy-deep);color:rgba(247,244,238,0.85);padding:18px 0;border-top:1px solid rgba(255,255,255,0.07);}
+  .trust .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 40px;text-align:center;}
+  .trust .item{font-size:0.9rem;display:inline-flex;align-items:center;gap:8px;}
+  .trust .item b{color:var(--sepia);font-weight:600;}
+
+  /* ===== Secciones ===== */
+  section{padding:64px 0;}
+  .section-eyebrow{
+    font-size:0.76rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--sepia);
+    font-weight:600;margin-bottom:14px;text-align:center;
+  }
+  .section-title{font-size:2.1rem;color:var(--navy);text-align:center;margin-bottom:14px;}
+  .section-intro{text-align:center;max-width:640px;margin:0 auto 44px;color:var(--gris);font-size:1.05rem;}
+
+  /* Servicios */
+  .servicios{background:var(--marfil-2);}
+  .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--linea);border:1px solid var(--linea);}
+  .serv-card{background:var(--marfil);padding:30px 26px;}
+  .serv-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:10px;}
+  .serv-card p{font-size:0.96rem;color:var(--gris);}
+  @media(max-width:860px){ .serv-grid{grid-template-columns:1fr 1fr;} }
+  @media(max-width:560px){ .serv-grid{grid-template-columns:1fr;} }
+
+  /* Cómo trabajamos — proceso real, numerado con sentido */
+  .pasos{max-width:760px;margin:0 auto;}
+  .paso{display:grid;grid-template-columns:auto 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--linea);}
+  .paso:last-child{border-bottom:none;}
+  .paso-num{font-family:'Playfair Display',serif;font-size:2rem;color:var(--sepia);line-height:1;font-weight:600;}
+  .paso h3{font-size:1.15rem;color:var(--navy);margin-bottom:6px;}
+  .paso p{font-size:0.98rem;color:var(--gris);}
+
+  /* Cobertura nacional */
+  .cobertura{background:var(--navy);color:var(--marfil);}
+  .cobertura .section-eyebrow{color:var(--sepia);}
+  .cobertura .section-title{color:#fff;}
+  .cobertura .section-intro{color:rgba(247,244,238,0.82);}
+  .ciudades{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:760px;margin:0 auto;}
+  .ciudad{
+    border:1px solid rgba(197,165,114,0.4);border-radius:40px;
+    padding:9px 20px;font-size:0.95rem;color:var(--marfil);
+  }
+  .ciudad.remoto{background:var(--sepia);color:var(--navy-deep);border-color:var(--sepia);font-weight:600;}
+
+  /* Quién te atiende */
+  .firma .wrap{display:grid;grid-template-columns:0.8fr 1.2fr;gap:48px;align-items:center;}
+  .firma-card{background:var(--marfil-2);border-radius:10px;padding:34px;border-left:4px solid var(--sepia);}
+  .firma-card .role{font-size:0.8rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--sepia);font-weight:600;margin-bottom:8px;}
+  .firma-card h3{font-size:1.6rem;color:var(--navy);margin-bottom:14px;}
+  .firma p{font-size:1.02rem;color:var(--tinta);margin-bottom:14px;}
+  .firma .credos{list-style:none;}
+  .firma .credos li{padding:7px 0;padding-left:22px;position:relative;color:var(--gris);font-size:0.97rem;}
+  .firma .credos li::before{content:"—";position:absolute;left:0;color:var(--sepia);}
+
+  /* CTA final */
+  .cta-final{background:var(--marfil-2);text-align:center;}
+  .cta-final h2{font-size:2.2rem;color:var(--navy);margin-bottom:14px;}
+  .cta-final p{font-size:1.08rem;color:var(--gris);max-width:540px;margin:0 auto 28px;}
+  .cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .cta-buttons .btn-primary{display:inline-block;width:auto;padding:15px 36px;}
+  .cta-buttons .btn-whatsapp{display:inline-flex;width:auto;padding:15px 30px;}
+
+  /* Footer mínimo */
+  footer{background:var(--navy-deep);color:rgba(247,244,238,0.6);padding:32px 0;text-align:center;font-size:0.85rem;}
+  footer a{color:var(--sepia-soft);text-decoration:none;}
+  footer .foot-links{margin-top:10px;display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+
+  /* Responsive hero */
+  @media(max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;gap:36px;}
+    .hero h1{font-size:2.3rem;}
+    .firma .wrap{grid-template-columns:1fr;gap:28px;}
+    .section-title{font-size:1.7rem;}
+  }
+
+  /* Botón flotante WhatsApp móvil */
+  .wa-float{
+    position:fixed;bottom:20px;right:20px;z-index:60;
+    background:var(--verde);color:#fff;width:56px;height:56px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 8px 24px rgba(0,0,0,0.25);text-decoration:none;font-size:1.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important;scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Barra superior (sin navegación: es landing de campaña) ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">Anteros<span>·</span>Legal</div>
+    <a class="topbar-phone" href="tel:+56948920125">
+      <span class="label">Atención directa:</span> <strong>+56 9 4892 0125</strong>
+    </a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Derecho migratorio · Todo Chile</span>
+      <h1>Tu situación migratoria en Chile, <em>resuelta con criterio</em>.</h1>
+      <p class="lead">Acompañamos a personas y familias migrantes en cada etapa: desde la primera residencia hasta la nacionalización, y en la defensa cuando algo se complica. Trabajamos en todo el país y de forma remota con la diáspora latinoamericana.</p>
+      <ul class="hero-points">
+        <li><span class="tick">✓</span> Residencias, nacionalización y regularización, presentadas sin errores que las retrasen.</li>
+        <li><span class="tick">✓</span> Defensa ante expulsión y recursos de protección con plazos que corren.</li>
+        <li><span class="tick">✓</span> Atención 100% remota: tu caso avanza estés donde estés.</li>
+      </ul>
+    </div>
+
+    <!-- Tarjeta de conversión -->
+    <div class="lead-card">
+      <h2>Cuéntanos tu caso</h2>
+      <p class="sub">Primera evaluación para entender tu situación y decirte, con honestidad, qué camino tienes. Sin compromiso.</p>
+
+      <form id="leadForm" action="https://forms.gle/Z4fJoRXPGiLX9ZTF9" method="get" target="_blank">
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+        <div class="field">
+          <label for="tema">¿Qué necesitas resolver?</label>
+          <select id="tema" name="tema" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option>Primera residencia / Visa</option>
+            <option>Residencia definitiva</option>
+            <option>Nacionalización chilena</option>
+            <option>Demora en mi nacionalización</option>
+            <option>Defensa ante expulsión</option>
+            <option>Recurso de protección</option>
+            <option>Regularización</option>
+            <option>Otro / No estoy seguro</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" data-conversion="lead_form">Solicitar mi evaluación</button>
+      </form>
+
+      <div class="or-divider">o escríbenos ahora</div>
+
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp" data-conversion="whatsapp_click">
+        <span>●</span> Hablar por WhatsApp
+      </a>
+
+      <p class="legal">Tus datos se usan solo para contactarte sobre tu consulta. Respuesta dentro de 24 horas hábiles.</p>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Franja de confianza ===== -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><b>13 años</b> de experiencia migratoria</div>
+    <div class="item"><b>+1.000</b> personas y familias acompañadas</div>
+    <div class="item"><b>Mentor Austral</b> CORFO 2026</div>
+    <div class="item"><b>Atención</b> en todo Chile y remota</div>
+  </div>
+</div>
+
+<!-- ===== Servicios ===== -->
+<section class="servicios">
+  <div class="wrap">
+    <div class="section-eyebrow">En qué te acompañamos</div>
+    <h2 class="section-title">Cada etapa de tu camino migratorio</h2>
+    <p class="section-intro">No hacemos todo para todos. Nos especializamos en lo migratorio, y eso significa que conocemos a fondo los plazos, los errores que retrasan y las vías que de verdad funcionan.</p>
+    <div class="serv-grid">
+      <div class="serv-card">
+        <h3>Residencias</h3>
+        <p>Tu primera residencia temporal y el paso a la residencia definitiva, presentadas correctamente ante el Servicio Nacional de Migraciones.</p>
+      </div>
+      <div class="serv-card">
+        <h3>Nacionalización</h3>
+        <p>Para quienes ya construyeron su vida en Chile. Acompañamiento hasta la resolución, y destrabe de nacionalizaciones congeladas por demora.</p>
+      </div>
+      <div class="serv-card">
+        <h3>Defensa ante expulsión</h3>
+        <p>Si recibiste una orden de expulsión, tienes derechos y plazos que corren. Actuamos de inmediato para proteger tu permanencia.</p>
+      </div>
+      <div class="serv-card">
+        <h3>Recurso de protección</h3>
+        <p>Acción ante la Corte de Apelaciones frente a actos arbitrarios o demoras que afectan tus derechos como migrante.</p>
+      </div>
+      <div class="serv-card">
+        <h3>Regularización</h3>
+        <p>Si tu situación quedó irregular, evaluamos tu caso y trazamos la ruta más segura para ordenarlo conforme a la ley vigente.</p>
+      </div>
+      <div class="serv-card">
+        <h3>Reunificación familiar</h3>
+        <p>Reúne a los tuyos en Chile. Tramitamos la vía adecuada para cónyuge, hijos y dependientes directos, dentro o fuera del país.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cómo trabajamos (proceso real → numeración con sentido) ===== -->
+<section>
+  <div class="wrap">
+    <div class="section-eyebrow">Cómo trabajamos</div>
+    <h2 class="section-title">Claridad desde el primer día</h2>
+    <div class="pasos">
+      <div class="paso">
+        <div class="paso-num">01</div>
+        <div>
+          <h3>Cuéntanos tu caso</h3>
+          <p>Nos escribes por el formulario o WhatsApp. Te hacemos las preguntas correctas para entender dónde estás parado, sin tecnicismos.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-num">02</div>
+        <div>
+          <h3>Evaluación honesta</h3>
+          <p>Revisamos tu situación y te decimos con franqueza qué caminos tienes, los plazos reales y qué esperar. Si no hay caso, te lo decimos.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-num">03</div>
+        <div>
+          <h3>Plan y acompañamiento</h3>
+          <p>Si decides avanzar, trazamos el plan, te indicamos qué documentos reunir y nos hacemos cargo de la presentación y el seguimiento.</p>
+        </div>
+      </div>
+      <div class="paso">
+        <div class="paso-num">04</div>
+        <div>
+          <h3>Hasta la resolución</h3>
+          <p>Te mantenemos informado en cada etapa. No desapareces en una carpeta: sabes en todo momento cómo va tu trámite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cobertura nacional ===== -->
+<section class="cobertura">
+  <div class="wrap">
+    <div class="section-eyebrow">Dónde atendemos</div>
+    <h2 class="section-title">En todo Chile, y donde estés</h2>
+    <p class="section-intro">Gran parte de nuestros clientes están en la Región Metropolitana, y atendemos desde nuestra base en Punta Arenas. Buena parte del trabajo es 100% remoto: acompañamos a personas en cualquier región de Chile, a quienes aún no llegan al país y a la diáspora latinoamericana en el exterior.</p>
+    <div class="ciudades">
+      <span class="ciudad">Santiago y Región Metropolitana</span>
+      <span class="ciudad">Punta Arenas y Magallanes</span>
+      <span class="ciudad">Resto de Chile · 100% remoto</span>
+      <span class="ciudad remoto">+ Latinoamericanos en el exterior (España, EE.UU. y la región)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quién te atiende ===== -->
+<section class="firma">
+  <div class="wrap">
+    <div class="firma-card">
+      <div class="role">Abogado fundador</div>
+      <h3>José Manuel Simons</h3>
+      <ul class="credos">
+        <li>Abogado venezolano, revalidante en la Universidad de Chile</li>
+        <li>Magíster en Gobierno y Dirección Pública</li>
+        <li>Formación en Harvard Business School (beca Santander)</li>
+        <li>Mentor Austral Magallanes 2026 · Netmentora · CORFO</li>
+      </ul>
+    </div>
+    <div class="firma-copy">
+      <p>Sé lo que es cruzar y empezar de nuevo, porque también lo viví. Por eso Anteros Legal nace con una idea simple: que el acceso a una estrategia legal de calidad no dependa de dónde vives ni del país del que vienes.</p>
+      <p>Acompañamos sobre todo a la comunidad latinoamericana en Chile, con el rigor de un estudio especializado y el trato de quien entiende, de primera mano, lo que hay en juego en cada trámite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA final ===== -->
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Conversemos sobre tu caso</h2>
+    <p>Una evaluación inicial puede ahorrarte meses de trámites mal hechos. Da el primer paso hoy.</p>
+    <div class="cta-buttons">
+      <a href="#leadForm" class="btn-primary">Solicitar mi evaluación</a>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp" data-conversion="whatsapp_click"><span>●</span> Hablar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div>© 2026 Anteros Legal — Derecho migratorio y empresarial · Chile</div>
+    <div class="foot-links">
+      <a href="tel:+56948920125">+56 9 4892 0125</a>
+      <a href="mailto:anteros.spa@gmail.com">anteros.spa@gmail.com</a>
+      <a href="https://anteroslegal.cl/privacidad/">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="wa-float" aria-label="Hablar por WhatsApp" data-conversion="whatsapp_click">●</a>
+
+</body>
+</html>
