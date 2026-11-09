@@ -1,0 +1,335 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Anteros Legal en Prensa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sala de prensa sobria — cabecera con cita, banda de cifras, hemeroteca en lista con fecha a la izquierda, actividades, ficha para periodistas */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#000000; --muted:#55524a; --line:#e3dfcf;
+  --accent:#7a7150; --gold:#B5AB82; --deep:#000000; --deep-ink:#FFFFFF;
+  --display:"RoxboroughCF", "Roxborough CF", "Playfair Display", Georgia, serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#000000; --surface:#0d0d0b; --ink:#FFFFFF; --muted:#b9b5a6; --line:#2e2c24;
+  --accent:#B5AB82; --gold:#B5AB82; --deep:#B5AB82; --deep-ink:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#000000; --surface:#0d0d0b; --ink:#FFFFFF; --muted:#b9b5a6; --line:#2e2c24;
+  --accent:#B5AB82; --gold:#B5AB82; --deep:#B5AB82; --deep-ink:#000000; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.15}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+
+/* Cabecera */
+.top{border-bottom:1px solid var(--line);background:var(--surface)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:20px;font-weight:600;text-decoration:none}
+.brand span{color:var(--accent)}
+.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover,.nav a[aria-current]{color:var(--ink)}
+
+.hero .wrap{padding-block:56px 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end}
+.hero h1{font-size:clamp(36px,6vw,62px);margin-top:12px;font-weight:800}
+.hero h1 em{font-weight:400;color:var(--accent)}
+.hero p.lede{color:var(--muted);max-width:52ch;margin:18px 0 0}
+blockquote.pull{margin:0;border-left:3px solid var(--gold);padding:4px 0 4px 22px}
+blockquote.pull p{font-family:var(--display);font-style:italic;font-size:clamp(20px,2.4vw,26px);line-height:1.35;margin:0}
+blockquote.pull footer{margin-top:12px;font-size:13px;color:var(--muted)}
+
+/* Cifras */
+.stats{background:var(--deep);color:var(--deep-ink)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:28px}
+.stat b{display:block;font-family:var(--display);font-size:42px;font-weight:800;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}
+.stat span{font-size:13px;opacity:.8}
+
+section.block .wrap{padding-block:56px}
+.sechead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.sechead h2{font-size:clamp(26px,3.4vw,36px)}
+.sechead p{color:var(--muted);margin:0;max-width:46ch;font-size:15px}
+
+/* Hemeroteca */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.filters button{font:500 13px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:7px 14px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.press{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.press li{display:grid;grid-template-columns:120px 1fr auto;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.press time{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
+.press .outlet{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.press h3{font-size:21px;margin-top:4px;font-weight:400}
+.press h3 a{text-decoration:none}
+.press h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.press p{margin:6px 0 0;color:var(--muted);font-size:15px;max-width:62ch}
+.tag{font-family:var(--mono);font-size:11px;border:1px solid var(--line);padding:3px 8px;border-radius:4px;color:var(--muted);white-space:nowrap}
+.press li>div{min-width:0}
+
+/* Actividades */
+.acts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.act{background:var(--surface);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:8px}
+.act time{font-family:var(--mono);font-size:12px;color:var(--accent)}
+.act h3{font-size:20px}
+.act{padding:0;overflow:hidden}
+.act .body{padding:0 22px 22px;display:flex;flex-direction:column;gap:8px}
+.media{display:block;position:relative;aspect-ratio:16/10;max-width:100%;background:linear-gradient(135deg,var(--ink),color-mix(in srgb,var(--gold) 55%,var(--ink)));text-decoration:none;color:var(--gold)}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.media .ph{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--display);font-size:22px;font-style:italic;opacity:.9}
+.media .play{position:absolute;left:16px;bottom:16px;background:var(--gold);color:#000;font:600 12px var(--body);padding:6px 12px;letter-spacing:.06em;text-transform:uppercase}
+.media:hover img{filter:brightness(.9)}
+.trayect{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.trayect li{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:16px 0;border-bottom:1px solid var(--line)}
+.trayect time{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.trayect b{font-weight:600}
+.trayect p{margin:4px 0 0;color:var(--muted);font-size:15px}
+.subh{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-top:40px}
+@media (max-width:820px){.trayect li{grid-template-columns:1fr;gap:4px}}
+.act p{margin:0;color:var(--muted);font-size:15px}
+
+/* Kit */
+.kit{background:var(--surface);border-top:1px solid var(--line)}
+.kitgrid{display:grid;grid-template-columns:1.3fr .7fr;gap:40px}
+.kitgrid h3{font-size:20px;margin-bottom:10px}
+.kitgrid p{margin:0 0 14px;max-width:62ch}
+.facts{list-style:none;margin:0;padding:0;font-size:15px}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+.facts li span:first-child{color:var(--muted)}
+.contact{border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:14px;background:var(--bg)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.row code{font-family:var(--mono);font-size:14px;user-select:all;overflow-wrap:anywhere}
+.copy{font:500 12px var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:5px 10px;cursor:pointer;border-radius:4px}
+.cta{display:inline-block;background:var(--gold);color:#000000;text-decoration:none;padding:12px 18px;font-weight:600;font-size:14px;text-align:center}
+footer.site{border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer.site .wrap{padding-block:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:820px){
+  .hero .wrap,.kitgrid{grid-template-columns:1fr;gap:32px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .acts{grid-template-columns:1fr}
+  .press li{grid-template-columns:1fr;gap:6px}
+  .press .tag{justify-self:start}
+}
+@media (prefers-reduced-motion:no-preference){.press li{transition:background .2s}.press li:hover{background:color-mix(in srgb,var(--accent) 5%,transparent)}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="https://www.anteroslegal.cl">Anteros <span>Legal</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="https://www.anteroslegal.cl">Inicio</a>
+      <a href="https://www.anteroslegal.cl">La Firma</a>
+      <a href="https://www.anteroslegal.cl">Servicios</a>
+      <a href="#hemeroteca" aria-current="page">Prensa</a>
+      <a href="https://calendly.com/anteroslegal">Agendar Consulta</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Sala de prensa · Punta Arenas</div>
+      <h1>Anteros Legal <em>en los medios</em></h1>
+      <p class="lede">Coberturas, columnas y actividades sobre migración, emprendimiento y cumplimiento normativo en Magallanes. Datos regionales verificados y una voz disponible para periodistas.</p>
+    </div>
+    <blockquote class="pull">
+      <p>«Magallanes no es zona de tránsito, será zona de asentamiento definitivo.»</p>
+      <footer>José Manuel Simons, fundador de Anteros Legal · <a href="https://laprensaaustral.cl/2026/05/02/lanzan-barometro-emprendedor-2026-primer-informe-de-datos-legales-y-migratorios-para-emprendedores-de-magallanes/">La Prensa Austral, 2 may 2026</a></footer>
+    </blockquote>
+  </div>
+</section>
+
+<section class="stats" aria-label="Cifras">
+  <div class="wrap">
+    <div class="stat"><b>5</b><span>coberturas en medios</span></div>
+    <div class="stat"><b>4</b><span>medios regionales y nacionales</span></div>
+    <div class="stat"><b>13</b><span>años acompañando migrantes</span></div>
+    <div class="stat"><b>3</b><span>países atendidos</span></div>
+  </div>
+</section>
+
+<section class="block" id="hemeroteca">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>Hemeroteca</h2>
+      <p>El Barómetro Emprendedor 2026 tuvo cuatro coberturas en cuatro días, todas orgánicas.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrar">
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">Todo</button>
+      <button type="button" id="f-cob" data-f="cobertura" aria-pressed="false">Coberturas</button>
+      <button type="button" id="f-col" data-f="columna" aria-pressed="false">Columnas</button>
+    </div>
+    <ol class="press">
+      <li data-k="columna">
+        <time datetime="2026-05-24">24 may 2026</time>
+        <div>
+          <div class="outlet">Radio Polar · Opinión</div>
+          <h3><a href="https://www.radiopolar.com/columna-opinion-ciudad-construida-migrantes-olvido-nombrarlos">La ciudad construida por migrantes que olvidó nombrarlos</a></h3>
+          <p>Columna de José Manuel Simons. Propone que el próximo PLADECO de Punta Arenas incluya un capítulo de integración migrante, con los 5.894 extranjeros registrados en la comuna como punto de partida.</p>
+        </div>
+        <span class="tag">Columna</span>
+      </li>
+      <li data-k="cobertura">
+        <time datetime="2026-05-02">2 may 2026</time>
+        <div>
+          <div class="outlet">La Prensa Austral</div>
+          <h3><a href="https://laprensaaustral.cl/2026/05/02/lanzan-barometro-emprendedor-2026-primer-informe-de-datos-legales-y-migratorios-para-emprendedores-de-magallanes/">Lanzan Barómetro Emprendedor 2026: primer informe de datos legales y migratorios para emprendedores de Magallanes</a></h3>
+          <p>El diario decano de Magallanes recoge el informe y cita al fundador sobre la necesidad de datos regionales, no promedios nacionales.</p>
+        </div>
+        <span class="tag">Barómetro 2026</span>
+      </li>
+      <li data-k="cobertura">
+        <time datetime="2026-05-01">1 may 2026</time>
+        <div>
+          <div class="outlet">Urgente.cl</div>
+          <h3><a href="https://urgente.cl/noticia/anteros-legal-lanza-barometro-emprendedor-2026-con-datos-clave-sobre-migracion-y-negocios-en-magallanes">Anteros Legal lanza Barómetro Emprendedor 2026 con datos clave sobre migración y negocios en Magallanes</a></h3>
+          <p>Primera cobertura de alcance nacional del informe.</p>
+        </div>
+        <span class="tag">Barómetro 2026</span>
+      </li>
+      <li data-k="cobertura">
+        <time datetime="2026-05-01">1 may 2026</time>
+        <div>
+          <div class="outlet">Radio Polar</div>
+          <h3><a href="https://www.radiopolar.com/anteros-legal-lanza-barometro-emprendedor-2026-datos-clave-migracion-negocios-magallanes">Anteros Legal lanza Barómetro Emprendedor 2026 con datos clave sobre migración y negocios en Magallanes</a></h3>
+          <p>Detalla el directorio de organismos públicos, los cambios normativos previstos y el mapa de riesgo fiscal por rubro.</p>
+        </div>
+        <span class="tag">Barómetro 2026</span>
+      </li>
+      <li data-k="cobertura">
+        <time datetime="2026-04-28">28 abr 2026</time>
+        <div>
+          <div class="outlet">ITV Patagonia</div>
+          <h3><a href="https://www.itvpatagonia.com/noticias/regional/28-04-2026/informe-revela-aumento-de-migracion-boliviana-y-advierte-impactos-en-el-trabajo-en-chile/">Informe revela aumento de migración boliviana y advierte impactos en el trabajo en Chile</a></h3>
+          <p>El alza de 842% en visas Mercosur para ciudadanos bolivianos entre 2023 y 2025, y los cinco errores legales más comunes de los negocios de Punta Arenas.</p>
+        </div>
+        <span class="tag">Barómetro 2026</span>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="actividades" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>Actividades y participación</h2>
+      <p>Espacios académicos y comunitarios donde Anteros Legal comparte su trabajo.</p>
+    </div>
+    <div class="acts">
+      <article class="act">
+        <a class="media" href="https://youtu.be/Tfa7gevNbJE" aria-label="Ver la ponencia en YouTube">
+          <span class="ph">Ponencia</span>
+          <img src="img/prensa/jornadas-antartico-2026.jpg" alt="José Manuel Simons exponiendo en las VIII Jornadas Chilenas de Derecho Antártico" loading="lazy" onerror="this.remove()">
+          <span class="play">▶ Ver ponencia</span>
+        </a>
+        <div class="body">
+          <time datetime="2026-11-05">5–6 nov 2026</time>
+          <h3>VIII Jornadas Chilenas de Derecho Antártico</h3>
+          <p>Exposición en línea de José Manuel Simons, magíster en Gobierno y Dirección Pública, sobre gobernanza antártica.</p>
+        </div>
+      </article>
+      <article class="act">
+        <div class="media">
+          <span class="ph">UMAG</span>
+          <img src="img/prensa/umag-2026.jpg" alt="Clase de análisis de caso migratorio en la Universidad de Magallanes" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <time datetime="2026-10-22">22 oct 2026</time>
+          <h3>Universidad de Magallanes</h3>
+          <p>Clase de análisis de caso migratorio para estudiantes, a partir de un caso real anonimizado.</p>
+        </div>
+      </article>
+      <article class="act">
+        <div class="media">
+          <span class="ph">Barómetro 2026</span>
+          <img src="img/prensa/barometro-2026.jpg" alt="Portada del Barómetro Emprendedor 2026 de Anteros Legal" loading="lazy" onerror="this.remove()">
+        </div>
+        <div class="body">
+          <time datetime="2026-04-28">Abr 2026</time>
+          <h3>Barómetro Emprendedor 2026</h3>
+          <p>Informe gratuito con datos del Servicio Nacional de Migraciones, CASEN y OIM Chile para emprendedores de Magallanes.</p>
+        </div>
+      </article>
+    </div>
+    <div class="subh">Trayectoria en movilidad humana</div>
+    <ul class="trayect">
+      <li>
+        <time datetime="2024-10">2024</time>
+        <div><b>Red Regional de Protección a Personas LGBTQIA+ Refugiadas y Migrantes en las Américas</b><p>Integrante de la red articulada por Caribe Afirmativo, como presidente y director legal de Migración Diversa (Chile). <a href="https://caribeafirmativo.lgbt/wp-content/uploads/2024/10/directorio-digital-encuentro-red-MH.pdf">Ver directorio</a></p></div>
+      </li>
+      <li>
+        <time datetime="2021-12-06">Dic 2021</time>
+        <div><b>Vergara 240 · Universidad Diego Portales</b><p>Entrevistado sobre la falta de perspectiva migratoria en las políticas públicas. <a href="https://vergara240.udp.cl/doble-discriminacion-la-lucha-de-la-comunidad-migrante-lgbtiq-en-chile/">Leer nota</a></p></div>
+      </li>
+      <li>
+        <time datetime="2021-09-14">Sep 2021</time>
+        <div><b>Revista Sur · Chile a Todo Color</b><p>Invitado al programa sobre migración, refugio e interculturalidad, junto a la académica Caterine Galaz (U. de Chile). <a href="https://www.revistasur.cl/revistasur.cl/2021/09/chile-a-todo-color-migracion-refugio-interculturalidad-y-comunidad-lgbti/">Ver programa</a></p></div>
+      </li>
+      <li>
+        <time datetime="2021-03-03">Mar 2021</time>
+        <div><b>Conversatorio CADEF: crisis migratoria y derecho a migrar</b><p>Expositor junto a la ONG CADEF sobre la protección de personas refugiadas y migrantes.</p></div>
+      </li>
+      <li>
+        <time datetime="2019-09-14">Sep 2019</time>
+        <div><b>ACNUR y FASIC · Capacitación en movilidad humana</b><p>Expositor en la jornada de formación de ACNUR y FASIC para organizaciones de la sociedad civil en Santiago. <a href="https://www.ongces.cl/2019/09/fasic-acoge-a-la-diversidad-sexual-refugiada-y-migrante/">Ver nota</a></p></div>
+      </li>
+      <li>
+        <time datetime="2019">2019</time>
+        <div><b>Cofundador de Migración Diversa</b><p>ONG que asesora y acompaña a personas migrantes LGBTIQ+ en Chile, parte de la Red Nacional de Refugiades y Migrantes LGBTQ+.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="block kit" id="kit">
+  <div class="wrap">
+    <div class="sechead"><h2>Para periodistas</h2></div>
+    <div class="kitgrid">
+      <div>
+        <h3>Sobre Anteros Legal</h3>
+        <p>Anteros Legal es un estudio jurídico boutique de Punta Arenas especializado en derecho migratorio y empresarial. Acompaña a migrantes, emprendedores y pymes en residencias, constitución de empresas, defensa ante expulsiones y cumplimiento migratorio para empleadores.</p>
+        <p>Su fundador, José Manuel Simons, es magíster en Gobierno y Dirección Pública por la Universidad Autónoma de Chile y tiene experiencia profesional en varios países de América Latina.</p>
+        <ul class="facts">
+          <li><span>Sede</span><span>Punta Arenas, Magallanes</span></li>
+          <li><span>Especialidad</span><span>Derecho migratorio y empresarial</span></li>
+          <li><span>Temas como fuente</span><span>Migración y empleo · fiscalización a empleadores · emprendimiento migrante</span></li>
+          <li><span>Cómo citarnos</span><span>Estudio jurídico (no consultora)</span></li>
+        </ul>
+      </div>
+      <aside class="contact" aria-label="Contacto de prensa">
+        <div class="eyebrow">Contacto de prensa</div>
+        <div class="row"><code id="mail">anteros.spa@gmail.com</code><button class="copy" type="button" id="c-mail" data-t="anteros.spa@gmail.com">Copiar</button></div>
+        <div class="row"><code id="tel">+56 9 4892 0125</code><button class="copy" type="button" id="c-tel" data-t="+56948920125">Copiar</button></div>
+        <p style="margin:0;font-size:14px;color:var(--muted)">Pide el kit de prensa con logo, fotos en alta resolución y la ficha del Barómetro. Respondemos en menos de 24 horas.</p>
+        <a class="cta" href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0">Escribir por WhatsApp</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Anteros Legal · Punta Arenas, Chile</span>
+    <a href="https://www.anteroslegal.cl">www.anteroslegal.cl</a>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  const f=b.dataset.f;
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  document.querySelectorAll('.press li').forEach(li=>{li.hidden=!(f==='all'||li.dataset.k===f)});
+}));
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+  const t=b.dataset.t;
+  navigator.clipboard.writeText(t).then(()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar',1600)})
+  .catch(()=>{const r=document.createRange();r.selectNodeContents(b.previousElementSibling);const s=getSelection();s.removeAllRanges();s.addRange(r)});
+}));
+</script>
+
+</body></html>
