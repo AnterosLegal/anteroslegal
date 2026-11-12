@@ -114,8 +114,17 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
       "@type": "Offer",
       "itemOffered": {
        "@type": "Service",
-       "name": "Diagnóstico Express",
-       "description": "Sesión de 30 a 45 minutos e informe escrito en 48 horas hábiles, con semáforo por área y plan de acción a 30, 60 y 90 días."
+       "name": "Consulta legal"
+      },
+      "price": 60000,
+      "priceCurrency": "CLP"
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Diagnóstico Express para empresas",
+       "description": "Revisión de la situación migratoria de la dotación extranjera: sesión de 30 a 45 minutos e informe escrito en 48 horas hábiles, con semáforo por área y plan de acción a 30, 60 y 90 días."
       },
       "price": 80000,
       "priceCurrency": "CLP"
@@ -265,7 +274,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
      "name": "¿Por dónde empiezo si no sé qué trámite me corresponde?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Por el Diagnóstico Express: una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles con tu situación, un plan de acción y los próximos pasos. Cuesta $80.000 CLP y tiene descuento si luego contratas otro servicio."
+      "text": "Con una consulta, que cuesta $60.000 CLP. Si eres una empresa, el punto de partida es el Diagnóstico Express: una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles sobre la situación migratoria de tu equipo, por $80.000 CLP, con descuento si luego contratas otro servicio."
      }
     },
     {
@@ -817,15 +826,6 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-intro { max-width: 720px; margin-bottom: 3.5rem; }
   .sv-intro h2 { margin-bottom: 1rem; }
   .sv-intro > p { color: var(--gris); line-height: 1.7; max-width: 560px; }
-  .sv-pasos { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 2rem; margin-top: 1.8rem; }
-  .sv-pasos a {
-    display: inline-flex; align-items: baseline; gap: 0.6rem;
-    color: var(--negro); text-decoration: none; font-size: 0.85rem;
-    border-bottom: 1px solid var(--gris-claro); padding-bottom: 0.3rem; transition: border-color 0.2s;
-  }
-  .sv-pasos a:hover { border-color: var(--dorado); }
-  .sv-pasos span { font-family: 'Cormorant Garamond', serif; color: var(--dorado); font-size: 1.1rem; }
-
   .sv-kicker {
     display: flex; align-items: center; gap: 0.8rem;
     font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase;
@@ -841,7 +841,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-diagnostico {
     display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: center;
     background: var(--marfil); border: 1px solid var(--gris-claro);
-    padding: 3rem; margin-bottom: 4.5rem; scroll-margin-top: 90px;
+    padding: 3rem; margin-top: 3rem; scroll-margin-top: 90px;
   }
   .sv-diagnostico h3 {
     font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300;
@@ -863,11 +863,19 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-precio li { font-size: 0.8rem; line-height: 1.8; color: rgba(245,240,232,0.8); }
   .sv-precio li::before { content: '· '; color: var(--dorado); }
 
-  .sv-bloque { margin-bottom: 1.8rem; scroll-margin-top: 90px; }
+  #tab-empresas.active { display: block; background: none; }
+  .tab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--gris-claro); }
+  .sv-consulta {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
+    margin-top: 1.8rem; padding: 1.2rem 1.5rem; border: 1px solid var(--gris-claro); background: var(--marfil); max-width: 560px;
+  }
+  .sv-consulta-label { display: block; font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dorado); font-weight: 600; margin-bottom: 0.2rem; }
+  .sv-consulta-precio { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; line-height: 1; color: var(--negro); }
+  .sv-consulta-precio small { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; color: var(--gris); }
 
   .sv-asesor {
     background: var(--negro); color: var(--marfil);
-    margin: 5rem -8.14% -6rem; padding: 5rem 7vw;
+    margin-top: 3rem; padding: 3.5rem 3rem;
     position: relative; scroll-margin-top: 72px;
   }
   .sv-asesor::before {
@@ -982,7 +990,8 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     .form-row { grid-template-columns: 1fr; }
     .sv-diagnostico { grid-template-columns: 1fr; padding: 2rem 1.5rem; gap: 2rem; }
     .planes-grid { grid-template-columns: 1fr; gap: 2rem; }
-    .sv-asesor { margin: 4rem -5.56% -4rem; padding: 4rem 5vw; }
+    .sv-asesor { padding: 2.5rem 1.4rem; }
+    .tab-grid { grid-template-columns: 1fr; }
     .plan-para { min-height: 0; }
     .contacto-grid > * { min-width: 0; }
     .contacto-metodo-val { overflow-wrap: anywhere; }
@@ -1095,48 +1104,16 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   </div>
 </section>
 
-<!-- SERVICIOS (Diagnóstico Express + servicios + Anteros Asesor en un solo bloque) -->
+<!-- SERVICIOS (consulta y pestañas; Diagnóstico Express y Anteros Asesor dentro de Para Empresas) -->
 <section id="servicios">
   <div class="sv-intro">
     <div class="section-label">Servicios</div>
-    <h2>Tres formas de <em>empezar</em></h2>
-    <p>Según dónde estés hoy: conocer tu situación, resolver un caso concreto o contar con nosotros todo el año.</p>
-    <ol class="sv-pasos">
-      <li><a href="#diagnostico"><span>01</span>Diagnóstico Express</a></li>
-      <li><a href="#servicios-caso"><span>02</span>Un servicio puntual</a></li>
-      <li><a href="#anteros-asesor"><span>03</span>Anteros Asesor</a></li>
-    </ol>
-  </div>
-
-  <!-- 01 · DIAGNÓSTICO EXPRESS -->
-  <div class="sv-diagnostico" id="diagnostico">
-    <div class="sv-diagnostico-texto">
-      <div class="sv-kicker"><span>01</span>El primer paso</div>
-      <h3>Diagnóstico <em>Express</em></h3>
-      <p>Antes de cualquier trámite, conoce tu situación real. Una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles, para personas y para empresas con trabajadores extranjeros.</p>
-      <ul class="sv-lista">
-        <li>Semáforo verde, amarillo o rojo por cada área</li>
-        <li>Plan de acción priorizado a 30, 60 y 90 días</li>
-        <li>Próximos pasos y servicios recomendados</li>
-      </ul>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="btn-primary">Agendar mi diagnóstico →</a>
+    <h2>Cómo podemos <em>ayudarte</em></h2>
+    <p>Elige tu situación. Si aún no sabes qué trámite te corresponde, empieza con una consulta.</p>
+    <div class="sv-consulta">
+      <div><span class="sv-consulta-label">Consulta</span><span class="sv-consulta-precio">$60.000 <small>CLP</small></span></div>
+      <a href="https://calendly.com/anteroslegal" target="_blank" class="btn-primary">Agendar consulta →</a>
     </div>
-    <div class="sv-precio">
-      <div class="sv-precio-label">Valor</div>
-      <div class="sv-precio-num">$80.000</div>
-      <div class="sv-precio-nota">CLP · pago anticipado</div>
-      <ul>
-        <li>Informe en 48 horas hábiles</li>
-        <li>Para personas y empresas</li>
-        <li>Descuento si contratas otro servicio</li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- 02 · SERVICIO PUNTUAL -->
-  <div class="sv-bloque" id="servicios-caso">
-    <div class="sv-kicker"><span>02</span>Un servicio puntual</div>
-    <h3 class="sv-titulo">Resolvemos <em>tu caso</em></h3>
   </div>
 
   <div class="servicios-tabs">
@@ -1192,23 +1169,116 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
 
   <!-- TAB EMPRESAS -->
   <div class="tab-panel" id="tab-empresas">
-    <div class="servicio-card">
-      <div class="servicio-num">01</div>
-      <h3>Compliance Migratorio Empresarial</h3>
-      <p>El único servicio paquetizado en Magallanes. Auditamos tu dotación extranjera y prevenimos multas del SERMIG.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+    <div class="tab-grid">
+      <div class="servicio-card">
+        <div class="servicio-num">01</div>
+        <h3>Compliance Migratorio Empresarial</h3>
+        <p>El único servicio paquetizado en Magallanes. Auditamos tu dotación extranjera y prevenimos multas del SERMIG.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">02</div>
+        <h3>Constitución de Empresas</h3>
+        <p>SpA, EIRL, SRL o SA. Constitución, inicio de actividades y RUT, con criterio legal desde el primer día.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">03</div>
+        <h3>Visa por Contrato (ALR)</h3>
+        <p>Para empresas que necesitan contratar trabajadores migrantes específicos. Tramitación guiada de la visa sujeta a contrato.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
     </div>
-    <div class="servicio-card">
-      <div class="servicio-num">02</div>
-      <h3>Constitución de Empresas</h3>
-      <p>SpA, EIRL, SRL o SA. Constitución, inicio de actividades y RUT, con criterio legal desde el primer día.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+
+    <!-- DIAGNÓSTICO EXPRESS PARA EMPRESAS -->
+    <div class="sv-diagnostico" id="diagnostico">
+      <div class="sv-diagnostico-texto">
+        <div class="sv-kicker">El primer paso para tu empresa</div>
+        <h3>Diagnóstico <em>Express</em></h3>
+        <p>¿Tu dotación extranjera está en regla? Una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles, antes de que llegue una fiscalización o una multa.</p>
+        <ul class="sv-lista">
+          <li>Semáforo verde, amarillo o rojo por cada área</li>
+          <li>Plan de acción priorizado a 30, 60 y 90 días</li>
+          <li>Próximos pasos y servicios recomendados</li>
+        </ul>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="btn-primary">Agendar mi diagnóstico →</a>
+      </div>
+      <div class="sv-precio">
+        <div class="sv-precio-label">Valor</div>
+        <div class="sv-precio-num">$80.000</div>
+        <div class="sv-precio-nota">CLP · pago anticipado</div>
+        <ul>
+          <li>Informe en 48 horas hábiles</li>
+          <li>Para empresas con trabajadores extranjeros</li>
+          <li>Descuento si contratas otro servicio</li>
+        </ul>
+      </div>
     </div>
-    <div class="servicio-card">
-      <div class="servicio-num">03</div>
-      <h3>Visa por Contrato (ALR)</h3>
-      <p>Para empresas que necesitan contratar trabajadores migrantes específicos. Tramitación guiada de la visa sujeta a contrato.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+
+    <!-- ANTEROS ASESOR -->
+    <div class="sv-asesor" id="anteros-asesor">
+      <div class="sv-asesor-head">
+        <div class="sv-kicker">Acompañamiento todo el año</div>
+        <h3 class="sv-titulo">Anteros <em>Asesor</em></h3>
+        <p>Una suscripción mensual para emprendedores y empresas que quieren respaldo legal antes de que aparezca el problema, no después. Tres niveles que crecen con tu negocio.</p>
+        <p class="sv-cita">Una pyme no necesita asesoría legal de a ratos. Necesita a alguien que conozca su negocio los doce meses del año.</p>
+      </div>
+
+      <div class="planes-grid">
+        <div class="plan">
+          <div class="plan-nivel">Nivel 1</div>
+          <div class="plan-nombre">Básico</div>
+          <div class="plan-precio"><span>$</span>80.000</div>
+          <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
+          <div class="plan-para">Para emprendedor solo o con 1-2 trabajadores que quiere cobertura legal mínima continua.</div>
+          <ul>
+            <li>1 consulta mensual de hasta 30 min</li>
+            <li>Revisión de 1 contrato simple al mes</li>
+            <li>WhatsApp prioritario, respuesta en 24 h</li>
+            <li>Newsletter privado de cambios normativos</li>
+            <li>10% de descuento en servicios fuera del plan</li>
+          </ul>
+          <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn">Quiero el Básico →</a>
+        </div>
+
+        <div class="plan plan--destacado">
+          <div class="plan-sello">Recomendado</div>
+          <div class="plan-nivel">Nivel 2</div>
+          <div class="plan-nombre">Pro</div>
+          <div class="plan-precio"><span>$</span>180.000</div>
+          <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
+          <div class="plan-para">Para empresa pequeña (3-8 trabajadores) con actividad activa que necesita acompañamiento serio.</div>
+          <ul>
+            <li class="plan-incluye">Todo lo del plan Básico</li>
+            <li>3 consultas mensuales de hasta 45 min</li>
+            <li>Revisión de hasta 3 contratos al mes</li>
+            <li>Compliance migratorio semestral</li>
+            <li>Borradores de comunicaciones legales</li>
+            <li>20% de descuento en servicios fuera del plan</li>
+          </ul>
+          <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn plan-btn--lleno">Quiero el Pro →</a>
+        </div>
+
+        <div class="plan">
+          <div class="plan-nivel">Nivel 3</div>
+          <div class="plan-nombre">Premium</div>
+          <div class="plan-precio"><span>$</span>350.000</div>
+          <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
+          <div class="plan-para">Para pyme establecida (10+ trabajadores) o emprendedor con operación multi-país.</div>
+          <ul>
+            <li class="plan-incluye">Todo lo del plan Pro</li>
+            <li>Consultas ilimitadas</li>
+            <li>Revisión de contratos ilimitada</li>
+            <li>Compliance trimestral con seguimiento</li>
+            <li>Compliance laboral completo (Ley Karin)</li>
+            <li>Representación ante SERMIG / Inspección</li>
+            <li>30% de descuento en servicios fuera del plan</li>
+          </ul>
+          <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn">Quiero el Premium →</a>
+        </div>
+      </div>
+
+      <p class="sv-cierre">¿No sabes cuál te corresponde? Empieza por el <a href="#diagnostico">Diagnóstico Express</a> y lo decidimos juntos.</p>
     </div>
   </div>
 
@@ -1234,71 +1304,6 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     </div>
   </div>
 
-  <!-- 03 · ANTEROS ASESOR -->
-  <div class="sv-asesor" id="anteros-asesor">
-    <div class="sv-asesor-head">
-      <div class="sv-kicker"><span>03</span>Acompañamiento todo el año</div>
-      <h3 class="sv-titulo">Anteros <em>Asesor</em></h3>
-      <p>Una suscripción mensual para emprendedores y empresas que quieren respaldo legal antes de que aparezca el problema, no después. Tres niveles que crecen con tu negocio.</p>
-      <p class="sv-cita">Una pyme no necesita asesoría legal de a ratos. Necesita a alguien que conozca su negocio los doce meses del año.</p>
-    </div>
-
-    <div class="planes-grid">
-      <div class="plan">
-        <div class="plan-nivel">Nivel 1</div>
-        <div class="plan-nombre">Básico</div>
-        <div class="plan-precio"><span>$</span>80.000</div>
-        <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
-        <div class="plan-para">Para emprendedor solo o con 1-2 trabajadores que quiere cobertura legal mínima continua.</div>
-        <ul>
-          <li>1 consulta mensual de hasta 30 min</li>
-          <li>Revisión de 1 contrato simple al mes</li>
-          <li>WhatsApp prioritario, respuesta en 24 h</li>
-          <li>Newsletter privado de cambios normativos</li>
-          <li>10% de descuento en servicios fuera del plan</li>
-        </ul>
-        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn">Quiero el Básico →</a>
-      </div>
-
-      <div class="plan plan--destacado">
-        <div class="plan-sello">Recomendado</div>
-        <div class="plan-nivel">Nivel 2</div>
-        <div class="plan-nombre">Pro</div>
-        <div class="plan-precio"><span>$</span>180.000</div>
-        <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
-        <div class="plan-para">Para empresa pequeña (3-8 trabajadores) con actividad activa que necesita acompañamiento serio.</div>
-        <ul>
-          <li class="plan-incluye">Todo lo del plan Básico</li>
-          <li>3 consultas mensuales de hasta 45 min</li>
-          <li>Revisión de hasta 3 contratos al mes</li>
-          <li>Compliance migratorio semestral</li>
-          <li>Borradores de comunicaciones legales</li>
-          <li>20% de descuento en servicios fuera del plan</li>
-        </ul>
-        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn plan-btn--lleno">Quiero el Pro →</a>
-      </div>
-
-      <div class="plan">
-        <div class="plan-nivel">Nivel 3</div>
-        <div class="plan-nombre">Premium</div>
-        <div class="plan-precio"><span>$</span>350.000</div>
-        <div class="plan-nota">CLP / mes · compromiso 3 meses</div>
-        <div class="plan-para">Para pyme establecida (10+ trabajadores) o emprendedor con operación multi-país.</div>
-        <ul>
-          <li class="plan-incluye">Todo lo del plan Pro</li>
-          <li>Consultas ilimitadas</li>
-          <li>Revisión de contratos ilimitada</li>
-          <li>Compliance trimestral con seguimiento</li>
-          <li>Compliance laboral completo (Ley Karin)</li>
-          <li>Representación ante SERMIG / Inspección</li>
-          <li>30% de descuento en servicios fuera del plan</li>
-        </ul>
-        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" class="plan-btn">Quiero el Premium →</a>
-      </div>
-    </div>
-
-    <p class="sv-cierre">¿No sabes cuál te corresponde? Empieza por el <a href="#diagnostico">Diagnóstico Express</a> y lo decidimos juntos.</p>
-  </div>
 </section>
 
 <!-- RECURSO GRATUITO -->
@@ -1331,7 +1336,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
         <li><span class="diferencial-num">IV</span><div><strong>Información de primera mano</strong><p>Publicamos el Barómetro Migratorio y obtenemos datos oficiales vía Ley de Transparencia. Decidimos con evidencia, no con rumores.</p></div></li>
       </ul>
       <p>Atención presencial en Punta Arenas y 100% remota en toda Latinoamérica.</p>
-      <a href="https://calendly.com/anteroslegal" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">Agendar Consulta Gratuita</a>
+      <a href="https://calendly.com/anteroslegal" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">Agendar consulta</a>
     </div>
   </div>
 </section>
@@ -1540,7 +1545,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   <div class="section-label">Preguntas frecuentes</div>
   <h2>Lo que más <em>nos preguntan</em></h2>
   <div class="faq-lista">
-    <details class="faq-item"><summary>¿Por dónde empiezo si no sé qué trámite me corresponde?</summary><p>Por el Diagnóstico Express: una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles con tu situación, un plan de acción y los próximos pasos. Cuesta $80.000 CLP y tiene descuento si luego contratas otro servicio.</p></details>
+    <details class="faq-item"><summary>¿Por dónde empiezo si no sé qué trámite me corresponde?</summary><p>Con una consulta, que cuesta $60.000 CLP. Si eres una empresa, el punto de partida es el Diagnóstico Express: una sesión de 30 a 45 minutos y un informe escrito en 48 horas hábiles sobre la situación migratoria de tu equipo, por $80.000 CLP, con descuento si luego contratas otro servicio.</p></details>
     <details class="faq-item"><summary>¿Atienden solo en Punta Arenas?</summary><p>No. Atendemos presencialmente en Punta Arenas y de forma 100% remota en todo Chile y Latinoamérica.</p></details>
     <details class="faq-item"><summary>¿Qué hago si recibí una orden de expulsión?</summary><p>Escríbenos de inmediato por WhatsApp. Una expulsión tiene plazos que corren desde la notificación, y actuar a tiempo cambia el resultado.</p></details>
     <details class="faq-item"><summary>¿Qué pasa si Migraciones o el Ministerio no responden o no cumplen una sentencia?</summary><p>Presentamos un recurso de protección ante la Corte de Apelaciones y, si la sentencia no se cumple, seguimos ante la Corte hasta que se cumpla.</p></details>
@@ -1620,12 +1625,13 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
               <option>Constitución de Empresa</option>
               <option>Compliance Migratorio Empresarial</option>
               <option>Visa ALR para trabajadores</option>
+              <option>Diagnóstico Express para empresas ($80K)</option>
               <option>Anteros Asesor — Plan Básico ($80K/mes)</option>
               <option>Anteros Asesor — Plan Pro ($180K/mes)</option>
               <option>Anteros Asesor — Plan Premium ($350K/mes)</option>
             </optgroup>
-            <optgroup label="Diagnóstico y LATAM Remoto">
-              <option>Diagnóstico Express ($80K)</option>
+            <optgroup label="Consulta y LATAM Remoto">
+              <option>Consulta ($60K)</option>
               <option>Acompañamiento Migratorio Completo</option>
               <option>PYMES LATAM en Chile</option>
               <option>Doble filiación en Venezuela</option>
