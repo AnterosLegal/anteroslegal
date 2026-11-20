@@ -733,7 +733,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){er.textContent="Revisa tu correo.";return;}
     if(!document.getElementById("op-ok").checked){er.textContent="Marca la casilla para aceptar recibir las actualizaciones.";return;}
     er.textContent="";var bt=document.getElementById("op-btn");bt.disabled=true;bt.textContent="Enviando…";
-    fetch("https://hook.us2.make.com/uvavgjx1bp4d22cr79bn4gf2ruf7konr",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em,nombre:nm,origen:"Expediente Migratorio 2026 - actualizaciones - anteroslegal.cl",consentimiento:"Acepta recibir actualizaciones del Expediente y novedades de Anteros Legal",fecha:new Date().toISOString()})})
+    fetch("https://hook.us2.make.com/xx8sf9jz6ctn5kctnlt9ueav61qkt7ic",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em,nombre:nm,origen:"Expediente Migratorio 2026 - actualizaciones - anteroslegal.cl",consentimiento:"Acepta recibir actualizaciones del Expediente y novedades de Anteros Legal",fecha:new Date().toISOString()})})
     .then(function(){document.getElementById("optin").classList.add("sent");}).catch(function(){bt.disabled=false;bt.textContent="Quiero recibirlas";er.textContent="No pudimos registrar tu correo. Inténtalo de nuevo o escríbenos por WhatsApp.";});});
   if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",boot);}else{boot();}
   var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(onResize,150);});
