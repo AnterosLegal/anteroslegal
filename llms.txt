@@ -21,7 +21,8 @@
 ## Páginas
 - [La firma](https://anteroslegal.cl/la-firma/)
 - [Servicios](https://anteroslegal.cl/servicios/)
-- [Barómetro Migratorio](https://anteroslegal.cl/barometro/)
+- [Barómetro Emprendedor 2026](https://anteroslegal.cl/barometro/)
+- [Expediente Migratorio 2026](https://anteroslegal.cl/expediente/): informe con 42 respuestas de 35 organismos del Estado vía Ley de Transparencia; datos de migración por región, ciudad y país
 - [Prensa](https://anteroslegal.cl/prensa/)
 - [Responsabilidad social](https://anteroslegal.cl/responsabilidad-social/)
 - [Ebooks y guías](https://anteroslegal.gumroad.com/)

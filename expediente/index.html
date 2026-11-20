@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Expediente Migratorio 2026 · Anteros Legal</title>
+<link rel="canonical" href="https://anteroslegal.cl/expediente/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Expediente Migratorio 2026: 295 expulsiones decretadas, 48 cumplidas">
+<meta property="og:description" content="42 respuestas de 35 organismos del Estado sobre migración, con datos por región, ciudad y país. Informe de Anteros Legal.">
+<meta property="og:image" content="https://anteroslegal.cl/expediente/img/expediente-2026.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://anteroslegal.cl/expediente/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../images/logo.jpg">
+<meta name="description" content="Informe de Anteros Legal: 42 respuestas de 35 organismos del Estado de Chile sobre migración, con datos por región, ciudad y país.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: informe visual de lectura rápida; el territorio de norte a sur como columna de 16 regiones; citas en formato de oficio (ANT./MAT.); filetes finos como los e-books de Anteros. */
+:root{
+  --paper:#e2ded8; --paper-2:#eae7e2; --paper-3:#d5d0c8;
+  --ink:#23221f; --ink-2:#47453f; --muted:#5f5c56;
+  --rule:#b0aaa1; --rule-soft:#c9c4bc;
+  --accent:#7a5410; --alert:#8a2f24; --alert-bg:#ecdcd5;
+  --s1:#007c59; --s2:#915c08; --s3:#3a6aa7;
+  --h0:#d5d0c8; --h1:#e6d3aa; --h2:#d4b06a; --h3:#b98a35; --h4:#8f6416; --h5:#5c3f07;
+  --btn:#23221f; --btn-text:#f4f1ec;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --measure:64ch;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#1c1b19; --paper-2:#24231f; --paper-3:#2f2d29;
+    --ink:#ece7df; --ink-2:#cfc8bd; --muted:#a8a196;
+    --rule:#4c4841; --rule-soft:#3a3732;
+    --accent:#d2aa5c; --alert:#e8968a; --alert-bg:#3a2622;
+    --s1:#3ca17b; --s2:#b77f39; --s3:#5d8ece;
+    --h0:#2f2d29; --h1:#3e3424; --h2:#624d24; --h3:#8d6c2c; --h4:#bb9145; --h5:#e7c47c;
+    --btn:#ece7df; --btn-text:#1c1b19;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#1c1b19; --paper-2:#24231f; --paper-3:#2f2d29;
+  --ink:#ece7df; --ink-2:#cfc8bd; --muted:#a8a196;
+  --rule:#4c4841; --rule-soft:#3a3732;
+  --accent:#d2aa5c; --alert:#e8968a; --alert-bg:#3a2622;
+  --s1:#3ca17b; --s2:#b77f39; --s3:#5d8ece;
+  --h0:#2f2d29; --h1:#3e3424; --h2:#624d24; --h3:#8d6c2c; --h4:#bb9145; --h5:#e7c47c;
+  --btn:#ece7df; --btn-text:#1c1b19;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));padding-block:0 48px}
+a{color:inherit;text-decoration-color:var(--rule);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--ink)}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1100px;margin:0 auto}
+.wrap > *, .grid > *, .cols > *{min-width:0}
+p{margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0;color:var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+.src{font-family:var(--mono);font-size:11.5px;color:var(--muted);line-height:1.5}
+.src a,.ref{color:var(--accent);text-decoration:none}
+.src a:hover,.ref:hover{text-decoration:underline}
+.ref{font-family:var(--mono);font-size:.72em;vertical-align:.25em;padding:0 1px}
+.rule-dash{height:1px;margin:18px 0 0;background:repeating-linear-gradient(90deg,var(--ink) 0 46%,transparent 46% 50%,var(--ink) 50% 100%);opacity:.8;max-width:420px}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--body);font-weight:600;font-size:15px;padding:11px 18px;border-radius:2px;text-decoration:none;border:1px solid var(--btn);cursor:pointer;background:transparent;color:var(--ink)}
+.btn.primary{background:var(--btn);color:var(--btn-text)}
+.btn:hover{opacity:.88}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+
+/* Cabecera */
+.masthead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-block:22px 18px;border-bottom:1px solid var(--rule)}
+.lockup{display:flex;align-items:center;gap:14px;text-decoration:none}
+.lockup .mark{font-family:var(--display);font-size:40px;line-height:1;position:relative;padding-right:6px}
+.lockup .mark::after{content:"";position:absolute;right:0;top:4px;width:6px;height:6px;background:var(--ink);transform:rotate(45deg)}
+.lockup .bar{width:1px;align-self:stretch;background:var(--ink)}
+.lockup .name{font-family:var(--display);font-size:15px;line-height:1.15;letter-spacing:.12em;text-transform:uppercase}
+.lockup .name small{display:block;font-size:10px;letter-spacing:.5em;margin-top:4px;color:var(--ink-2)}
+.serie{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-align:right}
+
+/* Portada */
+.hero{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:40px;padding-block:40px 30px;align-items:end}
+.hero h1{font-size:clamp(2.3rem,6vw,4.6rem);line-height:1.02;text-transform:uppercase}
+.hero .lede{margin-top:18px;font-size:1.1rem;color:var(--ink-2);max-width:56ch}
+.hero .btns{margin-top:22px}
+.oficio{border:1px solid var(--rule);background:var(--paper-2);padding:18px 18px 14px;font-size:13.5px}
+.oficio dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0}
+.oficio dt{font-family:var(--mono);font-weight:500;font-size:12px;padding-top:2px}
+.oficio dd{margin:0;color:var(--ink-2)}
+.oficio .lugar{margin-top:12px;padding-top:10px;border-top:1px solid var(--rule-soft);font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.kpi{padding:16px 16px 14px 0;display:flex;flex-direction:column;gap:2px}
+.kpi + .kpi{padding-left:18px;border-left:1px solid var(--rule-soft)}
+.kpi b{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,2.7rem);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.kpi span{font-size:14px;color:var(--ink-2)}
+.toc{display:flex;flex-wrap:wrap;gap:6px 18px;padding-block:14px 0;font-size:14px}
+.toc a{text-decoration:none;color:var(--ink-2);border-bottom:1px solid var(--rule-soft)}
+.toc a:hover{color:var(--ink);border-color:var(--ink)}
+
+section{padding-block:52px 4px}
+.sec-head{display:flex;flex-direction:column;gap:8px;margin-bottom:22px;max-width:var(--measure)}
+.sec-head h2{font-size:clamp(1.6rem,3.4vw,2.4rem);line-height:1.1;text-transform:uppercase}
+.sec-head .dek{color:var(--ink-2);font-size:1.02rem}
+
+/* Chile en cifras */
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tile{background:var(--paper-2);border:1px solid var(--rule-soft);padding:16px 16px 14px;display:flex;flex-direction:column;gap:8px}
+.tile b{font-family:var(--display);font-weight:400;font-size:clamp(2rem,3.6vw,2.6rem);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.tile p{font-size:14.5px;color:var(--ink-2)}
+.meter{position:relative;height:8px;background:var(--paper-3);border-radius:4px;overflow:hidden}
+.meter span{position:absolute;left:0;top:0;bottom:0;background:var(--s2);border-radius:4px}
+.meter i{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.meter-l{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);font-family:var(--mono)}
+
+/* Explorador regional */
+.explorer{display:grid;grid-template-columns:230px minmax(0,1fr);gap:22px;align-items:start}
+.strip{display:flex;flex-direction:column;gap:4px}
+.rbtn{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;text-align:left;font-family:var(--body);font-size:14px;color:var(--ink);background:var(--paper-2);border:1px solid var(--rule-soft);border-left:7px solid var(--h1);padding:6px 10px;cursor:pointer;border-radius:2px}
+.rbtn small{font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+.rbtn[aria-selected="true"]{border-color:var(--ink);border-left-width:7px;background:var(--paper);font-weight:600}
+.rbtn:hover{border-color:var(--ink-2)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:12.5px;color:var(--ink-2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.panel{background:var(--paper-2);border:1px solid var(--rule);padding:20px 20px 18px;display:flex;flex-direction:column;gap:16px}
+.panel h3{font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase;line-height:1.05}
+.pstats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule-soft)}
+.pstats div{padding:10px 10px 10px 0}
+.pstats div + div{padding-left:12px;border-left:1px solid var(--rule-soft)}
+.pstats b{display:block;font-family:var(--display);font-weight:400;font-size:1.8rem;line-height:1.05;font-variant-numeric:lining-nums tabular-nums}
+.pstats span{font-size:12.5px;color:var(--ink-2)}
+.ptitle{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.dtgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.dtgrid div{border:1px solid var(--rule-soft);padding:8px 10px;background:var(--paper)}
+.dtgrid b{display:block;font-size:1.25rem;font-variant-numeric:tabular-nums}
+.dtgrid span{font-size:12px;color:var(--ink-2)}
+.rows{display:flex;flex-direction:column;gap:8px}
+.row{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;font-size:14.5px;border-bottom:1px solid var(--rule-soft);padding-bottom:8px}
+.row .k{color:var(--muted);font-size:13px}
+.chip{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:1px 6px;border:1px solid currentColor;border-radius:2px;margin-right:6px;white-space:nowrap;vertical-align:1px}
+.chip.ok{color:var(--s1)} .chip.mid{color:var(--accent)} .chip.no{color:var(--alert)} .chip.na{color:var(--muted)}
+.facts{margin:0;padding-left:18px;font-size:14.5px;color:var(--ink-2);display:flex;flex-direction:column;gap:4px}
+.pend{background:var(--alert-bg);border-left:4px solid var(--alert);padding:10px 12px}
+.pend .ptitle{color:var(--alert)}
+.pend ul{margin:6px 0 0;padding-left:18px;font-size:14.5px;display:flex;flex-direction:column;gap:3px}
+.pcta{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border-top:1px solid var(--rule-soft);padding-top:12px;font-size:14.5px;color:var(--ink-2)}
+
+/* Figuras */
+figure{margin:24px 0 0;padding:18px 18px 12px;background:var(--paper-2);border:1px solid var(--rule-soft);position:relative}
+.fig-title{font-weight:600;font-size:15.5px}
+.fig-sub{font-size:13.5px;color:var(--muted);margin-top:2px}
+.chart{position:relative;margin-top:10px;width:100%}
+.chart svg{display:block;overflow:visible}
+.chart text{font-family:var(--body);font-size:12px;fill:var(--muted)}
+.chart .lab{fill:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.chart .lab2{fill:var(--ink-2);font-variant-numeric:tabular-nums}
+.chart .grid line{stroke:var(--rule-soft);stroke-width:1}
+.chart .ref-line{stroke:var(--ink-2);stroke-width:1.5;stroke-dasharray:4 3}
+.chart .mark{transition:opacity .15s}
+.chart .mark:hover,.chart .mark:focus{opacity:.78;outline:none}
+.tip{position:absolute;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--rule);padding:7px 9px;font-size:13px;line-height:1.35;box-shadow:0 2px 10px rgba(0,0,0,.12);z-index:5;opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+.tip b{font-size:15px;font-variant-numeric:tabular-nums}
+.tip .k{display:inline-block;width:12px;height:2px;margin-right:6px;vertical-align:3px}
+.tip .row2{display:flex;align-items:baseline;gap:6px;white-space:nowrap}
+figcaption{margin-top:8px;font-size:12.5px;color:var(--muted);line-height:1.5}
+details.data{margin-top:6px;font-size:13px}
+details.data summary,details.more summary{cursor:pointer;color:var(--ink-2);font-family:var(--mono);font-size:12px;letter-spacing:.04em}
+.tscroll{overflow-x:auto;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{text-align:left;vertical-align:top;padding:7px 10px 7px 0;border-bottom:1px solid var(--rule-soft)}
+th{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--rule)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start}
+.cols figure{margin-top:0}
+
+/* Hallazgos */
+.finds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--rule)}
+.find{padding:16px 16px 16px 0;border-bottom:1px solid var(--rule-soft);display:flex;flex-direction:column;gap:6px}
+.find:not(:nth-child(4n+1)){padding-left:16px;border-left:1px solid var(--rule-soft)}
+.find b{font-family:var(--display);font-weight:400;font-size:2.2rem;line-height:1;font-variant-numeric:lining-nums}
+.find p{font-size:14.5px;color:var(--ink-2)}
+
+/* Pendientes */
+.waits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.wait{border:1px solid var(--alert);background:var(--alert-bg);padding:14px;display:flex;flex-direction:column;gap:6px}
+.wait b{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1;color:var(--alert);font-variant-numeric:lining-nums}
+.wait .who{font-weight:600;font-size:14.5px}
+.wait p{font-size:13.5px;color:var(--ink-2)}
+.inc{margin-top:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.cchip{border:1px solid var(--rule);background:var(--paper-2);padding:5px 10px;font-size:13.5px;border-radius:2px}
+.cchip small{font-family:var(--mono);color:var(--accent);margin-left:6px}
+.subh{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+
+/* Trabajo */
+.stat-line{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--rule-soft);padding-bottom:10px}
+.stat-line b{font-family:var(--display);font-weight:400;font-size:1.9rem;line-height:1;flex:0 0 auto;min-width:5.8ch;font-variant-numeric:lining-nums tabular-nums}
+.stat-line span{font-size:14.5px;color:var(--ink-2)}
+.side{border-top:1px solid var(--ink);padding-top:12px;display:flex;flex-direction:column;gap:12px}
+
+/* Letra chica */
+.fine{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ficha{border:1px solid var(--rule-soft);background:var(--paper-2);padding:12px 12px 10px;display:flex;flex-direction:column;gap:6px}
+.ficha .hd{font-family:var(--mono);font-size:11px;color:var(--muted);border-bottom:1px dashed var(--rule);padding-bottom:6px}
+.ficha p{font-size:14px;color:var(--ink-2);line-height:1.45}
+
+/* Servicios */
+.services{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.svc{border:1px solid var(--rule);background:var(--paper-2);padding:16px;display:flex;flex-direction:column;gap:8px}
+.svc .hook{font-family:var(--mono);font-size:11.5px;color:var(--accent);letter-spacing:.02em;line-height:1.4}
+.svc h3{font-family:var(--body);font-weight:700;font-size:16.5px;line-height:1.25}
+.svc p{font-size:14px;color:var(--ink-2);flex:1}
+.svc .hook{flex:none;min-height:2.9em}
+.svc a{font-weight:600;font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);align-self:flex-start}
+.contact{margin-top:26px;border:1px solid var(--ink);padding:24px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;background:var(--paper-2)}
+.contact h3{font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase;line-height:1.05}
+.contact p{color:var(--ink-2);margin-top:8px}
+.contact .btns{margin-top:16px}
+.cinfo{display:flex;flex-direction:column;gap:10px;font-size:14.5px}
+.cinfo .line{display:flex;flex-wrap:wrap;align-items:center;gap:8px;border-bottom:1px solid var(--rule-soft);padding-bottom:8px}
+.cinfo .k{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);width:100%}
+.cinfo code{font-family:var(--mono);font-size:14px;user-select:all}
+.copy{font-family:var(--mono);font-size:11.5px;padding:3px 8px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);cursor:pointer;border-radius:2px}
+
+.sources{columns:2;column-gap:32px;font-size:13px;padding:0;margin:10px 0 0;list-style:none}
+.sources li{break-inside:avoid;padding:6px 0;border-bottom:1px solid var(--rule-soft);color:var(--ink-2)}
+.sources li:target{background:var(--paper-3)}
+.sources .id{font-family:var(--mono);font-size:11px;color:var(--accent);margin-right:6px}
+.sources .fol{font-family:var(--mono);font-size:11px;color:var(--muted);word-break:break-all}
+.note{font-size:13px;color:var(--muted);margin-top:12px;max-width:var(--measure)}
+footer.colofon{margin-top:56px;padding-top:20px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+footer .tiny{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
+
+.sitenav{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;font-size:14px}
+.sitenav a{text-decoration:none;color:var(--ink-2)}
+.sitenav a:hover{color:var(--ink)}
+.sitenav a.btn{color:var(--btn-text);padding:8px 14px;font-size:14px}
+.optin{border:1px solid var(--ink);background:var(--paper-2);padding:24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px;align-items:start}
+.optin h2{font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase;line-height:1.05}
+.optin .dek{color:var(--ink-2);margin-top:10px}
+.optin form{display:flex;flex-direction:column;gap:10px}
+.optin label{font-size:13px;color:var(--ink-2);display:flex;flex-direction:column;gap:4px}
+.optin input[type=text],.optin input[type=email]{font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:2px}
+.optin .chk{flex-direction:row;align-items:flex-start;gap:8px;font-size:13px}
+.optin .chk input{margin-top:3px}
+.optin .err{color:var(--alert);font-size:13px;min-height:1em}
+.optin .ok{display:none;border-left:4px solid var(--s1);padding:10px 12px;background:var(--paper)}
+.optin.sent form{display:none}.optin.sent .ok{display:block}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;gap:24px;padding-block:30px 24px}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .services{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .finds{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .find:not(:nth-child(4n+1)){padding-left:0;border-left:0}
+  .find:nth-child(2n){padding-left:16px;border-left:1px solid var(--rule-soft)}
+  .waits{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fine{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cols{grid-template-columns:1fr}
+  .explorer{grid-template-columns:1fr}
+  .strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+  .rbtn{flex-direction:column;align-items:flex-start;gap:0;padding:5px 7px;font-size:12.5px;border-left-width:0;border-top:6px solid var(--h1)}
+  .rbtn[aria-selected="true"]{border-left-width:1px}
+  .contact{grid-template-columns:1fr}
+  .optin{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi:nth-child(3){padding-left:0;border-left:0}
+  .kpi:nth-child(n+3){border-top:1px solid var(--rule-soft)}
+  .tiles,.services,.waits,.fine{grid-template-columns:1fr}
+  .finds{grid-template-columns:1fr}
+  .find:nth-child(2n){padding-left:0;border-left:0}
+  .pstats{grid-template-columns:1fr 1fr}
+  .pstats div:nth-child(3){grid-column:1 / -1;border-left:0;padding-left:0;border-top:1px solid var(--rule-soft)}
+  .dtgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .row{grid-template-columns:1fr;gap:2px}
+  .sources{columns:1}
+  .serie{text-align:left}
+  .panel{padding:16px 14px}
+  figure{padding:14px 12px 10px}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <a class="lockup" href="../" aria-label="Anteros Legal, ir al inicio del sitio">
+    <span class="mark" aria-hidden="true">A</span><span class="bar" aria-hidden="true"></span>
+    <span class="name">Anteros<br>Legal<small>Chile</small></span>
+  </a>
+  <nav class="sitenav" aria-label="Sitio"><a href="../">Inicio</a><a href="../#servicios">Servicios</a><a href="../prensa/">Prensa</a><a class="btn primary" href="https://calendly.com/anteroslegal" target="_blank" rel="noopener">Agendar consulta</a></nav>
+</header>
+
+<div class="hero" id="portada">
+  <div>
+    <p class="eyebrow">Informe N° 1 · Expediente Migratorio 2026 · Magallanes y Chile</p>
+    <h1 style="margin-top:12px">295 expulsiones decretadas. 48 cumplidas.</h1>
+    <div class="rule-dash" aria-hidden="true"></div>
+    <p class="lede">Magallanes, 2022 a 2026. Es uno de los datos que obtuvimos al preguntarle por la migración a 35 organismos del Estado. Aquí están, por región, por ciudad y para todo Chile.</p>
+    <div class="btns"><a class="btn primary" href="#regiones">Ver tu región</a><a class="btn" href="#actualizaciones">Recibir actualizaciones</a></div>
+  </div>
+  <aside class="oficio" aria-label="Encabezado del informe">
+    <dl>
+      <dt>ANT.:</dt><dd>42 respuestas a solicitudes de acceso a la información pública (Ley N° 20.285), enero a noviembre de 2026.</dd>
+      <dt>MAT.:</dt><dd>Datos, cruces y letra chica sobre el aparato migratorio chileno.</dd>
+      <dt>DE:</dt><dd>José Manuel Simons Domínguez, abogado. Anteros Legal.</dd>
+    </dl>
+    <p class="lugar">PUNTA ARENAS, 19 DE NOVIEMBRE DE 2026</p>
+  </aside>
+</div>
+
+<div class="kpis">
+  <div class="kpi"><b>35</b><span>organismos consultados</span></div>
+  <div class="kpi"><b>42</b><span>documentos leídos</span></div>
+  <div class="kpi"><b>16</b><span>regiones con datos</span></div>
+  <div class="kpi"><b>183</b><span>días para responder una pregunta</span></div>
+</div>
+
+<nav class="toc" aria-label="Contenido">
+  <a href="#chile">Chile en cifras</a><a href="#regiones">Tu región</a><a href="#ciudades">Ciudades</a><a href="#magallanes">Magallanes</a><a href="#hallazgos">Hallazgos</a><a href="#pendientes">Lo que falta</a><a href="#trabajo">Trabajo</a><a href="#letra-chica">Letra chica</a><a href="#actualizaciones">Actualizaciones</a><a href="#servicios">Servicios</a><a href="#contacto">Contacto</a><a href="#fuentes">Fuentes</a>
+</nav>
+
+<!-- CHILE EN CIFRAS -->
+<section id="chile">
+  <div class="sec-head"><p class="eyebrow">Nivel nacional</p><h2>Chile en cifras</h2></div>
+  <div class="tiles">
+    <div class="tile"><b>1.608.650</b><p>personas nacidas en el extranjero viven en Chile. Son el 8,8% de la población y más del doble que en 2017.</p><p class="src">INE, Censo 2024 <a href="#f-s10">S10</a> <a href="#f-p5">P5</a></p></div>
+    <div class="tile"><b>940</b><p>expulsiones administrativas cumplidas en 2025, de 23.778 decretadas.</p><div class="meter" aria-hidden="true"><span style="width:4%"></span></div><div class="meter-l"><span>4% cumplidas</span><span>2025</span></div><p class="src">SERMIG, Reporte 5 <a href="#f-p1">P1</a></p></div>
+    <div class="tile"><b>9.550</b><p>resoluciones de expulsión notificadas entre 2022 y 2025, de 37.564 dictadas. Sin notificación no hay ejecución ni reclamo.</p><div class="meter" aria-hidden="true"><span style="width:25.4%"></span></div><div class="meter-l"><span>25% notificadas</span><span>2022–2025</span></div><p class="src">SERMIG, Reporte 5 <a href="#f-p1">P1</a></p></div>
+    <div class="tile"><b>263.158</b><p>solicitudes de residencia pendientes al cierre de 2025. El 26,7% de las definitivas en trámite son de menores de edad.</p><p class="src">SERMIG, Reporte 5 <a href="#f-p1">P1</a></p></div>
+    <div class="tile"><b>815</b><p>cartas de nacionalización otorgadas en 2025. Ese año se recibieron 39.683 solicitudes.</p><p class="src">SERMIG, Reporte 5 <a href="#f-p1">P1</a></p></div>
+    <div class="tile"><b>34,4%</b><p>de los reclamos laborales los presentan personas extranjeras, que son cerca del 11% de los ocupados.</p><div class="meter" aria-hidden="true"><span style="width:34.4%"></span><i style="left:11%"></i></div><div class="meter-l"><span>reclamos</span><span>| 11% del empleo</span></div><p class="src">Dirección del Trabajo <a href="#f-s11">S11</a> <a href="#f-s12">S12</a></p></div>
+  </div>
+</section>
+
+<!-- REGIONES -->
+<section id="regiones">
+  <div class="sec-head"><p class="eyebrow">De norte a sur</p><h2>Explora tu región</h2><p class="dek">Elige una región para ver su población migrante, qué respondieron sus autoridades, los datos laborales de 2025 y lo que sigue pendiente.</p></div>
+  <div class="explorer">
+    <div>
+      <div class="strip" id="strip" role="tablist" aria-label="Regiones de Chile, de norte a sur"></div>
+      <div class="legend" id="lg-strip"></div>
+    </div>
+    <div class="panel" id="rpanel" role="tabpanel" aria-live="polite"></div>
+  </div>
+  <p class="note">El color indica cuánto creció la población nacida en el extranjero entre los censos 2017 y 2024. Fuentes: INE <a class="ref" href="#f-s10">S10</a>, Dirección del Trabajo <a class="ref" href="#f-s11">S11</a>, Delegaciones <a class="ref" href="#f-s16">S16</a>–<a class="ref" href="#f-s22">S22</a>, Gobiernos Regionales <a class="ref" href="#f-s23">S23</a>–<a class="ref" href="#f-s27">S27</a>, municipios <a class="ref" href="#f-s28">S28</a>–<a class="ref" href="#f-s41">S41</a>, Censo vía Emol <a class="ref" href="#f-p5">P5</a>.</p>
+</section>
+
+<!-- CIUDADES -->
+<section id="ciudades">
+  <div class="sec-head"><p class="eyebrow">Nivel comunal</p><h2>Las 14 ciudades consultadas</h2><p class="dek">Cuánto creció su población inmigrante entre 2017 y 2024.</p></div>
+  <figure>
+    <p class="fig-title">Crecimiento de la población nacida en el extranjero, por comuna</p>
+    <p class="fig-sub">Variación porcentual entre censos. Entre paréntesis, habitantes inmigrantes en 2024.</p>
+    <div class="chart" id="ch-city" role="img" aria-label="Barras horizontales con el crecimiento de la población inmigrante en 14 comunas"></div>
+    <div class="legend" id="lg-city"></div>
+    <figcaption>INE, tabulado Censo 2017–2024 <a href="#f-s10">S10</a>.</figcaption>
+  </figure>
+</section>
+
+<!-- MAGALLANES -->
+<section id="magallanes">
+  <div class="sec-head"><p class="eyebrow">Caso de estudio</p><h2>Magallanes con lupa</h2><p class="dek">La única región con la serie completa de residencias y expulsiones. La obtuvimos con un amparo ante el Consejo para la Transparencia.</p></div>
+  <figure>
+    <p class="fig-title">Expulsiones administrativas en Magallanes: decretadas y cumplidas</p>
+    <p class="fig-sub">2026: decretadas de enero a junio; cumplidas hasta noviembre.</p>
+    <div class="chart" id="ch-exp" role="img" aria-label="Barras de expulsiones decretadas y materializadas en Magallanes, 2022 a 2026"></div>
+    <div class="legend" id="lg-exp"></div>
+    <figcaption>SERMIG <a href="#f-s04">S04</a> y PDI <a href="#f-s07">S07</a>. Una expulsión cumplida en un año puede venir de un decreto anterior, y alguien decretado en Magallanes puede salir del país desde otra región: la comparación muestra un orden de magnitud.</figcaption>
+    <details class="data"><summary>Ver datos</summary><div class="tscroll"><table><thead><tr><th>Año</th><th class="n">Decretadas</th><th class="n">Cumplidas adm.</th><th class="n">Cumplidas judiciales</th></tr></thead><tbody><tr><td>2022</td><td class="n">17</td><td class="n">1</td><td class="n">7</td></tr><tr><td>2023</td><td class="n">11</td><td class="n">9</td><td class="n">2</td></tr><tr><td>2024</td><td class="n">74</td><td class="n">6</td><td class="n">1</td></tr><tr><td>2025</td><td class="n">141</td><td class="n">17</td><td class="n">1</td></tr><tr><td>2026</td><td class="n">52</td><td class="n">15</td><td class="n">1</td></tr></tbody></table></div></details>
+  </figure>
+  <div class="cols" style="margin-top:22px">
+    <figure>
+      <p class="fig-title">Rechazo de residencias, Magallanes</p>
+      <p class="fig-sub">Rechazos sobre el total de resoluciones del año. 2026 parcial.</p>
+      <div class="chart" id="ch-rej" role="img" aria-label="Líneas de tasa de rechazo de residencias definitivas y temporales en Magallanes"></div>
+      <div class="legend" id="lg-rej"></div>
+      <figcaption>Cálculo propio sobre SERMIG <a href="#f-s03">S03</a>. 2021: transición a la Ley 21.325, con pocas resoluciones.</figcaption>
+    </figure>
+    <figure>
+      <p class="fig-title">Cartas de nacionalización otorgadas, Magallanes</p>
+      <p class="fig-sub">Número por año. 2026 parcial.</p>
+      <div class="chart" id="ch-nac" role="img" aria-label="Barras de cartas de nacionalización otorgadas en Magallanes"></div>
+      <figcaption>SERMIG <a href="#f-s03">S03</a>.</figcaption>
+    </figure>
+  </div>
+  <figure>
+    <p class="fig-title">Expulsiones decretadas en Magallanes, mes a mes</p>
+    <p class="fig-sub">Más oscuro, más decretos. Dos picos: octubre a diciembre de 2024 y abril de 2025.</p>
+    <div class="chart" id="ch-heat" role="img" aria-label="Mapa de calor mensual de expulsiones decretadas en Magallanes"></div>
+    <div class="legend" id="lg-heat"></div>
+    <figcaption>SERMIG <a href="#f-s04">S04</a>. Sin datos después de junio de 2026.</figcaption>
+  </figure>
+</section>
+
+<!-- HALLAZGOS -->
+<section id="hallazgos">
+  <div class="sec-head"><p class="eyebrow">En una mirada</p><h2>Ocho hallazgos</h2></div>
+  <div class="finds">
+    <div class="find"><b>16</b><p>expulsiones cumplidas en la región por cada 100 decretadas en Magallanes desde 2022.</p><p class="src"><a href="#f-s04">S04</a> <a href="#f-s07">S07</a></p></div>
+    <div class="find"><b>18,2%</b><p>de rechazo en residencias definitivas en Magallanes (2026), cuatro alzas seguidas desde 2,4%.</p><p class="src"><a href="#f-s03">S03</a></p></div>
+    <div class="find"><b>183</b><p>días, un amparo y dos derivaciones para saber cuántas expulsiones se cumplen en una región.</p><p class="src"><a href="#f-s02">S02</a> <a href="#f-s07">S07</a></p></div>
+    <div class="find"><b>5 de 7</b><p>Delegaciones Presidenciales derivaron la pregunta sobre coordinación migratoria. Ninguna de las siete entregó cifras.</p><p class="src"><a href="#f-s16">S16</a>–<a href="#f-s22">S22</a></p></div>
+    <div class="find"><b>2,6</b><p>renuncias por cada finiquito ratificado de un trabajador extranjero. Entre chilenos, 0,79.</p><p class="src"><a href="#f-s11">S11</a></p></div>
+    <div class="find"><b>0</b><p>iniciativas regionales para migrantes en Tarapacá y Antofagasta, donde 23% y 20% de la población nació fuera.</p><p class="src"><a href="#f-s24">S24</a> <a href="#f-s25">S25</a> <a href="#f-p5">P5</a></p></div>
+    <div class="find"><b>0</b><p>estudios de la Subsecretaría de DD.HH. sobre el efecto de las demoras migratorias en los derechos.</p><p class="src"><a href="#f-s13">S13</a></p></div>
+    <div class="find"><b>2023</b><p>es el primer año en que el Poder Judicial distingue los recursos de protección migratorios.</p><p class="src"><a href="#f-s08">S08</a></p></div>
+  </div>
+</section>
+
+<!-- PENDIENTES -->
+<section id="pendientes">
+  <div class="sec-head"><p class="eyebrow">Al 19 de noviembre de 2026</p><h2>Lo que falta</h2><p class="dek">Organismos que no han respondido, respuestas incompletas y territorios que aún no consultamos.</p></div>
+  <div class="waits">
+    <div class="wait"><b class="num">290</b><p class="who">SERMIG · derivación del CDE</p><p>Recursos de protección migratorios y su resultado. Derivada el 2 de febrero. Sin respuesta en el expediente.</p><p class="src"><a href="#f-s09">S09</a></p></div>
+    <div class="wait"><b class="num">281</b><p class="who">SERMIG · derivación de Arica</p><p>Coordinación migratoria regional. Derivada el 11 de febrero. Sin respuesta en el expediente.</p><p class="src"><a href="#f-s19">S19</a></p></div>
+    <div class="wait"><b class="num">111</b><p class="who">SERMIG · derivación de Tarapacá</p><p>Coordinación migratoria regional. Derivada el 31 de julio. Sin respuesta en el expediente.</p><p class="src"><a href="#f-s20">S20</a></p></div>
+    <div class="wait"><b class="num">57</b><p class="who">Poder Judicial · Magallanes</p><p>Expulsiones judiciales decretadas en la región. Derivada el 23 de septiembre. Sin respuesta.</p><p class="src"><a href="#f-s02">S02</a></p></div>
+  </div>
+  <p class="note">Días corridos de espera al 19 de noviembre de 2026.</p>
+  <p class="subh">Respuestas incompletas</p>
+  <div class="tscroll"><table>
+    <thead><tr><th>Organismo</th><th>Qué falta</th><th>Próximo paso</th></tr></thead>
+    <tbody>
+      <tr><td>SERMIG</td><td>Estadísticas de coordinación por región: pidió precisar qué actuaciones</td><td>Nueva solicitud con definiciones exactas</td></tr>
+      <tr><td>Subsecretaría del Trabajo</td><td>Diagnósticos internos sobre empleo migrante: reconoce que existen, pero no los entrega</td><td>Nueva solicitud por esos documentos</td></tr>
+      <tr><td>Delegación de Antofagasta</td><td>No trató la consulta como solicitud de transparencia</td><td>Nueva solicitud</td></tr>
+      <tr><td>GORE Metropolitano</td><td>Montos de sus 10 iniciativas</td><td>Nueva solicitud</td></tr>
+      <tr><td>GORE Biobío</td><td>Documentos de 3 iniciativas: solo en pendrive o por correo postal</td><td>Retirarlos o pedir envío digital</td></tr>
+      <tr><td>6 municipios</td><td>Cifras de atención: Antofagasta, Estación Central, Arica, Iquique, Punta Arenas y Alto Hospicio</td><td>Nueva solicitud con preguntas cuantitativas</td></tr>
+      <tr><td>SERMIG, 15 regiones</td><td>Serie de residencias, nacionalizaciones y expulsiones: solo se pidió para Magallanes</td><td>Solicitar la misma serie región por región</td></tr>
+    </tbody></table></div>
+  <p class="subh">Regiones sin consultar</p>
+  <div class="chips"><span class="cchip">Atacama</span><span class="cchip">Coquimbo</span><span class="cchip">O'Higgins</span><span class="cchip">Maule</span><span class="cchip">Ñuble</span><span class="cchip">La Araucanía</span><span class="cchip">Los Ríos</span><span class="cchip">Los Lagos</span><span class="cchip">Aysén</span></div>
+  <p class="subh">Comunas grandes que más crecen y aún no consultamos</p>
+  <div class="chips"><span class="cchip">Puerto Montt<small>+417%</small></span><span class="cchip">San Miguel<small>+401%</small></span><span class="cchip">Hualpén<small>+396%</small></span><span class="cchip">Lampa<small>+359%</small></span><span class="cchip">Quillota<small>+330%</small></span><span class="cchip">Curicó<small>+311%</small></span><span class="cchip">Rancagua<small>+307%</small></span><span class="cchip">La Cisterna<small>+293%</small></span><span class="cchip">Talca<small>+290%</small></span></div>
+  <p class="note">Crecimiento de la población inmigrante 2017–2024, INE <a class="ref" href="#f-s10">S10</a>. Este expediente se actualiza con cada respuesta nueva.</p>
+</section>
+
+<!-- ACTUALIZACIONES -->
+<section id="actualizaciones">
+  <div class="optin" id="optin">
+    <div>
+      <p class="eyebrow">Este expediente sigue abierto</p>
+      <h2 style="margin-top:8px">Recibe las actualizaciones del expediente</h2>
+      <p class="dek">Cuando lleguen las respuestas pendientes o publiquemos datos de nuevas regiones, te avisamos por correo. Sin spam: solo actualizaciones de este informe y novedades de Anteros Legal.</p>
+    </div>
+    <div>
+      <form id="optin-form" novalidate>
+        <label>Nombre<input type="text" id="op-nombre" autocomplete="name"></label>
+        <label>Correo electrónico<input type="email" id="op-email" autocomplete="email" required></label>
+        <label class="chk"><input type="checkbox" id="op-ok"><span>Acepto recibir por correo las actualizaciones del Expediente Migratorio y novedades de Anteros Legal. Puedo darme de baja cuando quiera. <a href="../privacidad/">Política de privacidad</a>.</span></label>
+        <p class="err" id="op-err" role="alert"></p>
+        <button class="btn primary" type="submit" id="op-btn">Quiero recibirlas</button>
+      </form>
+      <div class="ok" role="status"><b>Listo.</b> Te escribiremos cuando el expediente se actualice.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJO -->
+<section id="trabajo">
+  <div class="sec-head"><p class="eyebrow">Trabajo, 2025</p><h2>La cuenta llega al final</h2><p class="dek">Los extranjeros denuncian en proporción a su peso en el empleo. Donde se disparan es en los reclamos, al terminar la relación laboral.</p></div>
+  <div class="cols">
+    <figure>
+      <p class="fig-title">Personas extranjeras en cada trámite ante la Dirección del Trabajo</p>
+      <p class="fig-sub">Porcentaje del total de cada trámite. La línea marca su peso en el empleo.</p>
+      <div class="chart" id="ch-dt" role="img" aria-label="Barras con el porcentaje de personas extranjeras en cada trámite ante la Dirección del Trabajo"></div>
+      <figcaption>«Casa particular»: término de contrato de trabajadoras y trabajadores de casa particular. Dirección del Trabajo, informe 2025 <a href="#f-s11">S11</a>; 11% de los ocupados según INE, citado por la DT <a href="#f-s12">S12</a>.</figcaption>
+    </figure>
+    <div class="side">
+      <div class="stat-line"><b class="num">2,6</b><span>renuncias ratificadas por cada finiquito ratificado de un extranjero. Entre chilenos, 0,79.</span></div>
+      <div class="stat-line"><b class="num">22,8%</b><span>de las sanciones por denuncias de extranjeros castigan impedir la fiscalización o no exhibir documentos.</span></div>
+      <div class="stat-line"><b class="num">120</b><span>fiscalizaciones en el único programa focalizado de 2025: empresas de aseo y seguridad, ocho semanas, todo Chile.</span></div>
+      <div class="stat-line"><b class="num">20%</b><span>de las actuaciones de la DT con trabajadores extranjeros en Magallanes son por licencias médicas que el empleador no recibió. En el país, 9%.</span></div>
+      <p class="src">Dirección del Trabajo <a href="#f-s11">S11</a> <a href="#f-s12">S12</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- LETRA CHICA -->
+<section id="letra-chica">
+  <div class="sec-head"><p class="eyebrow">Letra chica</p><h2>Detalles que dicen mucho</h2></div>
+  <div class="fine">
+    <div class="ficha"><p class="hd">DELEGACIÓN METROPOLITANA · Oficio N° 106</p><p>Dijo no tener información sobre coordinación migratoria. SERMIG respondió con la resolución con que esa Delegación creó y preside la Mesa Regional de Migración. <a class="ref" href="#f-s16">S16</a> <a class="ref" href="#f-s01">S01</a></p></div>
+    <div class="ficha"><p class="hd">PDI · Notificación N° 34492</p><p>Notificó su prórroga cuatro días hábiles después de vencido el plazo, y respondió tres días hábiles después de vencida la prórroga. <a class="ref" href="#f-s06">S06</a> <a class="ref" href="#f-s07">S07</a></p></div>
+    <div class="ficha"><p class="hd">4 ORGANISMOS · misma frase</p><p>«La ley no obliga a generar, elaborar o producir información»: SERMIG y las Delegaciones de Arica, Valparaíso y Antofagasta. <a class="ref" href="#f-s01">S01</a> <a class="ref" href="#f-s19">S19</a> <a class="ref" href="#f-s17">S17</a> <a class="ref" href="#f-s21">S21</a></p></div>
+    <div class="ficha"><p class="hd">TESORERÍA · Oficio N° 6940-DJ</p><p>El trámite en línea para devolver pagos migratorios está deshabilitado. Sin RUT, la devolución es un cheque enviado a una dirección en Chile. <a class="ref" href="#f-s15">S15</a></p></div>
+    <div class="ficha"><p class="hd">GORE BIOBÍO · ORD. N° 279</p><p>Entrega la información en un pendrive que hay que retirar en persona en Concepción, de 8:30 a 13:00, o por correo postal: «por su peso» no se puede enviar por el sistema. <a class="ref" href="#f-s27">S27</a></p></div>
+    <div class="ficha"><p class="hd">DIRECCIÓN DEL TRABAJO · informe 2025</p><p>En el 63,8% de los reclamos de trabajadores extranjeros, la nacionalidad figura como «otra». <a class="ref" href="#f-s11">S11</a></p></div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios">
+  <div class="sec-head"><p class="eyebrow">Anteros Legal</p><h2>Cómo te ayudamos</h2><p class="dek">Cada servicio responde a un problema que estos datos muestran. Escríbenos por WhatsApp o <a href="https://calendly.com/anteroslegal" target="_blank" rel="noopener">agenda tu consulta en Calendly</a> ($60.000).</p></div>
+  <div class="services">
+    <div class="svc"><p class="hook">9.550 de 37.564 expulsiones notificadas</p><h3>Defensa ante una expulsión</h3><p>Revisamos el decreto y su notificación, los plazos para reclamar y las opciones para regularizar tu situación.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Tengo%20una%20expulsi%C3%B3n%20decretada%20y%20quiero%20revisar%20mi%20caso." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">18,2% de rechazo en Magallanes</p><h3>Residencia definitiva rechazada</h3><p>Analizamos la resolución, preparamos el recurso y corregimos el expediente antes de volver a postular.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Me%20rechazaron%20la%20residencia%20definitiva%20y%20quiero%20saber%20qu%C3%A9%20opciones%20tengo." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">263.158 solicitudes pendientes</p><h3>Trámite detenido en SERMIG</h3><p>Comparamos tu caso con los plazos legales y activamos reclamo, solicitud de información o recurso de protección por demora.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Mi%20tr%C3%A1mite%20en%20SERMIG%20est%C3%A1%20detenido%20y%20quiero%20saber%20qu%C3%A9%20hacer." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">815 cartas otorgadas en 2025</p><h3>Carta de nacionalización</h3><p>Preparamos la solicitud, reunimos los antecedentes y hacemos seguimiento hasta la resolución.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Quiero%20postular%20a%20la%20nacionalizaci%C3%B3n%20chilena." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">34,4% de los reclamos laborales</p><h3>Trabajadores extranjeros</h3><p>Te orientamos en constancias, reclamos y finiquitos ante la Inspección del Trabajo, y en el cobro de cotizaciones impagas.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Soy%20trabajador%20extranjero%20y%20tengo%20un%20problema%20laboral." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">22,8% de las sanciones: impedir fiscalizar o no exhibir documentos</p><h3>Empresas que contratan extranjeros</h3><p>Diagnóstico Express ($80.000): revisamos la situación migratoria de tu dotación extranjera en una sesión y te entregamos un informe escrito en 48 horas hábiles.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Tengo%20una%20empresa%20que%20contrata%20personas%20extranjeras%20y%20quiero%20el%20Diagn%C3%B3stico%20Express." target="_blank" rel="noopener">Pedir Diagnóstico Express</a></div>
+    <div class="svc"><p class="hook">Devolución en Tesorería: solo presencial</p><h3>Recuperar pagos migratorios</h3><p>Gestionamos el certificado de SERMIG y el cobro en Tesorería, también si hoy vives fuera de Chile.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Quiero%20recuperar%20un%20pago%20migratorio%20en%20Tesorer%C3%ADa." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
+    <div class="svc"><p class="hook">183 días para una respuesta</p><h3>Instituciones, prensa y academia</h3><p>Solicitudes de transparencia, informes de datos a medida y capacitación para equipos de atención municipal.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Escribo%20desde%20una%20instituci%C3%B3n%2C%20medio%20o%20universidad." target="_blank" rel="noopener">Conversemos por WhatsApp</a></div>
+  </div>
+
+  <div class="contact" id="contacto">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <h3 style="margin-top:8px">Cuéntanos tu caso</h3>
+      <p>Escríbenos por WhatsApp con tu región, el trámite y en qué etapa está, o agenda directamente una consulta. Atención presencial en Punta Arenas y remota en todo Chile.</p>
+      <div class="btns"><a class="btn primary" href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&amp;app_absent=0" target="_blank" rel="noopener">Escribir por WhatsApp</a><a class="btn" href="https://calendly.com/anteroslegal" target="_blank" rel="noopener">Agendar consulta</a></div>
+    </div>
+    <div class="cinfo">
+      <div class="line"><span class="k">WhatsApp</span><code>+56 9 4892 0125</code></div>
+      <div class="line"><span class="k">Correo</span><code id="mail">anteros.spa@gmail.com</code><button class="copy" type="button" id="copy-mail">Copiar</button></div>
+      <div class="line"><span class="k">Recurso gratuito</span><a href="../#recurso">Guía de Migración Chile 2026</a></div>
+      <div class="line"><span class="k">Oficina</span><span>Punta Arenas, Magallanes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MÉTODO Y FUENTES -->
+<section id="fuentes">
+  <div class="sec-head"><p class="eyebrow">Método y fuentes</p><h2>El expediente</h2><p class="dek">Solicitudes de acceso a la información presentadas entre el 7 de enero y el 20 de mayo de 2026, con las mismas preguntas por tipo de organismo. Los porcentajes y días son cálculo propio. No publicamos datos personales ni nombres de funcionarios. Cada documento se puede verificar con su folio en el Portal de Transparencia.</p></div>
+  <details class="more"><summary>Ver las 46 fuentes</summary>
+  <ul class="sources">
+    <li id="f-s01"><span class="id">S01</span>SERMIG. Oficio N° 7299, 20-feb-2026, con Res. Ex. N° 1082 de la DPR Metropolitana (22-ago-2025). <span class="fol">AB099T0119625 · AB099T0119709 · AB099T0120479</span></li>
+    <li id="f-s02"><span class="id">S02</span>SERMIG. ORD. N° 27715, 23-sep-2026, descargos amparo Rol C8916-26. <span class="fol">AB099T0125810</span></li>
+    <li id="f-s03"><span class="id">S03</span>SERMIG. Planilla C8916-26: residencias y nacionalidades, Magallanes 2021–2026.</li>
+    <li id="f-s04"><span class="id">S04</span>SERMIG. Planilla C8916-26 Complemento: expulsiones administrativas dictadas en Magallanes, por mes.</li>
+    <li id="f-s05"><span class="id">S05</span>PDI. Acuse de recibo, 02-oct-2026. <span class="fol">AD010T0034492</span></li>
+    <li id="f-s06"><span class="id">S06</span>PDI. Notificación de prórroga N° 34492, 06-nov-2026.</li>
+    <li id="f-s07"><span class="id">S07</span>PDI. Respuesta de 19-nov-2026 con planilla de expulsiones materializadas en Magallanes.</li>
+    <li id="f-s08"><span class="id">S08</span>Poder Judicial, Corporación Administrativa. Oficio 17DDI N° 1076, 18-feb-2026. <span class="fol">NR001T0011331</span></li>
+    <li id="f-s09"><span class="id">S09</span>Consejo de Defensa del Estado. Of. Ord. N° 268, 02-feb-2026. <span class="fol">AX001T0002540</span></li>
+    <li id="f-s10"><span class="id">S10</span>INE. ORD. N° 111, 29-ene-2026, y tabulado Censo 2017–2024. <span class="fol">AH007T0013785</span></li>
+    <li id="f-s11"><span class="id">S11</span>Dirección del Trabajo. Respuesta de 04-feb-2026 e informe del Depto. de Estudios 2025. <span class="fol">AL003T0024913</span></li>
+    <li id="f-s12"><span class="id">S12</span>Dirección del Trabajo. Oficio Circular N° 2000-76/2025, 27-feb-2025.</li>
+    <li id="f-s13"><span class="id">S13</span>Subsecretaría de Derechos Humanos. ORD. N° 179, 29-ene-2026. <span class="fol">AK012T0001787</span></li>
+    <li id="f-s14"><span class="id">S14</span>Subsecretaría del Trabajo. ORD. N° 117/2026, 26-ene-2026. <span class="fol">AL001T-00002500</span></li>
+    <li id="f-s15"><span class="id">S15</span>Tesorería General de la República. Oficio Ord. N° 6940-DJ, 20-feb-2026. <span class="fol">AE003T0006855</span></li>
+    <li id="f-s16"><span class="id">S16</span>DPR Metropolitana. Oficio N° 106, 18-ene-2026. <span class="fol">AB021T0001881</span></li>
+    <li id="f-s17"><span class="id">S17</span>DPR Valparaíso. Oficio N° 165, 30-ene-2026. <span class="fol">AB018T0000654</span></li>
+    <li id="f-s18"><span class="id">S18</span>DPR Magallanes. Oficio N° 43, 20-ene-2026. <span class="fol">AB015T0000264</span></li>
+    <li id="f-s19"><span class="id">S19</span>DPR Arica y Parinacota. Oficio N° 85, 11-feb-2026. <span class="fol">AB007T0000617</span></li>
+    <li id="f-s20"><span class="id">S20</span>DPR Tarapacá. Oficios N° 430/26 y 431/26, 31-jul-2026. <span class="fol">AB017T0000580</span></li>
+    <li id="f-s21"><span class="id">S21</span>DPR Antofagasta. Oficio N° 56, 02-feb-2026. <span class="fol">AB008T0000540</span></li>
+    <li id="f-s22"><span class="id">S22</span>DPR Biobío. ORD. N° 110/2026, 26-feb-2026. <span class="fol">AB019T0000668</span></li>
+    <li id="f-s23"><span class="id">S23</span>GORE Magallanes. Memo DIDESO-00005/2026, 27-ene-2026. <span class="fol">AB089T0001417</span></li>
+    <li id="f-s24"><span class="id">S24</span>GORE Antofagasta. ORD. 00358/2026, 11-feb-2026. <span class="fol">AB077T0001791</span></li>
+    <li id="f-s25"><span class="id">S25</span>GORE Tarapacá. Oficio Ord. N° 129, 10-feb-2026. <span class="fol">AB076T0001390</span></li>
+    <li id="f-s26"><span class="id">S26</span>GORE Metropolitano. Oficio N° 654, 10-feb-2026. <span class="fol">AB081T0003988</span></li>
+    <li id="f-s27"><span class="id">S27</span>GORE Biobío. ORD. N° 279, 06-feb-2026. <span class="fol">AB084T0002844</span></li>
+    <li id="f-s28"><span class="id">S28</span>Municipalidad de Punta Arenas. ORD. N° 130, 09-feb-2026. <span class="fol">MU239T0002762</span></li>
+    <li id="f-s29"><span class="id">S29</span>Municipalidad de Iquique. Informe DIDECO, 16-ene-2026. <span class="fol">MU112T0004776</span></li>
+    <li id="f-s30"><span class="id">S30</span>Municipalidad de Alto Hospicio. Memorándum N° 1/2026, 13-feb-2026. <span class="fol">MU005T0002262</span></li>
+    <li id="f-s31"><span class="id">S31</span>Municipalidad de Arica. ORD. N° 229/2026, 21-ene-2026. <span class="fol">MU012T0005692</span></li>
+    <li id="f-s32"><span class="id">S32</span>Municipalidad de Antofagasta. Oficio N° 100/2026, 27-ene-2026. <span class="fol">MU009T0017230</span></li>
+    <li id="f-s33"><span class="id">S33</span>Municipalidad de Valparaíso. Informe de la Oficina Municipal de Personas Migrantes e Informe Sello Migrante 2019–2021 (s/f).</li>
+    <li id="f-s34"><span class="id">S34</span>Municipalidad de Viña del Mar. Memorándum N° 62, 21-ene-2026. <span class="fol">MU340T0004212</span></li>
+    <li id="f-s35"><span class="id">S35</span>Municipalidad de Santiago. ORD. N° E-101/2026, 23-ene-2026, y Carta N° 2/2026. <span class="fol">MU308T0016944</span></li>
+    <li id="f-s36"><span class="id">S36</span>Municipalidad de Estación Central. Providencia N° 46/2026, 12-feb-2026. <span class="fol">MU089T0006136</span></li>
+    <li id="f-s37"><span class="id">S37</span>Municipalidad de Independencia. ORD. N° 140/2026, 12-feb-2026. <span class="fol">MU111T0004572</span></li>
+    <li id="f-s38"><span class="id">S38</span>Municipalidad de Recoleta. Respuesta s/f. <span class="fol">MU263T0007784</span></li>
+    <li id="f-s39"><span class="id">S39</span>Municipalidad de Quilicura. Memorándum DIDECO-01090/2026, 20-ene-2026. <span class="fol">MU250T0009195</span></li>
+    <li id="f-s40"><span class="id">S40</span>Municipalidad de Concepción. ORD. N° 136, 11-feb-2026. <span class="fol">MU061T0009134</span></li>
+    <li id="f-s41"><span class="id">S41</span>Municipalidad de Talcahuano. Decretos Alcaldicios N° 274/2020, 262/2021, 1666/2022, 155/2023, 234/2024 y 226/2025, con anexo OIM (abril 2023).</li>
+    <li id="f-p1"><span class="id">P1</span>SERMIG. <a href="https://serviciomigraciones.cl/wp-content/uploads/2026/03/Reporte-5-Estadisticas-SERMIG.pdf" target="_blank" rel="noopener">Estadísticas generales registro administrativo, Reporte 5</a>, marzo 2026.</li>
+    <li id="f-p2"><span class="id">P2</span>SERMIG. <a href="https://serviciomigraciones.cl/avances-gestion-migratoria/" target="_blank" rel="noopener">Informe SERMIG: mejoras en tiempos de trámites</a>, 16-jun-2025.</li>
+    <li id="f-p4"><span class="id">P4</span>BioBioChile. <a href="https://www.biobiochile.cl/especial/bbcl-investiga/noticias/articulos/2026/04/17/19-mil-solicitudes-sin-respuesta-y-una-multa-impaga-la-crisis-que-dejo-el-exdirector-de-migraciones.shtml" target="_blank" rel="noopener">19 mil solicitudes sin respuesta</a>, 17-abr-2026.</li>
+    <li id="f-p5"><span class="id">P5</span>Emol. <a href="https://www.emol.com/noticias/Nacional/2025/04/30/1165047/migrantes-poblacion-censo-2024-regiones.html" target="_blank" rel="noopener">Censo 2024: población migrante por región</a>, 30-abr-2025, con datos del INE.</li>
+    <li id="f-p6"><span class="id">P6</span>INE. <a href="https://censo2024.ine.gob.cl/resultados/" target="_blank" rel="noopener">Censo 2024, resultados</a>.</li>
+  </ul>
+  </details>
+</section>
+
+<footer class="colofon">
+  <div>
+    <a class="lockup" href="../" aria-label="Anteros Legal, ir al inicio del sitio"><span class="mark" aria-hidden="true">A</span><span class="bar" aria-hidden="true"></span><span class="name">Anteros<br>Legal<small>Chile</small></span></a>
+    <p class="tiny" style="margin-top:12px">Derecho migratorio y empresarial · Punta Arenas · <a href="../privacidad/">Privacidad</a> · <a href="../terminos/">Términos</a></p>
+  </div>
+  <p class="cite"><b>Cómo citar:</b> Simons Domínguez, J. M. (2026). <i>Expediente Migratorio 2026.</i> Serie Inteligencia Institucional, Informe N° 1. Anteros Legal, Punta Arenas. Este informe es informativo y no constituye asesoría legal para un caso particular.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var NS="http://www.w3.org/2000/svg";
+  function WA(t){return "https://wa.me/56948920125?text="+encodeURIComponent("Hola, vengo del Expediente Migratorio 2026. "+t);}
+  function svgEl(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs){if(attrs[k]!==undefined)e.setAttribute(k,attrs[k]);}if(parent)parent.appendChild(e);return e;}
+  function el(tag,cls,text,parent){var e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined&&text!==null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+  function cssVar(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim();}
+  function fmt(n,dec){return Number(n).toLocaleString("es-CL",{minimumFractionDigits:dec||0,maximumFractionDigits:dec||0});}
+  function roundTop(x,y,w,h,r){r=Math.min(r,w/2,h);if(h<=0)return "";return "M"+x+","+(y+h)+" V"+(y+r)+" Q"+x+","+y+" "+(x+r)+","+y+" H"+(x+w-r)+" Q"+(x+w)+","+y+" "+(x+w)+","+(y+r)+" V"+(y+h)+" Z";}
+  function roundRight(x,y,w,h,r){r=Math.min(r,h/2,w);if(w<=0)return "";return "M"+x+","+y+" H"+(x+w-r)+" Q"+(x+w)+","+y+" "+(x+w)+","+(y+r)+" V"+(y+h-r)+" Q"+(x+w)+","+(y+h)+" "+(x+w-r)+","+(y+h)+" H"+x+" Z";}
+
+  /* ---------- Tooltip ---------- */
+  function makeTip(c){var t=el("div","tip");t.setAttribute("role","status");c.appendChild(t);return t;}
+  function showTip(tip,c,x,y,rows,title){tip.textContent="";rows.forEach(function(r){var row=el("div","row2",null,tip);if(r.color){var k=el("span","k",null,row);k.style.background=r.color;}el("b",null,r.value,row);var s=el("span",null,r.label,row);s.style.color="var(--ink-2)";});if(title){var h=el("div",null,title,tip);h.style.color="var(--muted)";h.style.fontSize="12px";h.style.marginTop="3px";}
+    tip.classList.add("on");var cw=c.clientWidth,tw=tip.offsetWidth,th=tip.offsetHeight;tip.style.left=Math.min(Math.max(0,x+12),cw-tw)+"px";tip.style.top=Math.max(0,y-th-10)+"px";}
+  function hideTip(t){t.classList.remove("on");}
+  function bindMark(m,tip,c,rows,title){m.setAttribute("tabindex","0");m.classList.add("mark");
+    m.addEventListener("pointermove",function(ev){var r=c.getBoundingClientRect();showTip(tip,c,ev.clientX-r.left,ev.clientY-r.top,rows(),title);});
+    m.addEventListener("pointerleave",function(){hideTip(tip);});
+    m.addEventListener("focus",function(){var bb=m.getBBox(),sr=m.ownerSVGElement.getBoundingClientRect(),cr=c.getBoundingClientRect();showTip(tip,c,bb.x+bb.width/2+(sr.left-cr.left),bb.y+(sr.top-cr.top),rows(),title);});
+    m.addEventListener("blur",function(){hideTip(tip);});}
+  function legend(id,items){var lg=document.getElementById(id);if(!lg)return;lg.textContent="";items.forEach(function(it){var s=el("span",null,null,lg);var i=el("i",null,null,s);if(it.line){i.style.height="2px";i.style.width="16px";i.style.verticalAlign="3px";}i.style.background=it.color;if(it.border)i.style.border=it.border;s.appendChild(document.createTextNode(it.label));});}
+
+  /* ---------- Regiones ---------- */
+  var REG=[
+    {n:"Arica y Parinacota",s:"Arica",i24:36188,i17:18015,g:100.9,p:14.9,dt:[122,96,103,406],dpr:["no","Derivó a SERMIG a los 19 días hábiles"],gore:null,mun:[["Arica","35.592","Oficina de Derechos Humanos; advierte sobre servicios irregulares. Sin cifras de atención"]],x:[],pend:["SERMIG no responde la derivación de la Delegación (281 días)","Serie de residencias y expulsiones no solicitada","Gobierno Regional no consultado"]},
+    {n:"Tarapacá",s:"Tarapacá",i24:84935,i17:43646,g:94.6,p:23.2,dt:[597,488,358,1288],dpr:["no","Derivó a SERMIG el 31 de julio"],gore:["no","Ninguna iniciativa para migrantes 2020–2025"],mun:[["Iquique","40.655","Beneficios solo para residentes definitivos"],["Alto Hospicio","37.628","Sin diagnóstico local formal"]],x:["Es la región con la mayor proporción del país"],pend:["SERMIG no responde la derivación de la Delegación (111 días)","Serie de residencias y expulsiones no solicitada","Municipios sin cifras de atención"]},
+    {n:"Antofagasta",s:"Antofagasta",i24:124006,i17:62663,g:97.9,p:19.7,dt:[568,732,309,1311],dpr:["no","Trató la consulta como trámite y no la derivó"],gore:["no","Ninguna iniciativa financiada por el FNDR"],mun:[["Antofagasta","76.793","Casa de la Diversidad; sin cifras"]],x:["Segunda región con más inmigrantes en números absolutos"],pend:["Delegación sin respuesta de fondo","Serie de residencias y expulsiones no solicitada","Municipio sin cifras de atención"]},
+    {n:"Atacama",s:"Atacama",i24:25167,i17:8798,g:186.1,p:null,dt:[112,136,114,592],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Coquimbo",s:"Coquimbo",i24:44578,i17:14741,g:202.4,p:null,dt:[178,141,105,656],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Valparaíso",s:"Valparaíso",i24:100655,i17:40166,g:150.6,p:null,dt:[575,473,472,1647],dpr:["no","Derivó a SERMIG a los 11 días hábiles"],gore:null,mun:[["Valparaíso","13.223","Más de 3.000 atenciones al año; 75% irregulares (2020–21)"],["Viña del Mar","21.597","Dos personas; 486 atenciones en 2025"]],x:["Quillota: +330% de población inmigrante desde 2017"],pend:["Serie de residencias y expulsiones no solicitada","Gobierno Regional no consultado"]},
+    {n:"Metropolitana",s:"RM",i24:964835,i17:486568,g:98.3,p:null,dt:[5573,5396,2020,55097],dpr:["no","Derivó a SERMIG, aunque preside la Mesa Regional de Migración"],gore:["mid","10 iniciativas 2020–2024, sin montos"],mun:[["Santiago","176.956","66% irregulares y 75% mujeres entre las personas atendidas (2024)"],["Estación Central","69.328","Solo orientación, sin beneficios"],["Independencia","51.908","Sello Migrante desde 2016"],["Recoleta","34.009","35.398 extranjeros inscritos en salud (2021)"],["Quilicura","27.310","Atiende sin importar la situación migratoria; diagnóstico propio"]],x:["60% de la población inmigrante del país","San Miguel: +401%; Lampa: +359%. Las Condes: +0,2%"],pend:["Montos de las 10 iniciativas del GORE","Serie de residencias y expulsiones no solicitada","Estación Central sin cifras de atención"]},
+    {n:"O'Higgins",s:"O'Higgins",i24:49272,i17:13242,g:272.1,p:null,dt:[214,171,124,770],dpr:null,gore:null,mun:[],x:["Rancagua: +307%"],pend:["Región no consultada"]},
+    {n:"Maule",s:"Maule",i24:42349,i17:10780,g:292.8,p:null,dt:[193,187,97,605],dpr:null,gore:null,mun:[],x:["La región que más creció del país","Curicó: +311%; Talca: +290%"],pend:["Región no consultada"]},
+    {n:"Ñuble",s:"Ñuble",i24:10934,i17:3736,g:192.7,p:2.1,dt:[51,58,26,169],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Biobío",s:"Biobío",i24:46933,i17:12144,g:286.5,p:null,dt:[240,198,185,888],dpr:["ok","Integra con SERMIG las mesas de trata de personas y de asistencia a víctimas. Sin cifras"],gore:["mid","3 iniciativas, entre ellas un estudio sobre niñez migrante; documentos en pendrive"],mun:[["Concepción","15.088","6.084 personas atendidas; 60% irregulares"],["Talcahuano","4.512","Programa de una persona; $14,2 millones en 2024"]],x:["Hualpén: +396%; Talcahuano: +395%"],pend:["Documentos del GORE solo en pendrive o por correo postal","Serie de residencias y expulsiones no solicitada"]},
+    {n:"La Araucanía",s:"Araucanía",i24:21077,i17:10674,g:97.5,p:2.1,dt:[73,62,72,265],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Los Ríos",s:"Los Ríos",i24:7508,i17:3768,g:99.3,p:1.9,dt:[36,38,47,118],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Los Lagos",s:"Los Lagos",i24:35285,i17:10034,g:251.7,p:null,dt:[178,170,75,525],dpr:null,gore:null,mun:[],x:["Puerto Montt: de 3.595 a 18.588 inmigrantes (+417%)"],pend:["Región no consultada"]},
+    {n:"Aysén",s:"Aysén",i24:3931,i17:2083,g:88.7,p:null,dt:[17,13,4,62],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Magallanes",s:"Magallanes",i24:10997,i17:4714,g:133.3,p:null,dt:[78,66,66,257],dpr:["no","Derivó a SERMIG a los 3 días hábiles"],gore:["mid","1 iniciativa (2021); rendición en revisión"],mun:[["Punta Arenas","7.991","Los beneficios exigen cédula vigente"]],x:["295 expulsiones decretadas y 48 cumplidas, 2022–2026","Rechazo de residencias definitivas: 18,2% en 2026","Nacionalizaciones: de 28 (2021) a 4 (2025)","Licencias médicas no recibidas: 20% de las actuaciones de la DT con extranjeros (país: 9%)","Punta Arenas concentra el 72,7% de los inmigrantes de la región"],pend:["Expulsiones judiciales: el Poder Judicial no responde (57 días)"]}
+  ];
+  function bin(g){return g<100?1:g<150?2:g<200?3:g<250?4:5;}
+  function rankOf(r){var s=REG.slice().sort(function(a,b){return b.g-a.g;});return s.indexOf(r)+1;}
+  var sel=15;
+  function chipFor(st,label){var c=el("span","chip "+st,label);return c;}
+  function renderStrip(){var s=document.getElementById("strip");if(!s)return;s.textContent="";
+    REG.forEach(function(r,i){var b=el("button","rbtn",null,s);b.type="button";b.setAttribute("role","tab");b.setAttribute("aria-selected",i===sel?"true":"false");b.style.borderLeftColor="var(--h"+bin(r.g)+")";b.style.borderTopColor="var(--h"+bin(r.g)+")";
+      el("span",null,r.s,b);el("small",null,"+"+fmt(Math.round(r.g))+"%",b);
+      b.addEventListener("click",function(){sel=i;renderStrip();renderPanel();});
+      b.addEventListener("keydown",function(ev){if(ev.key==="ArrowDown"||ev.key==="ArrowRight"){sel=Math.min(REG.length-1,sel+1);renderStrip();renderPanel();s.children[sel].focus();ev.preventDefault();}if(ev.key==="ArrowUp"||ev.key==="ArrowLeft"){sel=Math.max(0,sel-1);renderStrip();renderPanel();s.children[sel].focus();ev.preventDefault();}});});
+    var lg=document.getElementById("lg-strip");if(lg&&!lg.childNodes.length){[["menos de +100%",1],["+100 a +149%",2],["+150 a +199%",3],["+200 a +249%",4],["+250% o más",5]].forEach(function(p){var sp=el("span",null,null,lg);var ii=el("i",null,null,sp);ii.style.background="var(--h"+p[1]+")";sp.appendChild(document.createTextNode(p[0]));});}
+  }
+  function renderPanel(){var p=document.getElementById("rpanel");if(!p)return;var r=REG[sel];p.textContent="";
+    el("p","eyebrow","Región "+(sel+1)+" de 16, de norte a sur",p);el("h3",null,r.n,p);
+    var st=el("div","pstats",null,p);
+    var a=el("div",null,null,st);el("b",null,fmt(r.i24),a);el("span",null,"inmigrantes en 2024",a);
+    var b=el("div",null,null,st);el("b",null,"+"+fmt(r.g,1).replace(".",",")+"%",b);el("span",null,"crecimiento desde 2017 ("+fmt(r.i17)+")",b);
+    var c=el("div",null,null,st);el("b",null,rankOf(r)+".º de 16",c);el("span",null,"en crecimiento entre las regiones",c);
+    el("p","ptitle","Trabajo 2025 · trámites de personas extranjeras ante la DT",p);
+    var g=el("div","dtgrid",null,p);[["Denuncias",0],["Fiscalizaciones",1],["Materias sancionadas",2],["Reclamos",3]].forEach(function(k){var d=el("div",null,null,g);el("b",null,fmt(r.dt[k[1]]),d);el("span",null,k[0],d);});
+    el("p","ptitle","Qué respondió el Estado aquí",p);
+    var rows=el("div","rows",null,p);
+    var r1=el("div","row",null,rows);el("span","k","Delegación Presidencial",r1);var v1=el("span",null,null,r1);if(r.dpr){v1.appendChild(chipFor(r.dpr[0],r.dpr[0]==="ok"?"Respondió":"Sin datos"));v1.appendChild(document.createTextNode(r.dpr[1]));}else{v1.appendChild(chipFor("na","No consultada"));}
+    var r2=el("div","row",null,rows);el("span","k","Gobierno Regional",r2);var v2=el("span",null,null,r2);if(r.gore){v2.appendChild(chipFor(r.gore[0],r.gore[0]==="no"?"Cero":"Parcial"));v2.appendChild(document.createTextNode(r.gore[1]));}else{v2.appendChild(chipFor("na","No consultado"));}
+    var r3=el("div","row",null,rows);el("span","k","Municipios",r3);var v3=el("span",null,null,r3);if(r.mun.length){var ul=el("ul","facts",null,v3);ul.style.paddingLeft="16px";r.mun.forEach(function(m){var li=el("li",null,null,ul);var bb=el("b",null,m[0],li);bb.style.color="var(--ink)";li.appendChild(document.createTextNode(" ("+m[1]+" inmigrantes): "+m[2]));});}else{v3.appendChild(chipFor("na","No consultados"));}
+    var xs=(r.p?[fmt(r.p,1)+"% de la población regional nació en el extranjero"]:[]).concat(r.x);
+    if(xs.length){el("p","ptitle","Datos destacados",p);var ux=el("ul","facts",null,p);xs.forEach(function(t){el("li",null,t,ux);});}
+    var pe=el("div","pend",null,p);el("p","ptitle","Pendiente",pe);var up=el("ul",null,null,pe);r.pend.forEach(function(t){el("li",null,t,up);});
+    var cta=el("div","pcta",null,p);el("span",null,"¿Tu trámite es en "+r.n+"? Escríbenos con tu caso.",cta);var a2=el("a","btn primary","Escríbenos por WhatsApp",cta);a2.href=WA("Región: "+r.n+". Quiero revisar mi caso.");a2.target="_blank";a2.rel="noopener";
+  }
+
+  /* ---------- Gráficos ---------- */
+  function hbars(id,items,o){var c=document.getElementById(id);if(!c)return;c.textContent="";var W=c.clientWidth,narrow=W<520;var m={t:o.refLabel?22:6,r:narrow?(o.rN||52):(o.r||52),b:22,l:narrow?(o.lN||120):(o.l||170)};var rowH=o.rowH||26;var H=m.t+items.length*rowH+m.b;
+    var svg=svgEl("svg",{width:W,height:H,viewBox:"0 0 "+W+" "+H},c);var tip=makeTip(c);var iw=W-m.l-m.r;var x=function(v){return m.l+(v/o.max)*iw;};
+    var g=svgEl("g",{"class":"grid"},svg);o.ticks.forEach(function(t){svgEl("line",{x1:x(t),x2:x(t),y1:m.t-4,y2:H-m.b},g);var tx=svgEl("text",{x:x(t),y:H-6,"text-anchor":"middle"},svg);tx.textContent=t+(o.unit||"");});
+    items.forEach(function(it,i){var yy=m.t+i*rowH,bh=Math.min(16,rowH-8),by=yy+(rowH-bh)/2;var t=svgEl("text",{x:m.l-10,y:by+bh/2+4,"text-anchor":"end"},svg);t.textContent=narrow&&it.labelN?it.labelN:it.label;t.style.fill="var(--ink-2)";
+      var pth=svgEl("path",{d:roundRight(x(0),by,x(it.value)-x(0),bh,4),fill:it.color},svg);bindMark(pth,tip,c,function(){return [{value:it.tip,label:"",color:it.color}];},it.label);
+      var l=svgEl("text",{x:x(it.value)+6,y:by+bh/2+4,"class":it.strong?"lab":"lab2"},svg);l.textContent=narrow&&it.endN?it.endN:it.end;});
+    if(o.ref!==undefined){svgEl("line",{x1:x(o.ref),x2:x(o.ref),y1:m.t-12,y2:H-m.b,"class":"ref-line"},svg);var rl=svgEl("text",{x:x(o.ref)+4,y:m.t-8,"class":"lab2"},svg);rl.textContent=o.refLabel;}
+    svgEl("line",{x1:x(0),x2:x(0),y1:m.t-4,y2:H-m.b,stroke:cssVar("--rule"),"stroke-width":1},svg);}
+  function drawCity(){var s1=cssVar("--s1"),s2=cssVar("--s2");var d=[["Talcahuano",395.3,4512],["Concepción",265.4,15088],["Estación Central",202.3,69328],["Alto Hospicio",202.0,37628],["Punta Arenas",132.1,7991],["Viña del Mar",118.2,21597],["Valparaíso",117.2,13223],["Antofagasta",103.4,76793],["Arica",102.7,35592],["Quilicura",73.4,27310],["Independencia",71.2,51908],["Santiago",57.4,176956],["Iquique",45.7,40655],["Recoleta",41.3,34009]];
+    hbars("ch-city",d.map(function(r){var pa=r[0]==="Punta Arenas";var pct="+"+fmt(r[1],0)+"%";return {label:r[0],value:r[1],color:pa?s2:s1,strong:pa,end:pct+" ("+fmt(r[2])+")",endN:pct,tip:pct+" · "+fmt(r[2])+" inmigrantes"};}),{max:400,ticks:[0,100,200,300,400],unit:"%",rowH:25,l:130,lN:112,r:120,rN:46});
+    legend("lg-city",[{label:"Punta Arenas",color:s2},{label:"Otras comunas consultadas",color:s1}]);}
+  function drawDT(){var s1=cssVar("--s1");var d=[["Finiquitos ratificados","Finiquitos",3.6],["Licencia médica no recibida","Licencia médica",5.4],["Renuncias","Renuncias",11.1],["Denuncias","Denuncias",12.7],["Constancias","Constancias",13.4],["Término de contrato en casa particular","Casa particular",18.2],["Reclamos","Reclamos",34.4]];
+    hbars("ch-dt",d.map(function(r){var v=fmt(r[2],1)+"%";return {label:r[0],labelN:r[1],value:r[2],color:s1,strong:r[0]==="Reclamos"||r[0]==="Finiquitos ratificados",end:v,tip:v+" de extranjeros"};}),{max:40,ticks:[0,10,20,30,40],unit:"%",ref:11,refLabel:"11% del empleo",l:240,lN:112});}
+  function drawExp(){var c=document.getElementById("ch-exp");if(!c)return;c.textContent="";var W=c.clientWidth,H=260,m={t:20,r:8,b:28,l:36};var cats=["2022","2023","2024","2025","2026"],A=[17,11,74,141,52],B=[1,9,6,17,15];var s1=cssVar("--s1"),s2=cssVar("--s2");
+    var svg=svgEl("svg",{width:W,height:H,viewBox:"0 0 "+W+" "+H},c);var tip=makeTip(c);var iw=W-m.l-m.r,ih=H-m.t-m.b,max=150;var y=function(v){return m.t+ih-(v/max)*ih;};
+    var g=svgEl("g",{"class":"grid"},svg);[0,50,100,150].forEach(function(t){svgEl("line",{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t)},g);var tx=svgEl("text",{x:m.l-8,y:y(t)+4,"text-anchor":"end"},svg);tx.textContent=t;});
+    var band=iw/cats.length,bw=Math.min(24,(band-18)/2);
+    cats.forEach(function(cat,i){var cx=m.l+band*i+band/2,xa=cx-bw-1,xb=cx+1;var pa=svgEl("path",{d:roundTop(xa,y(A[i]),bw,y(0)-y(A[i]),4),fill:s1},svg);var pb=svgEl("path",{d:roundTop(xb,y(B[i]),bw,y(0)-y(B[i]),4),fill:s2},svg);
+      var rows=function(){return [{value:fmt(A[i]),label:"decretadas",color:s1},{value:fmt(B[i]),label:"cumplidas",color:s2}];};bindMark(pa,tip,c,rows,cat);bindMark(pb,tip,c,rows,cat);
+      var t=svgEl("text",{x:cx,y:H-8,"text-anchor":"middle"},svg);t.textContent=cat;
+      if(cat==="2025"){var la=svgEl("text",{x:xa+bw/2,y:y(A[i])-6,"text-anchor":"middle","class":"lab"},svg);la.textContent=A[i];var lb=svgEl("text",{x:xb+bw/2,y:y(B[i])-6,"text-anchor":"middle","class":"lab"},svg);lb.textContent=B[i];}});
+    svgEl("line",{x1:m.l,x2:W-m.r,y1:y(0),y2:y(0),stroke:cssVar("--rule"),"stroke-width":1},svg);
+    legend("lg-exp",[{label:"Decretadas (SERMIG)",color:s1},{label:"Cumplidas, administrativas (PDI)",color:s2}]);}
+  function drawRej(){var c=document.getElementById("ch-rej");if(!c)return;c.textContent="";var W=c.clientWidth,H=230,m={t:14,r:46,b:28,l:34};var cats=["2021","2022","2023","2024","2025","2026"],D=[24.6,2.4,8.9,11.5,14.9,18.2],T=[3.0,3.0,4.4,3.8,5.0,5.0];var s1=cssVar("--s1"),s3=cssVar("--s3"),surf=cssVar("--paper-2");
+    var svg=svgEl("svg",{width:W,height:H,viewBox:"0 0 "+W+" "+H},c);var tip=makeTip(c);var iw=W-m.l-m.r,ih=H-m.t-m.b,max=25;var x=function(i){return m.l+iw*(i/5);},y=function(v){return m.t+ih-(v/max)*ih;};
+    var g=svgEl("g",{"class":"grid"},svg);[0,5,10,15,20,25].forEach(function(t){svgEl("line",{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t)},g);var tx=svgEl("text",{x:m.l-6,y:y(t)+4,"text-anchor":"end"},svg);tx.textContent=t+"%";});
+    cats.forEach(function(cat,i){var t=svgEl("text",{x:x(i),y:H-8,"text-anchor":"middle"},svg);t.textContent=cat;});
+    function line(v,col){svgEl("path",{d:v.map(function(a,i){return (i?"L":"M")+x(i)+","+y(a);}).join(" "),fill:"none",stroke:col,"stroke-width":2,"stroke-linejoin":"round","stroke-linecap":"round"},svg);svgEl("circle",{cx:x(5),cy:y(v[5]),r:4.5,fill:col,stroke:surf,"stroke-width":2},svg);}
+    line(T,s3);line(D,s1);var e1=svgEl("text",{x:x(5)+8,y:y(18.2)+4,"class":"lab"},svg);e1.textContent="18,2%";var e2=svgEl("text",{x:x(5)+8,y:y(5)+4,"class":"lab2"},svg);e2.textContent="5,0%";
+    var cross=svgEl("line",{x1:0,x2:0,y1:m.t,y2:m.t+ih,stroke:cssVar("--ink-2"),"stroke-width":1,opacity:0},svg);var hit=svgEl("rect",{x:m.l,y:m.t,width:iw,height:ih,fill:"transparent",tabindex:"0"},svg);
+    function at(i,px,py){cross.setAttribute("x1",x(i));cross.setAttribute("x2",x(i));cross.setAttribute("opacity",.5);showTip(tip,c,px,py,[{value:fmt(D[i],1)+"%",label:"definitiva",color:s1},{value:fmt(T[i],1)+"%",label:"temporal",color:s3}],cats[i]);}
+    hit.addEventListener("pointermove",function(ev){var r=c.getBoundingClientRect(),px=ev.clientX-r.left;var i=Math.max(0,Math.min(5,Math.round(((px-m.l)/iw)*5)));at(i,px,ev.clientY-r.top);});
+    hit.addEventListener("pointerleave",function(){cross.setAttribute("opacity",0);hideTip(tip);});var fi=5;hit.addEventListener("focus",function(){at(fi,x(fi),y(D[fi]));});
+    hit.addEventListener("keydown",function(ev){if(ev.key==="ArrowLeft"){fi=Math.max(0,fi-1);at(fi,x(fi),y(D[fi]));ev.preventDefault();}if(ev.key==="ArrowRight"){fi=Math.min(5,fi+1);at(fi,x(fi),y(D[fi]));ev.preventDefault();}});
+    hit.addEventListener("blur",function(){cross.setAttribute("opacity",0);hideTip(tip);});
+    legend("lg-rej",[{label:"Residencia definitiva",color:s1,line:true},{label:"Residencia temporal",color:s3,line:true}]);}
+  function drawNac(){var c=document.getElementById("ch-nac");if(!c)return;c.textContent="";var W=c.clientWidth,H=230,m={t:20,r:8,b:28,l:30};var cats=["2021","2022","2023","2024","2025","2026"],V=[28,19,12,17,4,1];var s1=cssVar("--s1");
+    var svg=svgEl("svg",{width:W,height:H,viewBox:"0 0 "+W+" "+H},c);var tip=makeTip(c);var iw=W-m.l-m.r,ih=H-m.t-m.b,max=30;var y=function(v){return m.t+ih-(v/max)*ih;};
+    var g=svgEl("g",{"class":"grid"},svg);[0,10,20,30].forEach(function(t){svgEl("line",{x1:m.l,x2:W-m.r,y1:y(t),y2:y(t)},g);var tx=svgEl("text",{x:m.l-6,y:y(t)+4,"text-anchor":"end"},svg);tx.textContent=t;});
+    var band=iw/6,bw=Math.min(24,band-12);cats.forEach(function(cat,i){var cx=m.l+band*i+band/2;var pp=svgEl("path",{d:roundTop(cx-bw/2,y(V[i]),bw,y(0)-y(V[i]),4),fill:s1},svg);bindMark(pp,tip,c,function(){return [{value:fmt(V[i]),label:"cartas otorgadas"}];},cat);var t=svgEl("text",{x:cx,y:H-8,"text-anchor":"middle"},svg);t.textContent=cat;if(i===0||i===4){var l=svgEl("text",{x:cx,y:y(V[i])-6,"text-anchor":"middle","class":"lab"},svg);l.textContent=V[i];}});
+    svgEl("line",{x1:m.l,x2:W-m.r,y1:y(0),y2:y(0),stroke:cssVar("--rule"),"stroke-width":1},svg);}
+  function drawHeat(){var c=document.getElementById("ch-heat");if(!c)return;c.textContent="";var months=["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+    var data={"2022":[0,2,0,0,0,0,0,0,0,4,4,7],"2023":[1,2,2,1,1,0,0,2,1,0,0,1],"2024":[1,2,4,6,3,3,2,2,3,14,17,17],"2025":[4,4,5,38,8,5,24,15,3,9,11,15],"2026":[2,12,17,13,3,5,null,null,null,null,null,null]};var years=["2022","2023","2024","2025","2026"];
+    var cols=[cssVar("--h0"),cssVar("--h1"),cssVar("--h2"),cssVar("--h3"),cssVar("--h4"),cssVar("--h5")];function b(v){return v===0?0:v<=4?1:v<=9?2:v<=19?3:v<=29?4:5;}
+    var W=c.clientWidth,m={t:18,r:4,b:4,l:40},iw=W-m.l-m.r,cw=iw/12,ch=Math.max(18,Math.min(30,cw*0.8)),H=m.t+ch*5+m.b+8;var svg=svgEl("svg",{width:W,height:H,viewBox:"0 0 "+W+" "+H},c);var tip=makeTip(c);
+    months.forEach(function(mo,j){if(W<480&&j%2===1)return;var t=svgEl("text",{x:m.l+cw*j+cw/2,y:12,"text-anchor":"middle"},svg);t.textContent=mo;});
+    years.forEach(function(yr,i){var yy=m.t+i*(ch+2);var t=svgEl("text",{x:m.l-8,y:yy+ch/2+4,"text-anchor":"end"},svg);t.textContent=yr;data[yr].forEach(function(v,j){var xx=m.l+cw*j+1;if(v===null){svgEl("rect",{x:xx,y:yy,width:cw-2,height:ch,fill:"none",stroke:cssVar("--rule-soft"),"stroke-dasharray":"2 2"},svg);return;}var rc=svgEl("rect",{x:xx,y:yy,width:cw-2,height:ch,rx:2,fill:cols[b(v)]},svg);bindMark(rc,tip,c,function(){return [{value:fmt(v),label:"expulsiones decretadas"}];},months[j]+" "+yr);});});
+    legend("lg-heat",[{label:"0",color:cols[0]},{label:"1–4",color:cols[1]},{label:"5–9",color:cols[2]},{label:"10–19",color:cols[3]},{label:"20–29",color:cols[4]},{label:"30 o más",color:cols[5]},{label:"sin datos",color:"transparent",border:"1px dashed var(--rule)"}]);}
+
+  function drawAll(){try{renderStrip();renderPanel();drawCity();drawExp();drawRej();drawNac();drawHeat();drawDT();}catch(e){if(window.console)console.error(e);}}
+  var lastW=0;function onResize(){var w=document.querySelector(".wrap").clientWidth;if(Math.abs(w-lastW)>2){lastW=w;drawAll();}}
+  function boot(){lastW=document.querySelector(".wrap").clientWidth;drawAll();
+    var cb=document.getElementById("copy-mail");if(cb)cb.addEventListener("click",function(){var t=document.getElementById("mail").textContent;function sel(){var r=document.createRange();r.selectNodeContents(document.getElementById("mail"));var s=window.getSelection();s.removeAllRanges();s.addRange(r);cb.textContent="Selecciona y copia";}
+      try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){cb.textContent="Copiado";},sel);}else{sel();}}catch(e){sel();}});}
+  var of=document.getElementById("optin-form");if(of)of.addEventListener("submit",function(ev){ev.preventDefault();var em=document.getElementById("op-email").value.trim(),nm=document.getElementById("op-nombre").value.trim(),er=document.getElementById("op-err");
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){er.textContent="Revisa tu correo.";return;}
+    if(!document.getElementById("op-ok").checked){er.textContent="Marca la casilla para aceptar recibir las actualizaciones.";return;}
+    er.textContent="";var bt=document.getElementById("op-btn");bt.disabled=true;bt.textContent="Enviando…";
+    fetch("https://hook.us2.make.com/xx8sf9jz6ctn5kctnlt9ueav61qkt7ic",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:em,nombre:nm,origen:"Expediente Migratorio 2026 - actualizaciones - anteroslegal.cl",consentimiento:"Acepta recibir actualizaciones del Expediente y novedades de Anteros Legal",fecha:new Date().toISOString()})})
+    .then(function(){document.getElementById("optin").classList.add("sent");}).catch(function(){bt.disabled=false;bt.textContent="Quiero recibirlas";er.textContent="No pudimos registrar tu correo. Inténtalo de nuevo o escríbenos por WhatsApp.";});});
+  if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",boot);}else{boot();}
+  var rt;window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(onResize,150);});
+  var mq=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)");if(mq&&mq.addEventListener)mq.addEventListener("change",drawAll);
+  if(window.MutationObserver){new MutationObserver(function(){drawAll();}).observe(document.documentElement,{attributes:true,attributeFilter:["data-theme"]});}
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(function(){drawAll();});}
+})();
+</script>
+</body>
+</html>
