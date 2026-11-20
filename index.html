@@ -133,6 +133,16 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
       "@type": "Offer",
       "itemOffered": {
        "@type": "Service",
+       "name": "Denuncia por Demora Administrativa",
+       "description": "Denuncia ante la autoridad migratoria cuando una visa temporaria, una residencia definitiva o una carta de nacionalización lleva más de 6 meses sin resolver (artículo 64 de la Ley 19.880). Se descuenta completo del recurso de protección si después hace falta."
+      },
+      "price": 120000,
+      "priceCurrency": "CLP"
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
        "name": "Anteros Asesor · Plan Básico",
        "description": "Suscripción mensual con compromiso de 3 meses."
       },
@@ -863,7 +873,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-precio li { font-size: 0.8rem; line-height: 1.8; color: rgba(245,240,232,0.8); }
   .sv-precio li::before { content: '· '; color: var(--dorado); }
 
-  #tab-empresas.active { display: block; background: none; }
+  #tab-empresas.active, #tab-defensa.active { display: block; background: none; }
   .tab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--gris-claro); }
   .sv-consulta {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
@@ -1145,25 +1155,53 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     </div>
   </div>
 
-  <!-- TAB DEFENSA -->
+  <!-- TAB DEFENSA (cartas + Denuncia por Demora Administrativa destacada) -->
   <div class="tab-panel" id="tab-defensa">
-    <div class="servicio-card">
-      <div class="servicio-num">01</div>
-      <h3>Defensa ante Expulsión</h3>
-      <p>Si recibes una orden de expulsión, tienes derechos y plazos que corren. Actuamos de inmediato.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Atención urgente</a>
+    <div class="tab-grid">
+      <div class="servicio-card">
+        <div class="servicio-num">01</div>
+        <h3>Defensa ante Expulsión</h3>
+        <p>Si recibes una orden de expulsión, tienes derechos y plazos que corren. Actuamos de inmediato.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Atención urgente</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">02</div>
+        <h3>Recurso de Protección</h3>
+        <p>Acción constitucional ante la Corte de Apelaciones frente a actos arbitrarios que afecten tus derechos.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">03</div>
+        <h3>Apelación de Rechazo</h3>
+        <p>Un rechazo no es el final. Revisamos la resolución, identificamos el error y construimos la defensa.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
     </div>
-    <div class="servicio-card">
-      <div class="servicio-num">02</div>
-      <h3>Recurso de Protección</h3>
-      <p>Acción constitucional ante la Corte de Apelaciones frente a actos arbitrarios que afecten tus derechos.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
-    </div>
-    <div class="servicio-card">
-      <div class="servicio-num">03</div>
-      <h3>Apelación de Rechazo</h3>
-      <p>Un rechazo no es el final. Revisamos la resolución, identificamos el error y construimos la defensa.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+
+    <!-- DENUNCIA POR DEMORA ADMINISTRATIVA -->
+    <div class="sv-diagnostico" id="denuncia-demora">
+      <div class="sv-diagnostico-texto">
+        <div class="sv-kicker">Tu trámite lleva más de 6 meses</div>
+        <h3>Denuncia por <em>Demora Administrativa</em></h3>
+        <p>La ley fija 6 meses como plazo máximo para que la autoridad resuelva. Si tu visa temporaria, residencia definitiva o carta de nacionalización ya lo superó, denunciamos formalmente la demora y le exigimos una respuesta, sin ir todavía a tribunales.</p>
+        <ul class="sv-lista">
+          <li>Denuncia ante el Servicio Nacional de Migraciones y, en nacionalidad, ante la Subsecretaría del Interior</li>
+          <li>Seguimiento de los 5 días hábiles que la ley da para responder</li>
+          <li>Certificado de no resolución y solicitud por Transparencia</li>
+          <li>Si no responden, la prueba queda lista para un recurso de protección</li>
+        </ul>
+        <a href="https://wa.me/56948920125?text=Hola%2C%20mi%20tr%C3%A1mite%20en%20Migraciones%20lleva%20m%C3%A1s%20de%206%20meses%20sin%20respuesta%20y%20quiero%20informaci%C3%B3n%20sobre%20la%20Denuncia%20por%20Demora%20Administrativa." target="_blank" rel="noopener" class="btn-primary">Quiero denunciar la demora →</a>
+      </div>
+      <div class="sv-precio">
+        <div class="sv-precio-label">Valor</div>
+        <div class="sv-precio-num">$120.000</div>
+        <div class="sv-precio-nota">CLP · pago inicial del 50%</div>
+        <ul>
+          <li>O 3 cuotas sin interés de $40.000</li>
+          <li>Visa temporaria, definitiva o nacionalidad</li>
+          <li>Se descuenta completo si luego necesitas el recurso de protección</li>
+        </ul>
+      </div>
     </div>
   </div>
 
