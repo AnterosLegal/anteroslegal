@@ -258,6 +258,11 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 .optin .err{color:var(--alert);font-size:13px;min-height:1em}
 .optin .ok{display:none;border-left:4px solid var(--s1);padding:10px 12px;background:var(--paper)}
 .optin.sent form{display:none}.optin.sent .ok{display:block}
+.pull{margin:56px 0 0;padding:28px 0 24px;border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);background:none}
+.pull blockquote{margin:0;font-family:var(--display);font-style:italic;font-size:clamp(1.6rem,3.6vw,2.6rem);line-height:1.2;max-width:34ch;color:var(--ink)}
+.pull figcaption{margin-top:12px;font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.method{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;font-size:15px;color:var(--ink-2);line-height:1.6;border-top:1px solid var(--rule);padding-top:16px;margin-bottom:20px}
+@media (max-width:900px){.method{grid-template-columns:1fr}}
 @media (max-width:900px){
   .hero{grid-template-columns:1fr;gap:24px;padding-block:30px 24px}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -312,14 +317,14 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
     <p class="eyebrow">Informe N° 1 · Expediente Migratorio 2026 · Magallanes y Chile</p>
     <h1 style="margin-top:12px">295 expulsiones decretadas. 48 cumplidas.</h1>
     <div class="rule-dash" aria-hidden="true"></div>
-    <p class="lede">Magallanes, 2022 a 2026. Es uno de los datos que obtuvimos al preguntarle por la migración a 35 organismos del Estado. Aquí están, por región, por ciudad y para todo Chile.</p>
+    <p class="lede">Es la brecha que encontramos en Magallanes entre 2022 y 2026. Preguntamos por la migración a 35 organismos del Estado: esto es lo que respondieron, lo que callaron y lo que todavía no entregan.</p>
     <div class="btns"><a class="btn primary" href="#regiones">Ver tu región</a><a class="btn" href="#actualizaciones">Recibir actualizaciones</a></div>
   </div>
   <aside class="oficio" aria-label="Encabezado del informe">
     <dl>
       <dt>ANT.:</dt><dd>42 respuestas a solicitudes de acceso a la información pública (Ley N° 20.285), enero a noviembre de 2026.</dd>
       <dt>MAT.:</dt><dd>Datos, cruces y letra chica sobre el aparato migratorio chileno.</dd>
-      <dt>DE:</dt><dd>José Manuel Simons Domínguez, abogado. Anteros Legal.</dd>
+      <dt>DE:</dt><dd>José Manuel Simons Domínguez, fundador de Anteros Legal.</dd>
     </dl>
     <p class="lugar">PUNTA ARENAS, 19 DE NOVIEMBRE DE 2026</p>
   </aside>
@@ -338,7 +343,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- CHILE EN CIFRAS -->
 <section id="chile">
-  <div class="sec-head"><p class="eyebrow">Nivel nacional</p><h2>Chile en cifras</h2></div>
+  <div class="sec-head"><p class="eyebrow">Chile en cifras</p><h2>Un sistema que decreta más de lo que cumple</h2><p class="dek">Seis cifras oficiales para entender la migración en Chile hoy.</p></div>
   <div class="tiles">
     <div class="tile"><b>1.608.650</b><p>personas nacidas en el extranjero viven en Chile. Son el 8,8% de la población y más del doble que en 2017.</p><p class="src">INE, Censo 2024 <a href="#f-s10">S10</a> <a href="#f-p5">P5</a></p></div>
     <div class="tile"><b>940</b><p>expulsiones administrativas cumplidas en 2025, de 23.778 decretadas.</p><div class="meter" aria-hidden="true"><span style="width:4%"></span></div><div class="meter-l"><span>4% cumplidas</span><span>2025</span></div><p class="src">SERMIG, Reporte 5 <a href="#f-p1">P1</a></p></div>
@@ -351,7 +356,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- REGIONES -->
 <section id="regiones">
-  <div class="sec-head"><p class="eyebrow">De norte a sur</p><h2>Explora tu región</h2><p class="dek">Elige una región para ver su población migrante, qué respondieron sus autoridades, los datos laborales de 2025 y lo que sigue pendiente.</p></div>
+  <div class="sec-head"><p class="eyebrow">De norte a sur</p><h2>Dieciséis regiones, dieciséis realidades</h2><p class="dek">Elige tu región: cuánto creció su población migrante, qué respondieron sus autoridades, qué muestran los datos laborales de 2025 y qué sigue pendiente.</p></div>
   <div class="explorer">
     <div>
       <div class="strip" id="strip" role="tablist" aria-label="Regiones de Chile, de norte a sur"></div>
@@ -364,7 +369,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- CIUDADES -->
 <section id="ciudades">
-  <div class="sec-head"><p class="eyebrow">Nivel comunal</p><h2>Las 14 ciudades consultadas</h2><p class="dek">Cuánto creció su población inmigrante entre 2017 y 2024.</p></div>
+  <div class="sec-head"><p class="eyebrow">Las 14 comunas consultadas</p><h2>Talcahuano casi quintuplicó su población migrante. Santiago creció 57%</h2><p class="dek">La migración ya no se concentra en la capital: variación de la población nacida en el extranjero entre los censos 2017 y 2024.</p></div>
   <figure>
     <p class="fig-title">Crecimiento de la población nacida en el extranjero, por comuna</p>
     <p class="fig-sub">Variación porcentual entre censos. Entre paréntesis, habitantes inmigrantes en 2024.</p>
@@ -376,7 +381,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- MAGALLANES -->
 <section id="magallanes">
-  <div class="sec-head"><p class="eyebrow">Caso de estudio</p><h2>Magallanes con lupa</h2><p class="dek">La única región con la serie completa de residencias y expulsiones. La obtuvimos con un amparo ante el Consejo para la Transparencia.</p></div>
+  <div class="sec-head"><p class="eyebrow">Caso de estudio</p><h2>Magallanes: decretar no es expulsar</h2><p class="dek">La única región con la serie completa de residencias y expulsiones. Para obtenerla hizo falta un amparo ante el Consejo para la Transparencia.</p></div>
   <figure>
     <p class="fig-title">Expulsiones administrativas en Magallanes: decretadas y cumplidas</p>
     <p class="fig-sub">2026: decretadas de enero a junio; cumplidas hasta noviembre.</p>
@@ -411,7 +416,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- HALLAZGOS -->
 <section id="hallazgos">
-  <div class="sec-head"><p class="eyebrow">En una mirada</p><h2>Ocho hallazgos</h2></div>
+  <div class="sec-head"><p class="eyebrow">Hallazgos</p><h2>Ocho datos que solo aparecen cuando se pregunta</h2></div>
   <div class="finds">
     <div class="find"><b>16</b><p>expulsiones cumplidas en la región por cada 100 decretadas en Magallanes desde 2022.</p><p class="src"><a href="#f-s04">S04</a> <a href="#f-s07">S07</a></p></div>
     <div class="find"><b>18,2%</b><p>de rechazo en residencias definitivas en Magallanes (2026), cuatro alzas seguidas desde 2,4%.</p><p class="src"><a href="#f-s03">S03</a></p></div>
@@ -424,9 +429,14 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
   </div>
 </section>
 
+<figure class="pull" aria-label="Cita">
+  <blockquote>«Un decreto que no se cumple no es política migratoria: es incertidumbre para la persona, para quien la emplea y para el propio Estado.»</blockquote>
+  <figcaption>José Manuel Simons Domínguez, fundador de Anteros Legal</figcaption>
+</figure>
+
 <!-- PENDIENTES -->
 <section id="pendientes">
-  <div class="sec-head"><p class="eyebrow">Al 19 de noviembre de 2026</p><h2>Lo que falta</h2><p class="dek">Organismos que no han respondido, respuestas incompletas y territorios que aún no consultamos.</p></div>
+  <div class="sec-head"><p class="eyebrow">Al 19 de noviembre de 2026</p><h2>Lo que el Estado aún no responde</h2><p class="dek">Organismos que no han respondido, respuestas incompletas y los territorios que estamos consultando ahora.</p></div>
   <div class="waits">
     <div class="wait"><b class="num">290</b><p class="who">SERMIG · derivación del CDE</p><p>Recursos de protección migratorios y su resultado. Derivada el 2 de febrero. Sin respuesta en el expediente.</p><p class="src"><a href="#f-s09">S09</a></p></div>
     <div class="wait"><b class="num">281</b><p class="who">SERMIG · derivación de Arica</p><p>Coordinación migratoria regional. Derivada el 11 de febrero. Sin respuesta en el expediente.</p><p class="src"><a href="#f-s19">S19</a></p></div>
@@ -444,11 +454,11 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
       <tr><td>GORE Metropolitano</td><td>Montos de sus 10 iniciativas</td><td>Nueva solicitud</td></tr>
       <tr><td>GORE Biobío</td><td>Documentos de 3 iniciativas: solo en pendrive o por correo postal</td><td>Retirarlos o pedir envío digital</td></tr>
       <tr><td>6 municipios</td><td>Cifras de atención: Antofagasta, Estación Central, Arica, Iquique, Punta Arenas y Alto Hospicio</td><td>Nueva solicitud con preguntas cuantitativas</td></tr>
-      <tr><td>SERMIG, 15 regiones</td><td>Serie de residencias, nacionalizaciones y expulsiones: solo se pidió para Magallanes</td><td>Solicitar la misma serie región por región</td></tr>
+      <tr><td>SERMIG, 15 regiones</td><td>Serie de residencias, nacionalizaciones y expulsiones: hasta ahora solo existe para Magallanes</td><td>Solicitada región por región</td></tr>
     </tbody></table></div>
-  <p class="subh">Regiones sin consultar</p>
+  <p class="subh">Regiones en consulta · se agregan próximamente</p>
   <div class="chips"><span class="cchip">Atacama</span><span class="cchip">Coquimbo</span><span class="cchip">O'Higgins</span><span class="cchip">Maule</span><span class="cchip">Ñuble</span><span class="cchip">La Araucanía</span><span class="cchip">Los Ríos</span><span class="cchip">Los Lagos</span><span class="cchip">Aysén</span></div>
-  <p class="subh">Comunas grandes que más crecen y aún no consultamos</p>
+  <p class="subh">Comunas de mayor crecimiento en consulta · se agregan próximamente</p>
   <div class="chips"><span class="cchip">Puerto Montt<small>+417%</small></span><span class="cchip">San Miguel<small>+401%</small></span><span class="cchip">Hualpén<small>+396%</small></span><span class="cchip">Lampa<small>+359%</small></span><span class="cchip">Quillota<small>+330%</small></span><span class="cchip">Curicó<small>+311%</small></span><span class="cchip">Rancagua<small>+307%</small></span><span class="cchip">La Cisterna<small>+293%</small></span><span class="cchip">Talca<small>+290%</small></span></div>
   <p class="note">Crecimiento de la población inmigrante 2017–2024, INE <a class="ref" href="#f-s10">S10</a>. Este expediente se actualiza con cada respuesta nueva.</p>
 </section>
@@ -496,7 +506,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- LETRA CHICA -->
 <section id="letra-chica">
-  <div class="sec-head"><p class="eyebrow">Letra chica</p><h2>Detalles que dicen mucho</h2></div>
+  <div class="sec-head"><p class="eyebrow">Letra chica</p><h2>Lo que dicen los oficios</h2></div>
   <div class="fine">
     <div class="ficha"><p class="hd">DELEGACIÓN METROPOLITANA · Oficio N° 106</p><p>Dijo no tener información sobre coordinación migratoria. SERMIG respondió con la resolución con que esa Delegación creó y preside la Mesa Regional de Migración. <a class="ref" href="#f-s16">S16</a> <a class="ref" href="#f-s01">S01</a></p></div>
     <div class="ficha"><p class="hd">PDI · Notificación N° 34492</p><p>Notificó su prórroga cuatro días hábiles después de vencido el plazo, y respondió tres días hábiles después de vencida la prórroga. <a class="ref" href="#f-s06">S06</a> <a class="ref" href="#f-s07">S07</a></p></div>
@@ -509,7 +519,7 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- SERVICIOS -->
 <section id="servicios">
-  <div class="sec-head"><p class="eyebrow">Anteros Legal</p><h2>Cómo te ayudamos</h2><p class="dek">Cada servicio responde a un problema que estos datos muestran. Escríbenos por WhatsApp o <a href="https://calendly.com/anteroslegal" target="_blank" rel="noopener">agenda tu consulta en Calendly</a> ($60.000).</p></div>
+  <div class="sec-head"><p class="eyebrow">Anteros Legal</p><h2>Del dato a tu caso</h2><p class="dek">Cada servicio responde a un problema que estos datos muestran. Escríbenos por WhatsApp o <a href="https://calendly.com/anteroslegal" target="_blank" rel="noopener">agenda tu consulta en Calendly</a> ($60.000).</p></div>
   <div class="services">
     <div class="svc"><p class="hook">9.550 de 37.564 expulsiones notificadas</p><h3>Defensa ante una expulsión</h3><p>Revisamos el decreto y su notificación, los plazos para reclamar y las opciones para regularizar tu situación.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Tengo%20una%20expulsi%C3%B3n%20decretada%20y%20quiero%20revisar%20mi%20caso." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
     <div class="svc"><p class="hook">18,2% de rechazo en Magallanes</p><h3>Residencia definitiva rechazada</h3><p>Analizamos la resolución, preparamos el recurso y corregimos el expediente antes de volver a postular.</p><a href="https://wa.me/56948920125?text=Hola%2C%20vengo%20del%20Expediente%20Migratorio%202026.%20Me%20rechazaron%20la%20residencia%20definitiva%20y%20quiero%20saber%20qu%C3%A9%20opciones%20tengo." target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
@@ -539,7 +549,12 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
 
 <!-- MÉTODO Y FUENTES -->
 <section id="fuentes">
-  <div class="sec-head"><p class="eyebrow">Método y fuentes</p><h2>El expediente</h2><p class="dek">Solicitudes de acceso a la información presentadas entre el 7 de enero y el 20 de mayo de 2026, con las mismas preguntas por tipo de organismo. Los porcentajes y días son cálculo propio. No publicamos datos personales ni nombres de funcionarios. Cada documento se puede verificar con su folio en el Portal de Transparencia.</p></div>
+  <div class="sec-head"><p class="eyebrow">Metodología</p><h2>Cómo se construyó este expediente</h2></div>
+  <div class="method">
+    <p>Estudio exploratorio-descriptivo de diseño documental, que utiliza el derecho de acceso a la información pública (Ley N° 20.285) como técnica de producción de datos. Entre el 7 de enero y el 20 de mayo de 2026 se formularon solicitudes estandarizadas, con un mismo cuestionario por tipo de organismo, a 35 órganos de la Administración del Estado en tres niveles: servicios nacionales; gobierno interior y regional, y municipios de siete regiones.</p>
+    <p>El corpus resultante, de 42 documentos, se sometió a análisis de contenido y a triangulación entre registros administrativos (SERMIG, PDI, Dirección del Trabajo, Poder Judicial) y censales (INE, Censos 2017 y 2024). Además de la información entregada, se codificó la conducta institucional frente a cada solicitud —plazos, prórrogas, derivaciones y causales invocadas— como indicador de la capacidad estatal de registro y coordinación.</p>
+    <p>Las tasas, variaciones y plazos son cálculo propio. Cuando las series no permiten trazabilidad caso a caso, las cifras se presentan como órdenes de magnitud. Limitaciones: cobertura territorial parcial, hoy en ampliación, y dependencia de la calidad de los registros de cada organismo. No se publican datos personales ni nombres de funcionarios; cada documento es verificable por su folio en el Portal de Transparencia.</p>
+  </div>
   <details class="more"><summary>Ver las 46 fuentes</summary>
   <ul class="sources">
     <li id="f-s01"><span class="id">S01</span>SERMIG. Oficio N° 7299, 20-feb-2026, con Res. Ex. N° 1082 de la DPR Metropolitana (22-ago-2025). <span class="fol">AB099T0119625 · AB099T0119709 · AB099T0120479</span></li>
@@ -630,18 +645,18 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
     {n:"Arica y Parinacota",s:"Arica",i24:36188,i17:18015,g:100.9,p:14.9,dt:[122,96,103,406],dpr:["no","Derivó a SERMIG a los 19 días hábiles"],gore:null,mun:[["Arica","35.592","Oficina de Derechos Humanos; advierte sobre servicios irregulares. Sin cifras de atención"]],x:[],pend:["SERMIG no responde la derivación de la Delegación (281 días)","Serie de residencias y expulsiones no solicitada","Gobierno Regional no consultado"]},
     {n:"Tarapacá",s:"Tarapacá",i24:84935,i17:43646,g:94.6,p:23.2,dt:[597,488,358,1288],dpr:["no","Derivó a SERMIG el 31 de julio"],gore:["no","Ninguna iniciativa para migrantes 2020–2025"],mun:[["Iquique","40.655","Beneficios solo para residentes definitivos"],["Alto Hospicio","37.628","Sin diagnóstico local formal"]],x:["Es la región con la mayor proporción del país"],pend:["SERMIG no responde la derivación de la Delegación (111 días)","Serie de residencias y expulsiones no solicitada","Municipios sin cifras de atención"]},
     {n:"Antofagasta",s:"Antofagasta",i24:124006,i17:62663,g:97.9,p:19.7,dt:[568,732,309,1311],dpr:["no","Trató la consulta como trámite y no la derivó"],gore:["no","Ninguna iniciativa financiada por el FNDR"],mun:[["Antofagasta","76.793","Casa de la Diversidad; sin cifras"]],x:["Segunda región con más inmigrantes en números absolutos"],pend:["Delegación sin respuesta de fondo","Serie de residencias y expulsiones no solicitada","Municipio sin cifras de atención"]},
-    {n:"Atacama",s:"Atacama",i24:25167,i17:8798,g:186.1,p:null,dt:[112,136,114,592],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
-    {n:"Coquimbo",s:"Coquimbo",i24:44578,i17:14741,g:202.4,p:null,dt:[178,141,105,656],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"Atacama",s:"Atacama",i24:25167,i17:8798,g:186.1,p:null,dt:[112,136,114,592],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Coquimbo",s:"Coquimbo",i24:44578,i17:14741,g:202.4,p:null,dt:[178,141,105,656],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
     {n:"Valparaíso",s:"Valparaíso",i24:100655,i17:40166,g:150.6,p:null,dt:[575,473,472,1647],dpr:["no","Derivó a SERMIG a los 11 días hábiles"],gore:null,mun:[["Valparaíso","13.223","Más de 3.000 atenciones al año; 75% irregulares (2020–21)"],["Viña del Mar","21.597","Dos personas; 486 atenciones en 2025"]],x:["Quillota: +330% de población inmigrante desde 2017"],pend:["Serie de residencias y expulsiones no solicitada","Gobierno Regional no consultado"]},
     {n:"Metropolitana",s:"RM",i24:964835,i17:486568,g:98.3,p:null,dt:[5573,5396,2020,55097],dpr:["no","Derivó a SERMIG, aunque preside la Mesa Regional de Migración"],gore:["mid","10 iniciativas 2020–2024, sin montos"],mun:[["Santiago","176.956","66% irregulares y 75% mujeres entre las personas atendidas (2024)"],["Estación Central","69.328","Solo orientación, sin beneficios"],["Independencia","51.908","Sello Migrante desde 2016"],["Recoleta","34.009","35.398 extranjeros inscritos en salud (2021)"],["Quilicura","27.310","Atiende sin importar la situación migratoria; diagnóstico propio"]],x:["60% de la población inmigrante del país","San Miguel: +401%; Lampa: +359%. Las Condes: +0,2%"],pend:["Montos de las 10 iniciativas del GORE","Serie de residencias y expulsiones no solicitada","Estación Central sin cifras de atención"]},
-    {n:"O'Higgins",s:"O'Higgins",i24:49272,i17:13242,g:272.1,p:null,dt:[214,171,124,770],dpr:null,gore:null,mun:[],x:["Rancagua: +307%"],pend:["Región no consultada"]},
-    {n:"Maule",s:"Maule",i24:42349,i17:10780,g:292.8,p:null,dt:[193,187,97,605],dpr:null,gore:null,mun:[],x:["La región que más creció del país","Curicó: +311%; Talca: +290%"],pend:["Región no consultada"]},
-    {n:"Ñuble",s:"Ñuble",i24:10934,i17:3736,g:192.7,p:2.1,dt:[51,58,26,169],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"O'Higgins",s:"O'Higgins",i24:49272,i17:13242,g:272.1,p:null,dt:[214,171,124,770],dpr:null,gore:null,mun:[],x:["Rancagua: +307%"],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Maule",s:"Maule",i24:42349,i17:10780,g:292.8,p:null,dt:[193,187,97,605],dpr:null,gore:null,mun:[],x:["La región que más creció del país","Curicó: +311%; Talca: +290%"],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Ñuble",s:"Ñuble",i24:10934,i17:3736,g:192.7,p:2.1,dt:[51,58,26,169],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
     {n:"Biobío",s:"Biobío",i24:46933,i17:12144,g:286.5,p:null,dt:[240,198,185,888],dpr:["ok","Integra con SERMIG las mesas de trata de personas y de asistencia a víctimas. Sin cifras"],gore:["mid","3 iniciativas, entre ellas un estudio sobre niñez migrante; documentos en pendrive"],mun:[["Concepción","15.088","6.084 personas atendidas; 60% irregulares"],["Talcahuano","4.512","Programa de una persona; $14,2 millones en 2024"]],x:["Hualpén: +396%; Talcahuano: +395%"],pend:["Documentos del GORE solo en pendrive o por correo postal","Serie de residencias y expulsiones no solicitada"]},
-    {n:"La Araucanía",s:"Araucanía",i24:21077,i17:10674,g:97.5,p:2.1,dt:[73,62,72,265],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
-    {n:"Los Ríos",s:"Los Ríos",i24:7508,i17:3768,g:99.3,p:1.9,dt:[36,38,47,118],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
-    {n:"Los Lagos",s:"Los Lagos",i24:35285,i17:10034,g:251.7,p:null,dt:[178,170,75,525],dpr:null,gore:null,mun:[],x:["Puerto Montt: de 3.595 a 18.588 inmigrantes (+417%)"],pend:["Región no consultada"]},
-    {n:"Aysén",s:"Aysén",i24:3931,i17:2083,g:88.7,p:null,dt:[17,13,4,62],dpr:null,gore:null,mun:[],x:[],pend:["Región no consultada"]},
+    {n:"La Araucanía",s:"Araucanía",i24:21077,i17:10674,g:97.5,p:2.1,dt:[73,62,72,265],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Los Ríos",s:"Los Ríos",i24:7508,i17:3768,g:99.3,p:1.9,dt:[36,38,47,118],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Los Lagos",s:"Los Lagos",i24:35285,i17:10034,g:251.7,p:null,dt:[178,170,75,525],dpr:null,gore:null,mun:[],x:["Puerto Montt: de 3.595 a 18.588 inmigrantes (+417%)"],pend:["En consulta: sus datos se agregan próximamente"]},
+    {n:"Aysén",s:"Aysén",i24:3931,i17:2083,g:88.7,p:null,dt:[17,13,4,62],dpr:null,gore:null,mun:[],x:[],pend:["En consulta: sus datos se agregan próximamente"]},
     {n:"Magallanes",s:"Magallanes",i24:10997,i17:4714,g:133.3,p:null,dt:[78,66,66,257],dpr:["no","Derivó a SERMIG a los 3 días hábiles"],gore:["mid","1 iniciativa (2021); rendición en revisión"],mun:[["Punta Arenas","7.991","Los beneficios exigen cédula vigente"]],x:["295 expulsiones decretadas y 48 cumplidas, 2022–2026","Rechazo de residencias definitivas: 18,2% en 2026","Nacionalizaciones: de 28 (2021) a 4 (2025)","Licencias médicas no recibidas: 20% de las actuaciones de la DT con extranjeros (país: 9%)","Punta Arenas concentra el 72,7% de los inmigrantes de la región"],pend:["Expulsiones judiciales: el Poder Judicial no responde (57 días)"]}
   ];
   function bin(g){return g<100?1:g<150?2:g<200?3:g<250?4:5;}
@@ -665,9 +680,9 @@ footer .cite{max-width:60ch;font-size:13px;color:var(--ink-2)}
     var g=el("div","dtgrid",null,p);[["Denuncias",0],["Fiscalizaciones",1],["Materias sancionadas",2],["Reclamos",3]].forEach(function(k){var d=el("div",null,null,g);el("b",null,fmt(r.dt[k[1]]),d);el("span",null,k[0],d);});
     el("p","ptitle","Qué respondió el Estado aquí",p);
     var rows=el("div","rows",null,p);
-    var r1=el("div","row",null,rows);el("span","k","Delegación Presidencial",r1);var v1=el("span",null,null,r1);if(r.dpr){v1.appendChild(chipFor(r.dpr[0],r.dpr[0]==="ok"?"Respondió":"Sin datos"));v1.appendChild(document.createTextNode(r.dpr[1]));}else{v1.appendChild(chipFor("na","No consultada"));}
-    var r2=el("div","row",null,rows);el("span","k","Gobierno Regional",r2);var v2=el("span",null,null,r2);if(r.gore){v2.appendChild(chipFor(r.gore[0],r.gore[0]==="no"?"Cero":"Parcial"));v2.appendChild(document.createTextNode(r.gore[1]));}else{v2.appendChild(chipFor("na","No consultado"));}
-    var r3=el("div","row",null,rows);el("span","k","Municipios",r3);var v3=el("span",null,null,r3);if(r.mun.length){var ul=el("ul","facts",null,v3);ul.style.paddingLeft="16px";r.mun.forEach(function(m){var li=el("li",null,null,ul);var bb=el("b",null,m[0],li);bb.style.color="var(--ink)";li.appendChild(document.createTextNode(" ("+m[1]+" inmigrantes): "+m[2]));});}else{v3.appendChild(chipFor("na","No consultados"));}
+    var r1=el("div","row",null,rows);el("span","k","Delegación Presidencial",r1);var v1=el("span",null,null,r1);if(r.dpr){v1.appendChild(chipFor(r.dpr[0],r.dpr[0]==="ok"?"Respondió":"Sin datos"));v1.appendChild(document.createTextNode(r.dpr[1]));}else{v1.appendChild(chipFor("na",r.pend[0].indexOf("En consulta")===0?"En consulta":"No consultada"));}
+    var r2=el("div","row",null,rows);el("span","k","Gobierno Regional",r2);var v2=el("span",null,null,r2);if(r.gore){v2.appendChild(chipFor(r.gore[0],r.gore[0]==="no"?"Cero":"Parcial"));v2.appendChild(document.createTextNode(r.gore[1]));}else{v2.appendChild(chipFor("na",r.pend[0].indexOf("En consulta")===0?"En consulta":"No consultado"));}
+    var r3=el("div","row",null,rows);el("span","k","Municipios",r3);var v3=el("span",null,null,r3);if(r.mun.length){var ul=el("ul","facts",null,v3);ul.style.paddingLeft="16px";r.mun.forEach(function(m){var li=el("li",null,null,ul);var bb=el("b",null,m[0],li);bb.style.color="var(--ink)";li.appendChild(document.createTextNode(" ("+m[1]+" inmigrantes): "+m[2]));});}else{v3.appendChild(chipFor("na",r.pend[0].indexOf("En consulta")===0?"En consulta":"No consultados"));}
     var xs=(r.p?[fmt(r.p,1)+"% de la población regional nació en el extranjero"]:[]).concat(r.x);
     if(xs.length){el("p","ptitle","Datos destacados",p);var ux=el("ul","facts",null,p);xs.forEach(function(t){el("li",null,t,ux);});}
     var pe=el("div","pend",null,p);el("p","ptitle","Pendiente",pe);var up=el("ul",null,null,pe);r.pend.forEach(function(t){el("li",null,t,up);});
