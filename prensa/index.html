@@ -66,6 +66,7 @@ section.block .wrap{padding-block:56px}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .press{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .press li{display:grid;grid-template-columns:120px 1fr auto;gap:24px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.press li[hidden]{display:none}
 .press time{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:4px}
 .press .outlet{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .press h3{font-size:21px;margin-top:4px;font-weight:400}
@@ -173,6 +174,15 @@ footer.site .wrap{padding-block:24px;display:flex;justify-content:space-between;
       <button type="button" id="f-inf" data-f="informe" aria-pressed="false">Informes</button>
     </div>
     <ol class="press">
+      <li data-k="columna">
+        <time datetime="2026-11-21">21 nov 2026</time>
+        <div>
+          <div class="outlet">Anteros Legal · Columna propia</div>
+          <h3><a href="../columnas.html#2048-no-llega-en-2048">2048 no llega en 2048</a></h3>
+          <p>Columna de José Manuel Simons. El Tratado Antártico no vence en 2048, y Magallanes no puede mirar desde la galería una agenda que se escribe hoy. Deriva de su ponencia en las VIII Jornadas Chilenas de Derecho Antártico.</p>
+        </div>
+        <span class="tag">Columna</span>
+      </li>
       <li data-k="informe">
         <time datetime="2026-11-20">20 nov 2026</time>
         <div>
