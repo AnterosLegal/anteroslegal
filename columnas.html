@@ -244,6 +244,31 @@
     font-size:.8rem;line-height:1.6;
   }
   .src-note strong{color:var(--sepia);font-weight:600}
+  .related{
+    max-width:680px;margin:40px auto 0;
+  }
+  .related .kicker{
+    font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--sepia-deep);font-weight:600;margin-bottom:12px;
+  }
+  .related a.rel-card{
+    display:grid;grid-template-columns:240px 1fr;align-items:center;text-decoration:none;color:inherit;
+    border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--paper-warm);
+    transition:border-color .2s, transform .2s;
+  }
+  .related a.rel-card:hover{border-color:var(--sepia);transform:translateY(-2px)}
+  .related .thumb{position:relative;background:var(--navy);width:100%;aspect-ratio:16/9}
+  .related .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+  .related .thumb .play{
+    position:absolute;left:12px;bottom:12px;background:rgba(15,27,45,.85);color:var(--paper);
+    font-family:var(--sans);font-size:.75rem;font-weight:600;padding:6px 10px;border-radius:3px;
+  }
+  .related .txt{padding:18px 20px}
+  .related .txt h4{font-family:var(--serif);font-size:1.15rem;line-height:1.3;color:var(--navy);margin:0 0 8px}
+  .related .txt p{font-size:.88rem;line-height:1.55;color:var(--ink-soft);margin:0}
+  @media (max-width:560px){
+    .related a.rel-card{grid-template-columns:1fr}
+  }
 
   /* ---------- CTA ---------- */
   .cta{
@@ -414,6 +439,15 @@ const columns = [
 <p>Para Magallanes, esto no es un debate de cancillerías. Es nuestro puerto, nuestra economía, nuestros tribunales y parte de nuestra identidad colectiva. Sin embargo, una de las conclusiones de la investigación es que la política antártica chilena se percibe cerrada y concentrada en los ministerios de Relaciones Exteriores y de Defensa. Lo comprobé en el propio estudio: lo más difícil fue conseguir entrevistas en esos espacios.</p>
 <p>El Estatuto Chileno Antártico ya permite que el Gobierno Regional ejerza atribuciones en la materia. El desafío es convertir esa habilitación en participación real: que el Gobierno Regional, los municipios, las universidades, el sector privado y la sociedad civil de Magallanes se sienten a la mesa donde se diseña y se evalúa la política antártica. Y que discutamos, antes de que sea tarde, al menos tres cosas: un polo antártico en Magallanes para comunicaciones, monitoreo climático y rescate; una regulación anticipada de un turismo que ya superó la capacidad instalada; y una posición latinoamericana común frente a bloques que ya se están moviendo.</p>
 <p>2048 no llega en 2048. Se construye en cada instrumento que no se ratifica, en cada actor que no se sienta a la mesa y en cada conflicto que preferimos mantener congelado. Desde la puerta de entrada al continente, no podemos darnos el lujo de esperar la fecha.</p>`,
+    related: {
+      kicker: "Recomendado · Ver la ponencia",
+      href: "https://youtu.be/Tfa7gevNbJE",
+      img: "prensa/img/jornadas-antartico-2026.jpg",
+      alt: "José Manuel Simons exponiendo en las VIII Jornadas Chilenas de Derecho Antártico",
+      cta: "Ver en YouTube",
+      title: "«2048 no es una fecha de vencimiento»",
+      text: "La exposición completa en las VIII Jornadas Chilenas de Derecho Antártico (Universidad de Chile, noviembre de 2026): el panel de expertos, los escenarios hacia 2048 y el lugar de Magallanes."
+    },
     sourceNote: `<strong>Sobre esta columna.</strong> Deriva de la ponencia «2048 no es una fecha de vencimiento», presentada en las VIII Jornadas Chilenas de Derecho Antártico (Universidad de Chile, 5 y 6 de noviembre de 2026), y de la investigación de magíster en Gobierno y Dirección Pública (Universidad Autónoma de Chile) con un panel de doce expertos. Publicada en anteroslegal.cl el 21 de noviembre de 2026.`
   }
 ];
@@ -468,6 +502,13 @@ function showArticle(slug, push=true){
           <span class="role">Consultora Boutique · Migración & Empresas</span>
         </div>
       </div>
+      ${c.related ? `<aside class="related">
+        <div class="kicker">${c.related.kicker}</div>
+        <a class="rel-card" href="${c.related.href}" target="_blank" rel="noopener">
+          <div class="thumb"><img src="${c.related.img}" alt="${c.related.alt}" onerror="this.remove()"><span class="play">▶ ${c.related.cta}</span></div>
+          <div class="txt"><h4>${c.related.title}</h4><p>${c.related.text}</p></div>
+        </a>
+      </aside>` : ``}
       ${c.sourceNote ? `<div class="src-note">${c.sourceNote}</div>` : ``}
     </article>`;
   indexView.style.display='none';
