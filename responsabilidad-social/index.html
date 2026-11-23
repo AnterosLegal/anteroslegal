@@ -137,6 +137,18 @@
     section{padding:3.5rem 5%;}
     .hero{padding:7rem 5% 4rem;}
   }
+  .trayectoria{background:var(--blanco);}
+  .trayectoria h2{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:300;line-height:1.15;margin-bottom:1rem;}
+  .trayectoria h2 em{color:var(--dorado);font-style:italic;}
+  .tray-intro{max-width:640px;color:var(--gris);font-size:.95rem;line-height:1.7;}
+  .tray-lista{list-style:none;margin-top:2.5rem;border-top:1px solid var(--gris-claro);}
+  .tray-item{display:grid;grid-template-columns:120px 1fr;gap:2rem;padding:1.4rem 0;border-bottom:1px solid var(--gris-claro);}
+  .tray-fecha{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dorado);padding-top:.3rem;}
+  .tray-item h3{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:500;margin-bottom:.3rem;}
+  .tray-item p{font-size:.86rem;color:var(--gris);line-height:1.65;margin-bottom:.4rem;}
+  .tray-item a{color:var(--negro);font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--dorado);text-decoration:none;}
+  .tray-tag{display:inline-block;font-family:'DM Sans',sans-serif;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;background:var(--verde-claro);color:var(--verde);padding:.15rem .5rem;margin-left:.5rem;vertical-align:middle;}
+  @media(max-width:700px){.tray-item{grid-template-columns:1fr;gap:.4rem;}.manifiesto-grid>*,.manifiesto-grid{min-width:0;max-width:100%;}.manifiesto-texto{overflow-wrap:anywhere;}.manifiesto-numeros{grid-template-columns:1fr 1fr;gap:.8rem;}.numero-card{min-width:0;padding:1.2rem;}.numero-big{font-size:2rem;}.footer-links{flex-wrap:wrap;gap:.8rem 1.2rem;}}
 </style>
 </head>
 <body>
@@ -151,6 +163,7 @@
     <li><a href="../la-firma/">La Firma</a></li>
     <li><a href="../#servicios">Servicios</a></li>
     <li><a href="./">Responsabilidad Social</a></li>
+    <li><a href="https://anteroslegal.cl/prensa/">Prensa</a></li>
     <li><a href="../#contacto" class="nav-cta">Agendar Consulta</a></li>
   </ul>
 </nav>
@@ -159,8 +172,8 @@
   <div class="hero-grid">
     <div>
       <div class="hero-eyebrow">Responsabilidad Social</div>
-      <h1>El Derecho al servicio<br>de las <em>personas</em></h1>
-      <p class="hero-desc">El acceso a la justicia no debería depender del dinero que tienes ni del país del que vienes. Una parte de nuestra capacidad está siempre al servicio de quien más lo necesita.</p>
+      <h1>Comunidad, liderazgo<br>e <em>impacto social</em></h1>
+      <p class="hero-desc">El acceso a la justicia no debería depender del dinero que tienes ni del país del que vienes. Desde 2016 construimos comunidad con personas migrantes, organizaciones sociales y universidades, y ponemos datos públicos al servicio de todos.</p>
     </div>
     <div>
       <p class="hero-quote">"La ley existe para proteger a las personas. Cuando no cumple ese propósito, es nuestro deber profesional recordárselo."<br><br><span style="font-size:0.8rem;font-style:normal;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,240,232,0.4);">— José Manuel Simons</span></p>
@@ -181,9 +194,28 @@
       <div class="numero-card"><div class="numero-big">10</div><div class="numero-label">Años de presencia en Chile</div></div>
       <div class="numero-card"><div class="numero-big">+1.000</div><div class="numero-label">Personas acompañadas</div></div>
       <div class="numero-card"><div class="numero-big">Pro<br>Bono</div><div class="numero-label">Casos sin costo para familias vulnerables</div></div>
-      <div class="numero-card"><div class="numero-big">3</div><div class="numero-label">Alianzas sociales activas</div></div>
+      <div class="numero-card"><div class="numero-big">2</div><div class="numero-label">Informes públicos y gratuitos</div></div>
     </div>
   </div>
+</section>
+
+<section class="trayectoria" id="trayectoria">
+<div class="section-label">Trayectoria social</div>
+<h2>Liderazgo construido<br><em>en comunidad</em></h2>
+<p class="tray-intro">Antes de ser una firma, Anteros Legal fue trabajo comunitario: una organización fundada, redes regionales, aulas y datos abiertos. Este es el camino.</p>
+<ol class="tray-lista">
+<li class="tray-item"><div class="tray-fecha">Nov 2026</div><div><h3>Expediente Migratorio 2026 <span class="tray-tag">Datos abiertos</span></h3><p>42 respuestas de 35 organismos del Estado sobre migración, publicadas sin costo y de libre uso citando la fuente, para periodistas, academia, autoridades y comunidad.</p><a href="https://anteroslegal.cl/expediente/">Leer el informe</a></div></li>
+<li class="tray-item"><div class="tray-fecha">Nov 2026</div><div><h3>VIII Jornadas Chilenas de Derecho Antártico <span class="tray-tag">Pensamiento</span></h3><p>Ponencia sobre gobernanza antártica hacia 2048: liderazgo regional pensado desde Magallanes.</p><a href="https://youtu.be/Tfa7gevNbJE" target="_blank" rel="noopener">Ver ponencia</a></div></li>
+<li class="tray-item"><div class="tray-fecha">Oct 2026</div><div><h3>Universidad de Magallanes <span class="tray-tag">Formación</span></h3><p>Clase de análisis de caso migratorio para estudiantes, a partir de un caso real anonimizado.</p></div></li>
+<li class="tray-item"><div class="tray-fecha">Abr 2026</div><div><h3>Barómetro Emprendedor 2026 <span class="tray-tag">Datos abiertos</span></h3><p>Primer informe gratuito con datos legales y migratorios para emprendedores de Magallanes, con fuentes del Servicio Nacional de Migraciones, CASEN y OIM Chile.</p><a href="https://anteroslegal.cl/barometro/">Conocer el Barómetro</a></div></li>
+<li class="tray-item"><div class="tray-fecha">2024</div><div><h3>Red Regional de Protección a Personas LGBTQIA+ Refugiadas y Migrantes <span class="tray-tag">Red regional</span></h3><p>Integrante de la red de las Américas articulada por Caribe Afirmativo, como presidente y director legal de Migración Diversa.</p><a href="https://caribeafirmativo.lgbt/wp-content/uploads/2024/10/directorio-digital-encuentro-red-MH.pdf" target="_blank" rel="noopener">Ver directorio</a></div></li>
+<li class="tray-item"><div class="tray-fecha">Dic 2021</div><div><h3>Vergara 240 · Universidad Diego Portales <span class="tray-tag">Voz pública</span></h3><p>Entrevista sobre la falta de perspectiva migratoria en las políticas públicas.</p><a href="https://vergara240.udp.cl/doble-discriminacion-la-lucha-de-la-comunidad-migrante-lgbtiq-en-chile/" target="_blank" rel="noopener">Leer nota</a></div></li>
+<li class="tray-item"><div class="tray-fecha">Sep 2021</div><div><h3>Revista Sur · Chile a Todo Color <span class="tray-tag">Voz pública</span></h3><p>Invitado al programa sobre migración, refugio e interculturalidad, junto a la académica Caterine Galaz (Universidad de Chile).</p><a href="https://www.revistasur.cl/revistasur.cl/2021/09/chile-a-todo-color-migracion-refugio-interculturalidad-y-comunidad-lgbti/" target="_blank" rel="noopener">Ver programa</a></div></li>
+<li class="tray-item"><div class="tray-fecha">Mar 2021</div><div><h3>Conversatorio CADEF <span class="tray-tag">Comunidad</span></h3><p>Expositor sobre crisis migratoria, derecho a migrar y protección de personas refugiadas y migrantes.</p></div></li>
+<li class="tray-item"><div class="tray-fecha">Sep 2019</div><div><h3>ACNUR y FASIC · Capacitación en movilidad humana <span class="tray-tag">Formación</span></h3><p>Expositor en la jornada de formación para organizaciones de la sociedad civil en Santiago.</p><a href="https://www.ongces.cl/2019/09/fasic-acoge-a-la-diversidad-sexual-refugiada-y-migrante/" target="_blank" rel="noopener">Ver nota</a></div></li>
+<li class="tray-item"><div class="tray-fecha">2019</div><div><h3>Cofundador de Migración Diversa <span class="tray-tag">Liderazgo</span></h3><p>ONG que asesora y acompaña a personas migrantes LGBTIQ+ en Chile, parte de la Red Nacional de Refugiades y Migrantes LGBTQ+.</p></div></li>
+<li class="tray-item"><div class="tray-fecha">2016</div><div><h3>Sentencia 1187/2016 · Sala Constitucional de Venezuela <span class="tray-tag">Impacto</span></h3><p>Promovió y ganó el caso que reconoció a un niño como hijo de sus dos madres: jurisprudencia para las familias LGBTIQ+ venezolanas.</p></div></li>
+</ol>
 </section>
 
 <section class="mentor">
@@ -221,7 +253,7 @@
       <h3>Barómetro Emprendedor <em>2026</em></h3>
       <p>Nuestro aporte público a la comunidad empresarial y migrante de Magallanes: el primer informe regional con datos legales y migratorios para emprendedores. Gratuito. Datos de fuentes oficiales.</p>
     </div>
-    <a href="../#recurso" class="btn-dorado">Conocer el Barómetro →</a>
+    <a href="https://anteroslegal.cl/barometro/" class="btn-dorado">Conocer el Barómetro →</a>
   </div>
 </section>
 
@@ -233,13 +265,13 @@
       <div class="ini-icon">🌿</div>
       <span class="ini-tag">Alianza activa</span>
       <h3>Organizaciones Sociales</h3>
-      <p>Colaboración continua con organizaciones sociales que acompañan a comunidades venezolanas, migrantes y LGBTIQ+ en situación de vulnerabilidad en todo el mundo. Aportamos orientación legal gratuita, talleres de derechos y representación en casos urgentes.</p>
+      <p>Colaboración continua con organizaciones sociales que acompañan a comunidades venezolanas, migrantes y LGBTIQ+ en situación de vulnerabilidad, en Chile y en la región. Aportamos orientación legal gratuita, talleres de derechos y representación en casos urgentes.</p>
     </div>
     <div class="iniciativa-card">
       <div class="ini-icon">🎓</div>
       <span class="ini-tag">Academia</span>
       <h3>Pedagogía con Propósito</h3>
-      <p>Colaboración académica con espacios académicos. Talleres de derecho migratorio para estudiantes, compartiendo conocimiento especializado desde la práctica real.</p>
+      <p>Clases y talleres de derecho migratorio para estudiantes, como el análisis de caso en la Universidad de Magallanes, compartiendo conocimiento desde la práctica real.</p>
     </div>
     <div class="iniciativa-card">
       <div class="ini-icon">⚖️</div>
@@ -283,12 +315,12 @@
   <div class="section-label">Colaboramos con</div>
   <h2>Alianzas y <em>vínculos</em></h2>
   <div class="alianzas-lista">
-    <div class="alianza-item"><div class="alianza-nombre">ONGs Migrangtes y LGBTIQ+</div><p class="alianza-desc">Organizaciones sociales de acompañamiento a comunidades migrantes y personas LGBTIQ+. Alianza de orientación legal gratuita y representación en casos urgentes.</p></div>
+    <div class="alianza-item"><div class="alianza-nombre">ONG migrantes y LGBTIQ+</div><p class="alianza-desc">Organizaciones sociales de acompañamiento a comunidades migrantes y personas LGBTIQ+. Alianza de orientación legal gratuita y representación en casos urgentes.</p></div>
     <div class="alianza-item"><div class="alianza-nombre">Universidades e Institutos</div><p class="alianza-desc">Colaboración académica para formación en derecho migratorio. Talleres para estudiantes de derecho y actividades de extensión universitaria.</p></div>
     <div class="alianza-item"><div class="alianza-nombre">Otros abogados</div><p class="alianza-desc">Participación activa con otros abogados para impulsar formación, mantener ética profesional y red de apoyo para el ejercicio responsable del derecho.</p></div>
     <div class="alianza-item"><div class="alianza-nombre">Organismos Consulares LATAM</div><p class="alianza-desc">Coordinación con consulados de Venezuela, Colombia, Perú y Bolivia para derivación de casos urgentes y orientación a ciudadanos recién llegados.</p></div>
     <div class="alianza-item"><div class="alianza-nombre">ACNUR Chile</div><p class="alianza-desc">Coordinación en casos de refugio y protección internacional. Derivación de casos que requieren protección especial bajo el Convenio de Ginebra.</p></div>
-    <div class="alianza-item"><div class="alianza-nombre">Municipalidades y Fundaciones</div><p class="alianza-desc">Colaboración en programas de integración y talleres de derechos para migrantes coordinados enfocado en migrantes.</p></div>
+    <div class="alianza-item"><div class="alianza-nombre">Municipalidades y Fundaciones</div><p class="alianza-desc">Colaboración en programas de integración y talleres de derechos para personas migrantes.</p></div>
   </div>
 </section>
 
@@ -308,6 +340,7 @@
     <a href="../">Inicio</a>
     <a href="../la-firma/">La Firma</a>
     <a href="../#servicios">Servicios</a>
+    <a href="https://anteroslegal.cl/prensa/">Prensa</a>
     <a href="../#contacto">Contacto</a>
     <a href="../privacidad/">Privacidad</a>
   </div>
