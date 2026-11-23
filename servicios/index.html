@@ -66,6 +66,8 @@
 
   .tab-panel{display:none;padding:4rem 7%;}
   .tab-panel.active{display:block;}
+  .tab-panel .diagnostico-hero{margin:2.5rem 0 0;}
+  #tab-planes.active{padding:0;}
 
   .panel-intro{max-width:600px;margin-bottom:3rem;}
   .panel-intro h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:0.8rem;}
@@ -194,37 +196,6 @@
   </div>
 </div>
 
-<!-- DIAGNÓSTICO EXPRESS — BLOQUE DESTACADO PRE-TABS -->
-<section class="diagnostico-hero" id="diagnostico">
-  <div class="diag-grid">
-    <div>
-      <div class="diag-eyebrow">El primer paso</div>
-      <h2 class="diag-titulo">Diagnóstico <em>Express</em></h2>
-      <p class="diag-desc">Antes de cualquier trámite, necesitas saber exactamente dónde estás parado. El Diagnóstico Express es una sesión profesional breve seguida de un informe técnico escrito que te entregamos en 48 horas. Lo usan tanto personas con un trámite migratorio personal como empresas que necesitan saber si su dotación extranjera está en regla.</p>
-      <div class="diag-features">
-        <div class="diag-feature">Sesión de 30 a 45 minutos, presencial o por videollamada</div>
-        <div class="diag-feature">Informe Semáforo con áreas en verde, amarillo y rojo</div>
-        <div class="diag-feature">Plan de Acción priorizado a 30, 60 y 90 días</div>
-        <div class="diag-feature">Hoja de próximos pasos con servicios recomendados</div>
-      </div>
-      <div class="diag-cta-row">
-        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-primary" target="_blank">Agendar Diagnóstico →</a>
-      </div>
-    </div>
-    <div>
-      <div class="diag-precio-box">
-        <div class="diag-precio-label">Valor</div>
-        <div class="diag-precio">$80.000</div>
-        <div class="diag-precio-clp">CLP · pago anticipado</div>
-        <div class="diag-precio-bullets">
-          <div>Entrega en 48 horas hábiles</div>
-          <div>Para personas y empresas</div>
-          <div>Descuento si contratas otro servicio</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- TABS -->
 <div class="tabs-section">
@@ -233,11 +204,11 @@
     <p>Servicios puntuales por área. Si ya sabes lo que necesitas, encuéntralo abajo. Si todavía no estás seguro, empieza por el Diagnóstico Express.</p>
   </div>
   <div class="tabs-nav">
-    <button class="tab-btn active" onclick="switchTab('personas',this)">Para Personas</button>
-    <button class="tab-btn" onclick="switchTab('defensa',this)">Defensa &amp; Urgencia</button>
-    <button class="tab-btn" onclick="switchTab('empresas',this)">Para Empresas</button>
+    <button class="tab-btn active" onclick="switchTab('personas',this)">Chile</button>
     <button class="tab-btn" onclick="switchTab('venezuela',this)">Venezuela</button>
-    <button class="tab-btn" onclick="switchTab('latam',this)">LATAM Remoto</button>
+    <button class="tab-btn" onclick="switchTab('latam',this)">LATAM</button>
+    <button class="tab-btn" onclick="switchTab('empresas',this)">Empresas</button>
+    <button class="tab-btn" onclick="switchTab('planes',this)">Planes Mensuales</button>
   </div>
 
   <!-- PERSONAS -->
@@ -254,10 +225,7 @@
       <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>Nacionalización Chilena</h3><p>Para quienes han construido su vida en Chile. Guía completa del proceso ante el Ministerio del Interior, con seguimiento hasta la resolución.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-emergente">Demanda creciente</span><h3>RT Humanitaria — Menores (NNA)</h3><p>Para niños y adolescentes dentro de Chile. Proceso especial de regularización con enfoque en el interés superior del niño.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
     </div>
-  </div>
-
-  <!-- DEFENSA -->
-  <div class="tab-panel" id="tab-defensa">
+    <div style="height:3.5rem"></div>
     <div class="panel-intro">
       <h2>Defensa &amp; <em>Urgencia</em></h2>
       <p>Representación experta cuando enfrentas obstáculos administrativos severos. Actuamos rápido cuando el tiempo es crítico.</p>
@@ -308,7 +276,7 @@
   <div class="tab-panel" id="tab-empresas">
     <div class="panel-intro">
       <h2>Para <em>Empresas y PYMES</em></h2>
-      <p>Constitución, compliance migratorio empresarial y visas para tu equipo. Si buscas acompañamiento mensual continuo, mira más abajo nuestros planes <strong>Anteros Asesor</strong>.</p>
+      <p>Constitución, compliance migratorio empresarial y visas para tu equipo. Si buscas acompañamiento mensual continuo, revisa la pestaña <strong>Planes Mensuales</strong> (Anteros Asesor).</p>
     </div>
     <div class="servicios-grid">
       <div class="servicio-card"><div class="s-num">01</div><span class="s-badge badge-empresas">Alta demanda</span><h3>Constitución de Empresas en 48 horas</h3><p>SpA, EIRL, SRL o SA. Constitución completa, inicio de actividades y RUT. Ideal para emprendedores migrantes y fundadores extranjeros.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
@@ -318,7 +286,38 @@
       <div class="servicio-card"><div class="s-num">05</div><span class="s-badge badge-emergente">Estacional</span><h3>Compliance Estacional — Turismo Antártico</h3><p>Auditoría y regularización para empresas del sector turístico antártico que contratan tripulación extranjera estacionalmente.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
       <div class="servicio-card"><div class="s-num">06</div><span class="s-badge badge-empresas">Inversión</span><h3>Visas para Socios e Inversionistas</h3><p>Para extranjeros que quieren invertir o ser socios en empresas chilenas. Visa de residente inversionista y alternativas de la Ley de Migración.</p><a href="https://forms.gle/Z4fJoRXPGiLX9ZTF9" class="btn-contratar" target="_blank">Consultar ahora</a></div>
     </div>
+    <!-- DIAGNÓSTICO EXPRESS — BLOQUE DESTACADO PRE-TABS -->
+<div class="diagnostico-hero" id="diagnostico">
+  <div class="diag-grid">
+    <div>
+      <div class="diag-eyebrow">El primer paso</div>
+      <h2 class="diag-titulo">Diagnóstico <em>Express</em></h2>
+      <p class="diag-desc">Antes de cualquier trámite, necesitas saber exactamente dónde estás parado. El Diagnóstico Express es una sesión profesional breve seguida de un informe técnico escrito que te entregamos en 48 horas. Lo usan tanto personas con un trámite migratorio personal como empresas que necesitan saber si su dotación extranjera está en regla.</p>
+      <div class="diag-features">
+        <div class="diag-feature">Sesión de 30 a 45 minutos, presencial o por videollamada</div>
+        <div class="diag-feature">Informe Semáforo con áreas en verde, amarillo y rojo</div>
+        <div class="diag-feature">Plan de Acción priorizado a 30, 60 y 90 días</div>
+        <div class="diag-feature">Hoja de próximos pasos con servicios recomendados</div>
+      </div>
+      <div class="diag-cta-row">
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-primary" target="_blank">Agendar Diagnóstico →</a>
+      </div>
+    </div>
+    <div>
+      <div class="diag-precio-box">
+        <div class="diag-precio-label">Valor</div>
+        <div class="diag-precio">$80.000</div>
+        <div class="diag-precio-clp">CLP · pago anticipado</div>
+        <div class="diag-precio-bullets">
+          <div>Entrega en 48 horas hábiles</div>
+          <div>Para personas y empresas</div>
+          <div>Descuento si contratas otro servicio</div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+</div>
 
   <!-- VENEZUELA -->
   <div class="tab-panel" id="tab-venezuela">
@@ -353,10 +352,10 @@
     </div>
 
   </div>
-</div>
-
+  <!-- PLANES MENSUALES -->
+  <div class="tab-panel" id="tab-planes">
 <!-- ANTEROS ASESOR -->
-<section class="asesor" id="anteros-asesor">
+<div class="asesor" id="anteros-asesor">
   <div class="asesor-header">
     <div class="asesor-eyebrow">Acompañamiento continuo</div>
     <h2>Anteros <em>Asesor</em></h2>
@@ -425,7 +424,10 @@
   <div class="asesor-nota">
     ¿No estás seguro de cuál plan se ajusta a tu situación? Empieza con un <a onclick="document.querySelector('#diagnostico').scrollIntoView({behavior:'smooth'})">Diagnóstico Express</a> y lo decidimos juntos.
   </div>
-</section>
+</div>
+  </div>
+</div>
+
 
 <!-- PROCESO -->
 <div class="proceso">
@@ -470,7 +472,7 @@ function switchTab(tab, btn) {
 }
 </script>
 <script>
-if(location.hash==='#venezuela'){var b=[...document.querySelectorAll('.tab-btn')].find(x=>x.textContent.trim()==='Venezuela');if(b){switchTab('venezuela',b);document.getElementById('tab-venezuela').scrollIntoView();}}
+(function(){var h=location.hash.slice(1);if(!h)return;var el=document.getElementById(h);if(!el)return;var p=el.closest('.tab-panel');if(!p)return;var k=p.id.replace('tab-','');var b=[...document.querySelectorAll('.tab-btn')].find(x=>(x.getAttribute('onclick')||'').indexOf("'"+k+"'")>-1);if(b){switchTab(k,b);setTimeout(function(){el.scrollIntoView();},50);}})();
 </script>
 </body>
 </html>

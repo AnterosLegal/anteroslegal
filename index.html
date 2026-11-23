@@ -873,7 +873,8 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-precio li { font-size: 0.8rem; line-height: 1.8; color: rgba(245,240,232,0.8); }
   .sv-precio li::before { content: '· '; color: var(--dorado); }
 
-  #tab-empresas.active, #tab-defensa.active { display: block; background: none; }
+  #tab-empresas.active, #tab-defensa.active, #tab-personas.active, #tab-planes.active { display: block; background: none; }
+  .tab-subtitulo{font-family:inherit;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);margin:3rem 0 1.2rem;}
   .tab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--gris-claro); }
   .sv-consulta {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem;
@@ -1127,37 +1128,36 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   </div>
 
   <div class="servicios-tabs">
-    <button class="tab-btn active" onclick="switchTab('personas', this)">Para Personas</button>
-    <button class="tab-btn" onclick="switchTab('defensa', this)">Defensa &amp; Urgencia</button>
-    <button class="tab-btn" onclick="switchTab('empresas', this)">Para Empresas</button>
+    <button class="tab-btn active" onclick="switchTab('personas', this)">Chile</button>
     <button class="tab-btn" onclick="switchTab('venezuela', this)">Venezuela</button>
     <button class="tab-btn" onclick="switchTab('latam', this)">LATAM</button>
+    <button class="tab-btn" onclick="switchTab('empresas', this)">Empresas</button>
+    <button class="tab-btn" onclick="switchTab('planes', this)">Planes Mensuales</button>
   </div>
 
-  <!-- TAB PERSONAS -->
+  <!-- TAB CHILE (personas + defensa) -->
   <div class="tab-panel active" id="tab-personas">
-    <div class="servicio-card">
-      <div class="servicio-num">01</div>
-      <h3>Residencia Temporal</h3>
-      <p>Tu primera residencia en Chile, presentada ante el SERMIG sin errores que la retrasen.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
-    </div>
-    <div class="servicio-card">
-      <div class="servicio-num">02</div>
-      <h3>Residencia Definitiva</h3>
-      <p>El paso a la permanencia legal completa, para quienes ya cumplen el tiempo de residencia temporal.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
-    </div>
-    <div class="servicio-card">
-      <div class="servicio-num">03</div>
-      <h3>Nacionalización Chilena</h3>
-      <p>Para quienes construyeron su vida aquí. Acompañamiento hasta la resolución ante el Ministerio del Interior.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
-    </div>
+    <div class="tab-grid">
+      <div class="servicio-card">
+        <div class="servicio-num">01</div>
+        <h3>Residencia Temporal</h3>
+        <p>Tu primera residencia en Chile, presentada ante el SERMIG sin errores que la retrasen.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">02</div>
+        <h3>Residencia Definitiva</h3>
+        <p>El paso a la permanencia legal completa, para quienes ya cumplen el tiempo de residencia temporal.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
+      <div class="servicio-card">
+        <div class="servicio-num">03</div>
+        <h3>Nacionalización Chilena</h3>
+        <p>Para quienes construyeron su vida aquí. Acompañamiento hasta la resolución ante el Ministerio del Interior.</p>
+        <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+      </div>
   </div>
-
-  <!-- TAB DEFENSA (cartas + Denuncia por Demora Administrativa destacada) -->
-  <div class="tab-panel" id="tab-defensa">
+    <h3 class="tab-subtitulo">Defensa y urgencia</h3>
     <div class="tab-grid">
       <div class="servicio-card">
         <div class="servicio-num">01</div>
@@ -1254,6 +1254,10 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
       </div>
     </div>
 
+  </div>
+
+  <!-- TAB PLANES MENSUALES -->
+  <div class="tab-panel" id="tab-planes">
     <!-- ANTEROS ASESOR -->
     <div class="sv-asesor" id="anteros-asesor">
       <div class="sv-asesor-head">
@@ -1317,7 +1321,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
         </div>
       </div>
 
-      <p class="sv-cierre">¿No sabes cuál te corresponde? Empieza por el <a href="#diagnostico">Diagnóstico Express</a> y lo decidimos juntos.</p>
+      <p class="sv-cierre">¿No sabes cuál te corresponde? Empieza por el <a href="#diagnostico" onclick="var b=[...document.querySelectorAll('.tab-btn')].find(x=>x.textContent.trim()==='Empresas');switchTab('empresas',b);">Diagnóstico Express</a> y lo decidimos juntos.</p>
     </div>
   </div>
 
@@ -1860,6 +1864,9 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     const form = document.getElementById('contact-form');
     form.innerHTML = '<p style="color:var(--negro);text-align:center;font-family:Cormorant Garamond,serif;font-size:1.3rem;padding:1rem 0 0.5rem;">✓ ¡Consulta enviada!</p><p style="color:var(--gris);text-align:center;font-size:0.88rem;line-height:1.6;padding:0 0 1.5rem;">Revisa tu correo — te enviamos una confirmación. Te contactaremos en menos de 24 horas.</p><a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" target="_blank" style="display:block;width:100%;padding:1rem;background:#25D366;color:white;border:none;cursor:pointer;font-family:DM Sans,sans-serif;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;border-radius:2px;text-align:center;text-decoration:none;">¿Es urgente? Escríbenos por WhatsApp</a>';
   }
+</script>
+<script>
+(function(){var h=location.hash.slice(1);if(!h)return;var el=document.getElementById(h);if(!el)return;var p=el.closest('.tab-panel');if(!p)return;var k=p.id.replace('tab-','');var b=[...document.querySelectorAll('.tab-btn')].find(x=>(x.getAttribute('onclick')||'').indexOf("'"+k+"'")>-1);if(b){switchTab(k,b);setTimeout(function(){el.scrollIntoView();},50);}})();
 </script>
 </body>
 </html>
