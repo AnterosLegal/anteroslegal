@@ -874,6 +874,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
   .sv-precio li::before { content: '· '; color: var(--dorado); }
 
   #tab-empresas.active, #tab-defensa.active, #tab-personas.active, #tab-planes.active { display: block; background: none; }
+  #tab-recursos.active { display: block; background: var(--negro); }
   .tab-subtitulo{font-family:inherit;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gris);margin:3rem 0 1.2rem;}
   .tab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: var(--gris-claro); }
   .sv-consulta {
@@ -1134,6 +1135,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     <button class="tab-btn" onclick="switchTab('latam', this)">LATAM</button>
     <button class="tab-btn" onclick="switchTab('empresas', this)">Empresas</button>
     <button class="tab-btn" onclick="switchTab('planes', this)">Planes Mensuales</button>
+    <button class="tab-btn" onclick="switchTab('recursos', this)">Recursos Digitales</button>
   </div>
 
   <!-- TAB CHILE (personas + defensa) -->
@@ -1301,6 +1303,137 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     </div>
   </div>
 
+  <!-- TAB RECURSOS DIGITALES -->
+  <div class="tab-panel" id="tab-recursos" style="background:var(--negro);padding:3rem 2.5rem;">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2rem;flex-wrap:wrap;gap:1rem;">
+      <h3 style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:1.9rem;color:var(--marfil);">Guías y manuales <em style="color:var(--dorado);">para llevar contigo</em></h3>
+      <p style="color:#888;font-size:.85rem;max-width:340px;line-height:1.6;">Documentos descargables. Compra directa, acceso inmediato, sin suscripciones. Precios en CLP y su equivalente en USD.</p>
+    </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5px;background:rgba(255,255,255,0.06);">
+  
+      <!-- Expediente Migratorio 2026 (GRATIS, acceso libre) -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <img src="images/expediente-2026.jpg" alt="Expediente Migratorio 2026: 295 expulsiones decretadas en Magallanes, solo 48 cumplidas" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge producto-badge--gold">Nuevo</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Expediente Migratorio 2026</h3>
+          <p class="producto-desc">42 respuestas de 35 organismos del Estado sobre migración: datos por región, ciudad y país, y lo que el Estado aún no responde.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">Gratis</span>
+            <span class="precio-usd">Acceso libre</span>
+          </div>
+          <a href="expediente/" class="btn-comprar">Leer el informe →</a>
+        </div>
+      </div>
+  
+      <!-- Barómetro Emprendedor 2026 (GRATIS) -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <img src="images/barometro.jpg" alt="Barómetro Emprendedor 2026" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge producto-badge--gold">Gratis</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Barómetro Emprendedor 2026</h3>
+          <p class="producto-desc">Informe anual con los datos legales y migratorios que todo emprendedor de Magallanes necesita: cifras, fiscalizaciones y cambios 2026. Acceso gratuito con tu correo.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">Gratis</span>
+            <span class="precio-usd">Acceso inmediato</span>
+          </div>
+          <a href="https://anteroslegal.cl/barometro/" class="btn-comprar" target="_blank">Acceder →</a>
+        </div>
+      </div>
+  
+      <!-- Producto 5 · Reunificación Familiar (nuevo) -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <div class="portada-tipo"><small>Ebook · Anteros Legal</small><strong>Guía de Reunificación <em>Familiar</em> en Chile</strong></div>
+          <img src="images/reunificacion.jpg" alt="Guía de Reunificación Familiar en Chile" class="sobre-portada" onerror="this.style.display='none'">
+          <span class="producto-badge producto-badge--gold" style="z-index:2;">Nuevo</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Guía de Reunificación Familiar en Chile</h3>
+          <p class="producto-desc">Para quienes ya construyeron una vida en Chile y quieren traer a su familia. Requisitos, documentos y pasos, explicados con claridad.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">$8.000 <small>CLP</small></span>
+            <span class="precio-usd">USD $8 · acceso inmediato</span>
+          </div>
+          <a href="https://anteroslegal.gumroad.com/l/ftjop" class="btn-comprar" target="_blank">Comprar →</a>
+        </div>
+      </div>
+  
+      <!-- Producto 1 -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <img src="images/recursos.jpg" alt="Guía de Recursos para Migrantes en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge">Ebook</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Guía de Recursos para Migrantes en Chile</h3>
+          <p class="producto-desc">Todo lo que necesitas saber sobre instituciones, derechos y servicios disponibles para migrantes en Chile.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">$7.000 <small>CLP</small></span>
+            <span class="precio-usd">USD $7</span>
+          </div>
+          <a href="https://anteroslegal.gumroad.com/l/jcramm" class="btn-comprar" target="_blank">Comprar →</a>
+        </div>
+      </div>
+  
+      <!-- Producto 2 -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <img src="images/salud.jpg" alt="Guía Sistema de Salud en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge">Ebook</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Cómo Navegar el Sistema de Salud en Chile como Migrante</h3>
+          <p class="producto-desc">Fonasa, Isapres, urgencias y derechos de salud. Guía práctica para acceder al sistema sin importar tu estatus migratorio.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">$7.000 <small>CLP</small></span>
+            <span class="precio-usd">USD $7</span>
+          </div>
+          <a href="https://anteroslegal.gumroad.com/l/gbqzu" class="btn-comprar" target="_blank">Comprar →</a>
+        </div>
+      </div>
+  
+      <!-- Producto 3 -->
+      <div class="producto-card">
+        <div class="producto-img-wrap">
+          <img src="images/trabajadores.jpg" alt="Manual Derechos Trabajadores Extranjeros" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge">Manual</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Derechos y Obligaciones de Trabajadores Extranjeros en Chile</h3>
+          <p class="producto-desc">Manual completo sobre contrato de trabajo, visas laborales, derechos sindicales y protección ante el empleador.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">$13.000 <small>CLP</small></span>
+            <span class="precio-usd">USD $13</span>
+          </div>
+          <a href="https://anteroslegal.gumroad.com/l/aeyhem" class="btn-comprar" target="_blank">Comprar →</a>
+        </div>
+      </div>
+  
+      <!-- Producto 4 -->
+      <div class="producto-card producto-card--destacado">
+        <div class="producto-img-wrap">
+          <img src="images/invertir.jpg" alt="Guía para Invertir en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
+          <span class="producto-badge producto-badge--gold">Premium</span>
+        </div>
+        <div class="producto-body">
+          <h3 class="producto-titulo">Guía para Invertir en Chile: Estrategias para Invertir y Emprender</h3>
+          <p class="producto-desc">Marcos legales, estructuras societarias, beneficios tributarios y rutas reales para inversionistas y emprendedores extranjeros.</p>
+          <div class="producto-precio">
+            <span class="precio-clp">$25.000 <small>CLP</small></span>
+            <span class="precio-usd">USD $25</span>
+          </div>
+          <a href="https://anteroslegal.gumroad.com/l/svthjr" class="btn-comprar" target="_blank">Comprar →</a>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
   <!-- TAB VENEZUELA -->
   <div class="tab-panel" id="tab-venezuela">
     <div class="servicio-card">
@@ -1394,141 +1527,6 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
       <p>Atención presencial en Punta Arenas y 100% remota en toda Latinoamérica.</p>
       <a href="https://calendly.com/anteroslegal" class="btn-primary" target="_blank" style="margin-top:1.5rem; display:inline-flex;">Agendar consulta</a>
     </div>
-  </div>
-</section>
-
-<!-- PRODUCTOS -->
-<section id="productos" style="background:var(--negro);padding:5.5rem 7%;">
-  <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3rem;flex-wrap:wrap;gap:1.5rem;">
-    <div>
-      <div class="section-label" style="color:var(--dorado)">Recursos Digitales</div>
-      <h2 style="color:var(--marfil);">Guías y Manuales<br><em>para llevar contigo</em></h2>
-    </div>
-    <p style="color:#888;font-size:0.88rem;max-width:320px;line-height:1.6;">Documentos técnicos descargables. Compra directa, acceso inmediato. Sin suscripciones.</p>
-  </div>
-
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5px;background:rgba(255,255,255,0.06);">
-
-    <!-- Expediente Migratorio 2026 (GRATIS, acceso libre) -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <img src="images/expediente-2026.jpg" alt="Expediente Migratorio 2026: 295 expulsiones decretadas en Magallanes, solo 48 cumplidas" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge producto-badge--gold">Nuevo</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Expediente Migratorio 2026</h3>
-        <p class="producto-desc">42 respuestas de 35 organismos del Estado sobre migración: datos por región, ciudad y país, y lo que el Estado aún no responde.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">Gratis</span>
-          <span class="precio-usd">Acceso libre</span>
-        </div>
-        <a href="expediente/" class="btn-comprar">Leer el informe →</a>
-      </div>
-    </div>
-
-    <!-- Barómetro Emprendedor 2026 (GRATIS) -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <img src="images/barometro.jpg" alt="Barómetro Emprendedor 2026" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge producto-badge--gold">Gratis</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Barómetro Emprendedor 2026</h3>
-        <p class="producto-desc">Informe anual con los datos legales y migratorios que todo emprendedor de Magallanes necesita: cifras, fiscalizaciones y cambios 2026. Acceso gratuito con tu correo.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">Gratis</span>
-          <span class="precio-usd">Acceso inmediato</span>
-        </div>
-        <a href="https://anteroslegal.github.io/anteroslegal/barometro/" class="btn-comprar" target="_blank">Acceder →</a>
-      </div>
-    </div>
-
-    <!-- Producto 5 · Reunificación Familiar (nuevo) -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <div class="portada-tipo"><small>Ebook · Anteros Legal</small><strong>Guía de Reunificación <em>Familiar</em> en Chile</strong></div>
-        <img src="images/reunificacion.jpg" alt="Guía de Reunificación Familiar en Chile" class="sobre-portada" onerror="this.style.display='none'">
-        <span class="producto-badge producto-badge--gold" style="z-index:2;">Nuevo</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Guía de Reunificación Familiar en Chile</h3>
-        <p class="producto-desc">Para quienes ya construyeron una vida en Chile y quieren traer a su familia. Requisitos, documentos y pasos, explicados con claridad.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">USD $8</span>
-          <span class="precio-usd">Acceso inmediato</span>
-        </div>
-        <a href="https://anteroslegal.gumroad.com/l/ftjop" class="btn-comprar" target="_blank">Comprar →</a>
-      </div>
-    </div>
-
-    <!-- Producto 1 -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <img src="images/recursos.jpg" alt="Guía de Recursos para Migrantes en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge">Ebook</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Guía de Recursos para Migrantes en Chile</h3>
-        <p class="producto-desc">Todo lo que necesitas saber sobre instituciones, derechos y servicios disponibles para migrantes en Chile.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">$7.000 <small>CLP</small></span>
-          <span class="precio-usd">USD $7</span>
-        </div>
-        <a href="https://anteroslegal.gumroad.com/l/jcramm" class="btn-comprar" target="_blank">Comprar →</a>
-      </div>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <img src="images/salud.jpg" alt="Guía Sistema de Salud en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge">Ebook</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Cómo Navegar el Sistema de Salud en Chile como Migrante</h3>
-        <p class="producto-desc">Fonasa, Isapres, urgencias y derechos de salud. Guía práctica para acceder al sistema sin importar tu estatus migratorio.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">$7.000 <small>CLP</small></span>
-          <span class="precio-usd">USD $7</span>
-        </div>
-        <a href="https://anteroslegal.gumroad.com/l/gbqzu" class="btn-comprar" target="_blank">Comprar →</a>
-      </div>
-    </div>
-
-    <!-- Producto 3 -->
-    <div class="producto-card">
-      <div class="producto-img-wrap">
-        <img src="images/trabajadores.jpg" alt="Manual Derechos Trabajadores Extranjeros" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge">Manual</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Derechos y Obligaciones de Trabajadores Extranjeros en Chile</h3>
-        <p class="producto-desc">Manual completo sobre contrato de trabajo, visas laborales, derechos sindicales y protección ante el empleador.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">$13.000 <small>CLP</small></span>
-          <span class="precio-usd">USD $13</span>
-        </div>
-        <a href="https://anteroslegal.gumroad.com/l/aeyhem" class="btn-comprar" target="_blank">Comprar →</a>
-      </div>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="producto-card producto-card--destacado">
-      <div class="producto-img-wrap">
-        <img src="images/invertir.jpg" alt="Guía para Invertir en Chile" onerror="this.parentElement.style.background='#1a1a1a'">
-        <span class="producto-badge producto-badge--gold">Premium</span>
-      </div>
-      <div class="producto-body">
-        <h3 class="producto-titulo">Guía para Invertir en Chile: Estrategias para Invertir y Emprender</h3>
-        <p class="producto-desc">Marcos legales, estructuras societarias, beneficios tributarios y rutas reales para inversionistas y emprendedores extranjeros.</p>
-        <div class="producto-precio">
-          <span class="precio-clp">$25.000 <small>CLP</small></span>
-          <span class="precio-usd">USD $25</span>
-        </div>
-        <a href="https://anteroslegal.gumroad.com/l/svthjr" class="btn-comprar" target="_blank">Comprar →</a>
-      </div>
-    </div>
-
   </div>
 </section>
 
