@@ -1130,7 +1130,8 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     <button class="tab-btn active" onclick="switchTab('personas', this)">Para Personas</button>
     <button class="tab-btn" onclick="switchTab('defensa', this)">Defensa &amp; Urgencia</button>
     <button class="tab-btn" onclick="switchTab('empresas', this)">Para Empresas</button>
-    <button class="tab-btn" onclick="switchTab('latam', this)">LATAM y Venezuela</button>
+    <button class="tab-btn" onclick="switchTab('venezuela', this)">Venezuela</button>
+    <button class="tab-btn" onclick="switchTab('latam', this)">LATAM</button>
   </div>
 
   <!-- TAB PERSONAS -->
@@ -1320,6 +1321,49 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
     </div>
   </div>
 
+  <!-- TAB VENEZUELA -->
+  <div class="tab-panel" id="tab-venezuela">
+    <div class="servicio-card">
+      <div class="servicio-num">01</div>
+      <h3>Amparos constitucionales</h3>
+      <p>Acciones de amparo ante tribunales venezolanos para proteger tus derechos: identidad, documentos y debido proceso.</p>
+      <a href="https://wa.me/56948920125?text=Hola%2C%20tengo%20un%20tr%C3%A1mite%20en%20Venezuela." class="btn-contratar" target="_blank" rel="noopener">Consultar</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">02</div>
+      <h3>Administrativo y mercantil</h3>
+      <p>Reclamos ante SAREN, SAIME, registros y ministerios; actas, acciones y registro mercantil de empresas venezolanas.</p>
+      <a href="https://wa.me/56948920125?text=Hola%2C%20tengo%20un%20tr%C3%A1mite%20en%20Venezuela." class="btn-contratar" target="_blank" rel="noopener">Consultar</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">03</div>
+      <h3>Poderes con formato venezolano</h3>
+      <p>Redactados para firmar en notarías de Chile o de otros países y apostillar. Listos para su registro en Venezuela.</p>
+      <a href="https://wa.me/56948920125?text=Hola%2C%20tengo%20un%20tr%C3%A1mite%20en%20Venezuela." class="btn-contratar" target="_blank" rel="noopener">Consultar</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">04</div>
+      <h3>Pasaporte, consulado y documentos</h3>
+      <p>Solicitud de pasaporte, trámites consulares, partidas, actas, títulos y antecedentes con legalización y apostilla.</p>
+      <a href="https://wa.me/56948920125?text=Hola%2C%20tengo%20un%20tr%C3%A1mite%20en%20Venezuela." class="btn-contratar" target="_blank" rel="noopener">Consultar</a>
+    </div>
+    <div class="servicio-card">
+      <div class="servicio-num">05</div>
+      <h3>Familia, herencias y AFP</h3>
+      <p>Divorcios y sucesiones en Venezuela mediante apoderado, y retiro de fondos de AFP en Chile cuando la ley lo permite.</p>
+      <a href="https://wa.me/56948920125?text=Hola%2C%20tengo%20un%20tr%C3%A1mite%20en%20Venezuela." class="btn-contratar" target="_blank" rel="noopener">Consultar</a>
+    </div>
+    <div class="servicio-card servicio-card--precedente">
+      <div class="servicio-num">06</div>
+      <h3>Doble filiación en Venezuela</h3>
+      <p>Reconocimiento de hijas e hijos de dos madres o dos padres ante el registro civil venezolano. Lo dirige el abogado que promovió y ganó la sentencia 1187/2016 de la Sala Constitucional.</p>
+      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
+    </div>
+
+  </div>
+
+  <p id="ve-mas" style="display:none;text-align:center;margin-top:1.5rem;"><a href="/servicios/#venezuela" class="btn-contratar">Ver todos los servicios para Venezuela</a></p>
+
   <!-- TAB LATAM REMOTO -->
   <div class="tab-panel" id="tab-latam">
     <div class="servicio-card">
@@ -1332,12 +1376,6 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
       <div class="servicio-num">02</div>
       <h3>PYMES LATAM en Chile</h3>
       <p>Para empresas de la región que quieren operar en Chile. Constitución, compliance migratorio y visas para socios y equipo clave.</p>
-      <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
-    </div>
-    <div class="servicio-card servicio-card--precedente">
-      <div class="servicio-num">03</div>
-      <h3>Doble filiación en Venezuela</h3>
-      <p>Reconocimiento de hijas e hijos de dos madres o dos padres ante el registro civil venezolano. Lo dirige el abogado que promovió y ganó la sentencia 1187/2016 de la Sala Constitucional.</p>
       <a href="https://api.whatsapp.com/message/J5RDLFI23SHDI1?autoload=1&app_absent=0" class="btn-contratar" target="_blank">Consultar</a>
     </div>
   </div>
@@ -1766,6 +1804,7 @@ src="https://www.facebook.com/tr?id=2425088324585849&ev=PageView&noscript=1"
 
   // Tabs
   function switchTab(tab, btn) {
+    var vm=document.getElementById('ve-mas'); if(vm) vm.style.display = tab==='venezuela' ? 'block' : 'none';
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('tab-' + tab).classList.add('active');
